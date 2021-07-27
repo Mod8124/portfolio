@@ -1,0 +1,2370 @@
+/*code by denis munoz 
+date create : 7/10/2021
+last modified :7/19/2021
+*/
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+    
+  }
+  
+
+:root {
+    --water_green:#00ffff;
+    --orange:#ff8e31;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.wrapperOne {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    margin:0 auto;
+    background-color: #000;
+    background-image: url("img/images/wallpaperv2.jpg");
+    background-attachment: fixed;
+}
+
+.navMobile {
+    display: none;
+}
+
+input {
+    display: none;
+  }
+  
+  .open {
+    background-color: #fff;
+    width: 24px;
+    height: 4px;
+    display: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+  }
+  
+  .open:before {
+    content: "";
+    background-color:#fff;
+    width: 28px;
+    height: 4px;
+    display: block;
+    border-radius: 4px;
+    position: relative;
+    top: -8px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+  
+  .open:after {
+    content: "";
+    background-color:#fff;
+    width: 28px;
+    height: 4px;
+    display: block;
+    border-radius: 4px;
+    position: relative;
+    top: 4px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+  
+  .menuOpen {
+    width: 24px;
+    height: 20px;
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .menuOpen:hover .open:before {
+    top: -9px;
+  }
+  
+  .menuOpen:hover .open:after {
+    top: 5px;
+  }
+  
+  .menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #000;
+  }
+  
+  .menu label {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  
+  .menu .menuContent {
+    position: relative;
+    top: 50%;
+   font-size: 2em;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -170px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  
+  .menu ul li a:hover {
+    color: var(--orange);
+  }
+  
+  .menu ul li:hover {
+    background: white;
+  }
+  
+  .menuEffects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+  
+  .menuEffects ul {
+    transform: translateY(0%);
+    transition: all 0.5s;
+  }
+  
+  #menuToggle:checked ~ .menuEffects {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+  }
+  
+  #menuToggle:checked ~ .menuEffects ul {
+    opacity: 1;
+  }
+  
+  #menuToggle:checked ~ .menuOpen .open {
+    background-color: transparent;
+  }
+  
+  #menuToggle:checked ~ .menuOpen .open:before {
+    content: "";
+    background-color:var(--water_green);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #menuToggle:checked ~ .menuOpen .open:after {
+    content: "";
+    background-color: var(--orange);
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #menuToggle:not(:checked) ~ .menuEffects ul {
+    transform: translateY(-30%);
+  }
+  
+.nav {
+    flex:100%;
+}
+
+#nav {
+    padding-top: 20px;
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    flex:50%;
+}
+
+#logo {
+    width: 30%;
+}
+
+#logo img {
+    width: 100%;
+}
+
+.navBar {
+    flex:50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navBar nav {
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navBar a {
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding-bottom: 12px;
+}
+
+.navBar a:hover {
+    padding-bottom: 4px;
+    border-bottom: 4px solid var(--water_green);
+}
+
+.cta {
+    flex:100%;
+}
+
+#cta {
+    width:55%;
+    margin:0 auto;
+    padding-bottom: 50px;
+}
+
+
+
+h1 {
+    padding-top: 90px;
+    color: #fff;
+    font-size: 4.5em;
+    line-height: 120px;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 8px #fff;
+    animation: hello 4s infinite alternate;    
+}
+
+#im {
+    text-shadow: none;
+    letter-spacing: 3px;
+}
+
+#denis {
+    letter-spacing: 3px;
+    background-color: none;
+    color: black;
+    mix-blend-mode: screen;
+    text-shadow: 0px 0px 4px var(--orange), 0px 0px 6px var(--orange),  0px 0px 8px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange);
+    animation: denis 3s linear infinite;
+}
+
+@keyframes hello {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0px 0px 3px #fff, 0px 0px 8px #fff;
+    }
+
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }  
+}
+
+@keyframes denis {
+    0%,
+    100% {
+        text-shadow: 0px 0px 4px var(--orange), 0px 0px 6px var(--orange),  0px 0px 8px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange); 
+    }
+
+    50% {
+        text-shadow: 0px 0px 10px var(--orange), 0px 0px 10px var(--orange),  0px 0px 12px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange); 
+    }
+}
+
+#cta p {
+    padding-top: 20px;
+    color:#fff;
+    font-size: 1.8em;
+    letter-spacing: 4px;
+    padding-bottom: 50px;
+}
+
+#cta button {
+    background: transparent;
+    color:var(--water_green);
+    font-size: 1.5em;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 15px 25px 15px 25px;
+    font-weight: 600;
+    border:4px solid var(--water_green);
+    box-shadow: 0px 0px 4px 1px var(--water_green);
+}
+
+#cta button:hover {
+     color: #fff;
+     border:4px solid #fff;
+     box-shadow: 0px 0px 4px 1px #fff;
+}
+
+.redes {
+    flex:100%;
+}
+
+#redes {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.red {
+    width: 8%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.red svg path{
+    fill:white;
+}
+
+.red svg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    stroke:#fff;
+}
+
+.red svg:hover  {
+
+    stroke: var(--water_green);
+}
+
+/*---inicia wrapperTwo----*/
+
+.wrapperTwo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    margin:0 auto;
+}
+
+.about {
+    flex:50%;
+}
+
+#about {
+    width: 70%;
+    margin:0 auto;
+}
+
+#about h2 {
+    padding-top:200px;
+    padding-bottom: 40px;
+    color:#fff;
+    font-size:2.2em;
+    background-color: none;
+    color: black;
+    mix-blend-mode: screen;
+    text-shadow: 0px 0px 4px var(--orange), 0px 0px 6px var(--orange),  0px 0px 8px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange);
+}
+
+#about p {
+    width: 90%;
+    font-size: 1.5em;
+    padding-bottom: 50px;
+    color:white;
+    line-height: 36px;
+}
+
+.bars {
+    flex:50%;
+    padding-top:220px;
+    padding-bottom: 100px;
+}
+
+#bars {
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.baras {
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tecno {
+    flex:30%;
+    height: 80px;
+}
+
+.tecno h3 {
+   font-size: 1.2em;
+   text-align: center;
+   color:#fff;
+}
+
+.experience {
+    flex:70%;
+    height: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #202020;
+    border:1px solid #202020;
+    border-radius: 50px;
+    
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+        box-shadow: 0px 0px 6px 1px var(--orange);
+        background-color: var(--orange) ;
+      }
+      25%{
+          width: 50%;
+          box-shadow: 0px 0px 6px 1px var(--orange);
+          background-color: var(--orange);
+      }
+      50%{
+          width: 60%;
+          box-shadow: 0px 0px 6px 1px #fff;
+          background-color: #fff;
+      }
+
+      75%{
+        width: 70%;
+        box-shadow: 0px 0px 6px 1px #fff;
+        background-color: white;
+    }
+
+      100%{
+          width: 80%;
+          box-shadow: 0px 0px 6px 1px #fff;
+          background-color: white;
+    }
+}
+
+@keyframes react {
+    0%{
+        width: 0%;
+        box-shadow: 0px 0px 6px 1px var(--orange);
+        background-color: var(--orange) ;
+      }
+      25%{
+          width: 25%;
+          box-shadow: 0px 0px 6px 2px var(--orange);
+          background-color: var(--orange);
+      }
+      50%{
+          width: 40%;
+          box-shadow: 0px 0px 6px 1px #fff;
+          background-color: #fff;
+      }
+
+      75%{
+        width: 45%;
+        box-shadow: 0px 0px 6px 1px #fff;
+        background-color: #fff;
+    }
+
+      100%{
+          width: 50%;
+          box-shadow: 0px 0px 6px 1px #fff;
+          background-color: #fff;
+    }
+}
+
+@keyframes ps {
+    0%{
+        width: 0%;
+        box-shadow: 0px 0px 6px 1px #fff;
+        background-color: #fff ;
+      }
+      25%{
+          width: 25%;
+          box-shadow: 0px 0px 6px 1px #fff;
+          background-color: #fff;
+      }
+      50%{
+          width: 40%;
+          box-shadow: 0px 0px 6px 1px var(--orange);
+          background-color: var(--orange);
+      }
+
+      75%{
+        width: 55%;
+        box-shadow: 0px 0px 6px 1px var(--orange);
+        background-color: var(--orange);
+    }
+
+      100%{
+          width: 60%;
+          box-shadow: 0px 0px 6px 1px var(--orange);
+          background-color: var(--orange);
+    }
+}
+
+.css {
+    width: 80%;
+    background-color:white ;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 2px #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .css-animation {
+      animation: css 3.5s linear;
+    }
+
+    .react-animation {
+        animation: react 3.5s linear;  
+    }
+
+    .ps-animation {
+        animation: ps 3.5s linear;  
+    }
+}
+
+.js {
+    width: 60%;
+    background-color:var(--orange) ;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 1px var(--orange);
+}
+
+.react {
+    width: 50%;
+    background-color:#fff;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 1px #fff;
+}
+
+.sql {
+    width: 40%;
+    background-color:#fff;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 1px #fff;
+}
+
+.ps {
+    width: 60%;
+    background-color:var(--orange) ;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 1px var(--orange);
+}
+
+.ai {
+    width: 40%;
+    background-color:#fff;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 1px #fff;
+}
+
+/*----start wrapperFour--------*/
+
+.wrapperThree {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    margin:0 auto;
+}
+
+.tittle {
+    flex:100%;
+}
+
+#tittle {
+    width: 86%;
+    margin: 0 auto;
+}
+
+#tittle h2 {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    color:#fff;
+    font-size:2.2em;
+    background-color: none;
+    color: black;
+    mix-blend-mode: screen;
+    text-shadow: 0px 0px 4px var(--orange), 0px 0px 6px var(--orange),  0px 0px 8px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange);
+}
+
+.work_img {
+    flex:100%;
+}
+
+#work_img {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.workImg {
+    width: 28%;
+}
+
+.workImg img {
+    width: 100%;
+    box-shadow: 0px 0px 6px 6px #fff;
+}
+
+.work_imgTwo {
+    flex:100%;
+}
+
+#work_imgTwo {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.workImgTwo {
+    width: 28%;
+
+}
+
+.workImgTwo img {
+    width:100%;
+    box-shadow: 0px 0px 6px 10px #fff;
+}
+
+
+/*----start wrapperFive-------*/
+
+.wrapperFive {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    margin:0 auto;
+}
+
+.tittleTwo {
+    flex:100%;
+}
+
+#tittleTwo {
+    width: 84%;
+    margin: 0 auto; 
+}
+
+#tittleTwo h2 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    color:#fff;
+    font-size:2.2em;
+    background-color: none;
+    color: black;
+    mix-blend-mode: screen;
+    text-shadow: 0px 0px 4px var(--orange), 0px 0px 6px var(--orange),  0px 0px 8px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange);
+}
+
+#tittleTwo h3 {
+    color:white;
+    font-size: 1.6em;
+    padding-bottom: 80px;
+}
+
+.social {
+    flex:100%;
+}
+
+#social {
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.redSocial {
+    width: 34%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 3px solid #202020;
+    border-bottom: 4px solid var(--water_green);
+    box-shadow: 0 4px 2px -2px var(--water_green);
+}
+
+.textRed {
+    flex:80%;
+}
+
+.textRed h4 {
+    width: 94%;
+    margin:0 auto;
+    color:white;
+    font-size: 1.1em;
+}
+
+.imgRed {
+    flex:20%;
+    text-align: center;
+}
+
+.imgRed svg {
+    width: 40px;
+    fill:white;
+}
+
+.imgRed svg:hover {
+    fill: var(--water_green);
+}
+
+.socialTwo {
+    flex:100%;
+    padding-top: 60px;
+    padding-bottom: 300px;
+}
+
+#socialTwo {
+    width: 84%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.redSocialTwo {
+    width: 34%;
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    align-items: center;
+    border: 3px solid #202020;
+    border-bottom: 4px solid var(--water_green);
+    box-shadow: 0 4px 2px -2px var(--water_green); 
+}
+
+.textRedSocial {
+    flex:80%;
+}
+
+.textRedSocial h4 {
+    width: 94%;
+    margin:0 auto;
+    color:white;
+    font-size: 1.1em;
+}
+
+.imgRedSocial {
+    flex:20%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.imgRedSocial svg {
+    width:40px;
+    height: 40px;
+    fill:white;
+}
+
+.imgRedSocial svg:hover {
+    fill: var(--water_green);
+    stroke: var(--water_green);
+}
+
+
+
+.imgRedSocial svg path {
+    width: 40px;
+    fill:white;
+}
+
+
+/*-----start footer----*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    margin:0 auto;
+    
+}
+
+.footer {
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    padding-bottom: 100px;
+}
+
+.footerLogo {
+    flex:25%;
+}
+
+#footerLogo {
+    width: 50%;
+    margin:0 auto;
+}
+
+#footerLogo img {
+    width: 100%;
+}
+
+.footerAbout {
+    flex:25%;
+}
+
+#footerAbout {
+    width: 60%;
+    margin: 0 auto;
+    padding-top:30px;
+}
+
+#footerAbout nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footerAbout a {
+    line-height: 60px;
+    color:white;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+#footerAbout a:hover {
+     color: var(--orange);
+}
+
+.therm {
+    flex:25%;
+}
+
+#therm {
+    width: 60%;
+    margin:0 auto;
+    padding-top: 30px;
+}
+
+#therm nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+#therm a {
+    line-height: 60px;
+    color:white;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+#therm a:hover {
+    color: var(--water_green);
+}
+
+.footerSocial {
+    flex:25%;
+}
+
+#footerSocial {
+    width: 60%;
+    margin:0 auto;
+    padding-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#footerSocial svg {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    stroke:#fff;
+}
+
+
+#footerSocial svg:hover {
+    stroke: var(--water_green);
+}
+
+@media only screen and (min-width: 1500px) and (max-width:1600px) {
+
+    #cta {
+        width: 60%;
+    }
+
+    #textRedEmail {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width:1499px) {
+
+    #cta {
+        width: 60%;
+    }
+
+    #textRedEmail {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width:1399px) {
+
+    #cta {
+        width: 70%;
+    }
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1299px) {
+
+    #logo {
+        width: 40%;
+    }
+
+    #cta {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    #cta p {
+        font-size: 1.6em;
+    }
+
+    #cta button {
+        font-size: 1.3em;
+    }
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) and (max-width:1199px) {
+
+    #logo {
+        width: 40%;
+    }
+
+    .navBar nav {
+        width: 70%;
+    }
+
+    #cta {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 3.6em;
+    }
+
+    #cta p {
+        font-size: 1.6em;
+    }
+
+    #cta button {
+        font-size: 1.3em;
+    }
+
+    #about p {
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .bars {
+        padding-top: 240px;
+    }
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+    #tittleTwo h3 {
+        font-size: 1.3em;
+        padding-bottom: 60px;
+    }
+
+    .textRed h4 {
+        width: 96%;
+        font-size: 0.9em;
+    }
+
+    .textRedSocial h4 {
+        width: 96%;
+        font-size: 0.9em;
+    }
+
+    #footerAbout a, #therm a {
+        font-size: 1.1em;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width:1099px) {
+
+    #logo {
+        width: 40%;
+    }
+
+    .navBar nav {
+        width: 80%;
+    }
+
+    #cta {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 3.3em;
+    }
+
+    #cta p {
+        font-size: 1.4em;
+    }
+
+    #cta button {
+        font-size: 1.2em;
+    }
+
+    #about p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .bars {
+        padding-top: 240px;
+    }
+
+    .redSocial {
+        width: 40%;
+    }
+
+    .redSocialTwo {
+        width: 40%;
+    }
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+    #footerLogo {
+        width: 60%;
+        margin:0 auto;
+    }
+
+    #tittleTwo h3 {
+        font-size: 1.3em;
+        padding-bottom: 60px;
+    }
+
+    .textRed h4 {
+        width: 96%;
+        font-size: 0.9em;
+    }
+
+    .textRedSocial h4 {
+        width: 96%;
+        font-size: 0.9em;
+    }
+
+    #footerAbout a, #therm a {
+        font-size: 1.1em;
+    }
+    
+}
+
+@media only screen and (min-width: 900px) and (max-width:999px) {
+
+    #logo {
+        width: 50%;
+    }
+
+    .navBar nav {
+        width: 86%;
+    }
+
+    .navBar a {
+        font-size: 1.2em;
+    }
+
+    #cta {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 3.3em;
+        line-height: 100px;
+    }
+
+    #cta p {
+        font-size: 1.3em;
+    }
+
+    #cta button {
+        font-size: 1.1em;
+    }
+
+    #about p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .bars {
+        padding-top: 240px;
+    }
+
+    .redSocial {
+        width: 40%;
+    }
+
+    .redSocialTwo {
+        width: 40%;
+    }
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+    #footerLogo {
+        width: 60%;
+        margin:0 auto;
+    }
+
+    #tittleTwo h3 {
+        font-size: 1.3em;
+        padding-bottom: 60px;
+    }
+
+    .textRed h4 {
+        width: 96%;
+        font-size: 0.9em;
+    }
+
+    .textRedSocial h4 {
+        width: 96%;
+        font-size: 0.9em;
+    }
+
+    #footerAbout a, #therm a {
+        font-size: 1.1em;
+    }
+
+    #footerSocial {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) and (max-width:899px) {
+
+    #logo {
+        width: 50%;
+    }
+
+    .navBar nav {
+        width: 90%;
+    }
+
+    .navBar a {
+        font-size: 1.2em;
+    }
+
+    #cta {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 3em;
+        line-height: 100px;
+    }
+
+    #cta p {
+        font-size: 1.2em;
+    }
+
+    #cta button {
+        font-size: 1.1em;
+    }
+
+    #about p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .bars {
+        padding-top: 260px;
+    }
+
+    #bars {
+        width: 80%;
+    }
+
+    #work_imgTwo {
+        padding-top: 50px;
+    }
+
+    .redSocial {
+        width: 40%;
+    }
+
+    .redSocialTwo {
+        width: 40%; 
+    }
+
+    #tittleTwo h2 {
+        padding-top: 80px;
+    }
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+    #footerLogo {
+        width: 60%;
+        margin:0 auto;
+    }
+
+    #tittleTwo h3 {
+        font-size: 1.3em;
+        padding-bottom: 60px;
+    }
+
+    .textRed h4 {
+        width: 96%;
+        font-size: 0.8em;
+    }
+
+    .textRedSocial h4 {
+        width: 96%;
+        font-size: 0.8em;
+    }
+
+    #footerAbout a, #therm a {
+        font-size: 1.1em;
+    }
+
+    #footerSocial {
+        width: 80%;
+        padding-top: 200px;
+    }
+} 
+
+@media only screen and (min-width: 700px) and (max-width:799px) {
+
+    #logo {
+        width: 50%;
+    }
+
+    .navBar nav {
+        width: 90%;
+    }
+
+    .navBar a {
+        font-size: 1em;
+    }
+
+    #cta {
+        width: 76%;
+    }
+
+    h1 {
+        font-size: 2.8em;
+        line-height: 100px;
+    }
+
+    #cta p {
+        font-size: 1.2em;
+    }
+
+    #cta button {
+        font-size: 1.1em;
+    }
+
+    #redes {
+        padding-bottom: 40px;
+    }
+
+    #about {
+        width: 80%;
+    }
+
+    #about h2 {
+        padding-top: 160px;
+    }
+
+    #about p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .bars {
+        padding-top: 240px;
+    }
+
+    #bars {
+        width: 80%;
+    }
+
+    #work_imgTwo {
+        padding-top: 50px;
+    }
+
+
+    #tittle h2 {
+        padding-bottom: 60px;
+    }
+
+    #tittleTwo h2 {
+        padding-top: 80px;
+    }
+
+    #work_imgTwo {
+        padding-bottom: 50px;
+    }
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+
+    .redSocial {
+        width: 45%;
+    }
+
+    .redSocialTwo {
+        width: 45%; 
+    }
+
+
+    #tittleTwo h3 {
+        font-size: 1.1em;
+        padding-bottom: 60px;
+    }
+
+    .textRed h4 {
+        width: 96%;
+        font-size: 0.8em;
+    }
+
+    .textRedSocial h4 {
+        width: 96%;
+        font-size: 0.8em;
+    }
+
+    #footerLogo {
+        width: 60%;
+        margin:0 auto;
+    }
+
+    #footerAbout a, #therm a {
+        font-size: 1.1em;
+    }
+
+    #footerSocial {
+        width: 80%;
+        padding-top: 200px;
+    }
+} 
+
+@media only screen and (min-width: 600px) and (max-width:699px) {
+
+    #logo {
+        width: 50%;
+    }
+
+    .navBar nav {
+        width: 90%;
+    }
+
+    .navBar a {
+        font-size: 1em;
+    }
+
+    #cta {
+        width: 80%;
+        text-align: start;
+    }
+
+    h1 {
+        font-size: 2.7em;
+        line-height: 100px;
+    }
+
+    #cta p {
+        font-size: 1em;
+    }
+
+    #cta button {
+        font-size: 1.1em;
+    }
+
+    #redes {
+        padding-bottom: 40px;
+    }
+
+    .red {
+        width: 10%;
+        padding-right: 50px;
+    }
+
+    #about {
+        width: 80%;
+    }
+
+    #about h2 {
+        padding-top: 160px;
+    }
+
+    #about p {
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .bars {
+        padding-top: 240px;
+    }
+
+    #bars {
+        width: 80%;
+    }
+
+    .tecno h3 {
+        font-size: 1em;
+    }
+
+    #work_imgTwo {
+        padding-top: 50px;
+    }
+
+
+    #tittle h2 {
+        padding-bottom: 60px;
+    }
+
+    #tittleTwo h2 {
+        padding-top: 80px;
+    }
+
+    #work_imgTwo {
+        padding-bottom: 50px;
+    }
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+
+    .redSocial {
+        width: 45%;
+    }
+
+    .redSocialTwo {
+        width: 45%; 
+    }
+
+
+    #tittleTwo h3 {
+        font-size: 1.1em;
+        padding-bottom: 60px;
+    }
+
+    .textRed h4 {
+        width: 96%;
+        font-size: 0.7em;
+    }
+
+    .textRedSocial h4 {
+        width: 96%;
+        font-size: 0.7em;
+    }
+
+    #footerLogo {
+        width: 80%;
+    }
+
+    #footerAbout a, #therm a {
+        font-size: 1.1em;
+    }
+
+    #footerSocial {
+        width: 96%;
+        padding-top: 200px;
+    }
+} 
+
+@media only screen and (min-width: 500px) and (max-width:599px) {
+
+    #logo {
+        width: 60%;
+    }
+
+    .navBar nav {
+        width: 96%;
+    }
+
+    .navBar a {
+        font-size: 0.9em;
+    }
+
+    #cta {
+        width: 80%;
+        text-align: center;
+    }
+
+    h1 {
+        padding-top: 60px;
+        font-size: 2.2em;
+        line-height: 80px;
+    }
+
+    #cta p {
+        width: 74%;
+        margin:0 auto;
+        font-size: 1em;
+        line-height: 34px;
+    }
+
+    #cta button {
+        font-size: 1.1em;
+    }
+
+    #redes {
+        padding-bottom: 40px;
+    }
+
+    .red {
+        width: 10%;
+        padding-right: 60px;
+    }
+
+    .about {
+        flex:100%;
+    }
+
+    #about {
+        width: 82%;
+        text-align: center;
+    }
+
+    #about h2 {
+        padding-top: 140px;
+    }
+
+    #about p {
+        padding-bottom: 40px;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .bars {
+        flex:100%;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    #bars {
+        width: 80%;
+    }
+
+    .tecno h3 {
+        font-size: 1em;
+    }
+
+    /*start wrapperFour*/
+    #tittle {
+        width: 90%;
+        text-align: center;
+    }
+
+    #work_img {
+        width: 80%;
+    }
+
+    .workImg {
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    #work_imgTwo {
+        width: 80%;
+        padding-top: 10px;
+    }
+
+    .workImgTwo {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    /*---start wrapperFive---*/
+
+
+    #tittleTwo h2 {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    #tittleTwo h3 {
+        font-size: 1.2em;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+    #social {
+        width: 80%;
+    }
+
+
+    .redSocial {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+
+    .redSocialTwo {
+        width: 45%; 
+    }
+
+
+    .textRed h4 {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .textRedSocial h4 {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .socialTwo {
+        padding-top: 10px;
+    }
+
+    #socialTwo {
+        width: 80%;
+    }
+
+    .redSocialTwo {
+        width:100%;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    /*----footer----*/
+
+    .footerLogo {
+        flex:100%;
+    }
+
+    .footerAbout {
+        flex:100%;
+    }
+
+    #footerAbout {
+        padding-top: 10px;
+    }
+
+    .therm {
+        flex:100%;
+    }
+
+
+    .footerSocial {
+        flex: 100%;
+    }
+
+    #footerSocial {
+        padding-top: 100px;
+    }
+} 
+
+@media only screen and (min-width: 500px) and (max-width:599px) {
+
+    #logo {
+        width: 60%;
+    }
+
+    .navBar nav {
+        width: 96%;
+    }
+
+    .navBar a {
+        font-size: 0.9em;
+    }
+
+    #cta {
+        width: 80%;
+        text-align: center;
+    }
+
+    h1 {
+        padding-top: 60px;
+        font-size: 2.2em;
+        line-height: 80px;
+    }
+
+    #cta p {
+        width: 74%;
+        margin:0 auto;
+        font-size: 1em;
+        line-height: 34px;
+    }
+
+    #cta button {
+        font-size: 1.1em;
+    }
+
+    #redes {
+        padding-bottom: 40px;
+    }
+
+    .red {
+        width: 10%;
+        padding-right: 60px;
+    }
+
+    .about {
+        flex:100%;
+    }
+
+    #about {
+        width: 82%;
+        text-align: center;
+    }
+
+    #about h2 {
+        padding-top: 140px;
+    }
+
+    #about p {
+        padding-bottom: 40px;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .bars {
+        flex:100%;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    #bars {
+        width: 80%;
+    }
+
+    .tecno h3 {
+        font-size: 1em;
+    }
+
+    /*start wrapperFour*/
+    #tittle {
+        width: 90%;
+        text-align: center;
+    }
+
+    #work_img {
+        width: 80%;
+    }
+
+    .workImg {
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    #work_imgTwo {
+        width: 80%;
+        padding-top: 10px;
+    }
+
+    .workImgTwo {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    /*---start wrapperFive---*/
+
+
+    #tittleTwo h2 {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    #tittleTwo h3 {
+        font-size: 1.2em;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+    #social {
+        width: 80%;
+    }
+
+
+    .redSocial {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+
+    .redSocialTwo {
+        width: 45%; 
+    }
+
+
+    .textRed h4 {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .textRedSocial h4 {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .socialTwo {
+        padding-top: 10px;
+    }
+
+    #socialTwo {
+        width: 80%;
+    }
+
+    .redSocialTwo {
+        width:100%;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    /*----footer----*/
+
+    .footerLogo {
+        flex:100%;
+    }
+
+    .footerAbout {
+        flex:100%;
+    }
+
+    #footerAbout {
+        padding-top: 10px;
+    }
+
+    .therm {
+        flex:100%;
+    }
+
+
+    .footerSocial {
+        flex: 100%;
+    }
+
+    #footerSocial {
+        padding-top: 100px;
+    }
+} 
+
+@media only screen and (min-width: 400px) and (max-width:499px) {
+
+    .navMobile {
+        display: flex;
+        z-index: 1;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .logo {
+        flex: 100%;
+    }
+
+    .navBar {
+        flex: 0%;
+        display: none;
+    }
+
+    #logo {
+        width: 60%;
+        margin: 0 auto;
+        
+    }
+
+    .navBar nav {
+        width: 96%;
+    }
+
+    .navBar a {
+        font-size: 0.9em;
+    }
+
+    #cta {
+        width: 80%;
+        text-align: center;
+    }
+
+    h1 {
+        padding-top: 30px;
+        font-size: 2em;
+        line-height: 80px;
+        z-index: -1;
+    }
+
+    #cta p {
+        width: 76%;
+        margin:0 auto;
+        font-size: 1em;
+        line-height: 34px;
+    }
+
+    #cta button {
+        font-size: 1.1em;
+    }
+
+    #redes {
+        padding-bottom: 40px;
+    }
+
+    .red {
+        width: 10%;
+        padding-right: 60px;
+    }
+
+    .about {
+        flex:100%;
+    }
+
+    #about {
+        width: 82%;
+        text-align: center;
+    }
+
+    #about h2 {
+        padding-top: 140px;
+    }
+
+    #about p {
+        padding-bottom: 40px;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .bars {
+        flex:100%;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    #bars {
+        width: 80%;
+    }
+
+    .tecno h3 {
+        font-size: 1em;
+    }
+
+    /*start wrapperFour*/
+    #tittle {
+        width: 90%;
+        text-align: center;
+    }
+
+    #work_img {
+        width: 80%;
+    }
+
+    .workImg {
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    #work_imgTwo {
+        width: 80%;
+        padding-top: 10px;
+    }
+
+    .workImgTwo {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    /*---start wrapperFive---*/
+
+
+    #tittleTwo h2 {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    #tittleTwo h3 {
+        font-size: 1.2em;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+    #social {
+        width: 80%;
+    }
+
+
+    .redSocial {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+
+    .redSocialTwo {
+        width: 45%; 
+    }
+
+
+    .textRed h4 {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .textRedSocial h4 {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .socialTwo {
+        padding-top: 10px;
+    }
+
+    #socialTwo {
+        width: 80%;
+    }
+
+    .redSocialTwo {
+        width:100%;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    /*----footer----*/
+
+    .footerLogo {
+        flex:100%;
+    }
+
+    .footerAbout {
+        flex:100%;
+    }
+
+    #footerAbout {
+        padding-top: 10px;
+    }
+
+    .therm {
+        flex:100%;
+    }
+
+
+    .footerSocial {
+        flex: 100%;
+    }
+
+    #footerSocial {
+        padding-top: 100px;
+    }
+} 
+
+@media only screen and (max-width:399px) {
+
+    .navMobile {
+        display: flex;
+        z-index: 1;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .logo {
+        flex: 100%;
+    }
+
+    .navBar {
+        flex: 0%;
+        display: none;
+    }
+
+    #logo {
+        width: 60%;
+        margin: 0 auto;
+        
+    }
+
+    .navBar nav {
+        width: 96%;
+    }
+
+    .navBar a {
+        font-size: 0.9em;
+    }
+
+    #cta {
+        width: 80%;
+        text-align: center;
+    }
+
+    h1 {
+        padding-top: 30px;
+        font-size: 2em;
+        line-height: 80px;
+        z-index: -1;
+    }
+
+    #cta p {
+        width: 76%;
+        margin:0 auto;
+        font-size: 1em;
+        line-height: 34px;
+    }
+
+    #cta button {
+        font-size: 1.1em;
+    }
+
+    #redes {
+        padding-bottom: 40px;
+    }
+
+    .red {
+        width: 10%;
+        padding-right: 60px;
+    }
+
+    .about {
+        flex:100%;
+    }
+
+    #about {
+        width: 82%;
+        text-align: center;
+    }
+
+    #about h2 {
+        padding-top: 140px;
+    }
+
+    #about p {
+        padding-bottom: 40px;
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .bars {
+        flex:100%;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    #bars {
+        width: 80%;
+    }
+
+    .tecno h3 {
+        font-size: 1em;
+    }
+
+    /*start wrapperFour*/
+    #tittle {
+        width: 90%;
+        text-align: center;
+    }
+
+    #work_img {
+        width: 80%;
+    }
+
+    .workImg {
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    #work_imgTwo {
+        width: 80%;
+        padding-top: 10px;
+    }
+
+    .workImgTwo {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    /*---start wrapperFive---*/
+
+
+    #tittleTwo h2 {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    #tittleTwo h3 {
+        font-size: 1.2em;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+    #social {
+        width: 80%;
+    }
+
+
+    .redSocial {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+
+    .redSocialTwo {
+        width: 45%; 
+    }
+
+
+    .textRed h4 {
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .textRedSocial h4 {
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .socialTwo {
+        padding-top: 10px;
+    }
+
+    #socialTwo {
+        width: 80%;
+    }
+
+    .redSocialTwo {
+        width:100%;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    /*----footer----*/
+
+    .footerLogo {
+        flex:100%;
+    }
+
+    .footerAbout {
+        flex:100%;
+    }
+
+    #footerAbout {
+        padding-top: 10px;
+    }
+
+    .therm {
+        flex:100%;
+    }
+
+
+    .footerSocial {
+        flex: 100%;
+    }
+
+    #footerSocial {
+        padding-top: 100px;
+    }
+} 
