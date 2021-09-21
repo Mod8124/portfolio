@@ -269,8 +269,12 @@ h1 {
     color: #fff;
     font-size: 4.5em;
     line-height: 120px;
-    text-shadow: 0px 0px 2px #fff, 0px 0px 8px #fff;
-    animation: hello 4s infinite alternate;    
+    text-shadow: 0px 0px 2px #fff, 0px 0px 8px #fff; 
+}
+
+#hello {
+  animation: hello 4s infinite alternate;    
+  font-size: 1em;
 }
 
 #im {
@@ -283,14 +287,14 @@ h1 {
     background-color: none;
     color: black;
     mix-blend-mode: screen;
-    text-shadow: 0px 0px 4px var(--orange), 0px 0px 6px var(--orange),  0px 0px 8px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange);
-    animation: denis 3s linear infinite;
+    text-shadow: 0px 0px 8px var(--water_green), 0px 0px 10px var(--water_green),  0px 0px 10px var(--water_green),  0px 0px 10px var(--water_green),  0px 0px 10px var(--water_green);
+    animation: denis 2s linear infinite;
 }
 
 @keyframes hello {
 
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        text-shadow: 0px 0px 3px #fff, 0px 0px 8px #fff;
+        text-shadow: 0px 0px 3px #fff, 0px 0px 14px #fff;
     }
 
     20%, 24%, 55% {        
@@ -306,7 +310,7 @@ h1 {
     }
 
     50% {
-        text-shadow: 0px 0px 10px var(--orange), 0px 0px 10px var(--orange),  0px 0px 12px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange); 
+        text-shadow: 0px 0px 12px var(--orange), 0px 0px 12px var(--orange),  0px 0px 12px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange); 
     }
 }
 
@@ -327,13 +331,15 @@ h1 {
     padding: 15px 25px 15px 25px;
     font-weight: 600;
     border:4px solid var(--water_green);
-    box-shadow: 0px 0px 4px 1px var(--water_green);
+    box-shadow: 0px 0px 4px 3px var(--water_green);
 }
 
 #cta button:hover {
-     color: #fff;
      border:4px solid #fff;
-     box-shadow: 0px 0px 4px 1px #fff;
+     color:#fff;
+     text-shadow: 0px 0px 3px #fff, 0px 0px 4px #fff;
+     box-shadow: 0px 0px 4px 3px #fff;
+     transform: translateY(-0.25em);
 }
 
 .redes {
@@ -395,14 +401,14 @@ h1 {
 }
 
 #about h2 {
-    padding-top:200px;
+    padding-top:210px;
     padding-bottom: 40px;
     color:#fff;
-    font-size:2.2em;
+    font-size:2.8em;
     background-color: none;
     color: black;
     mix-blend-mode: screen;
-    text-shadow: 0px 0px 4px var(--orange), 0px 0px 6px var(--orange),  0px 0px 8px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange);
+    text-shadow: 0px 0px 4px var(--orange), 0px 0px 8px var(--orange),  0px 0px 8px var(--orange),  0px 0px 12px var(--orange),  0px 0px 12px var(--orange);
 }
 
 #about p {
@@ -551,7 +557,7 @@ h1 {
     background-color:white ;
     height: 100%;
     border-radius: 50px;
-    box-shadow: 0px 0px 6px 2px #fff;
+    box-shadow: 0px 0px 10px 1px #fff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -573,7 +579,7 @@ h1 {
     background-color:var(--orange) ;
     height: 100%;
     border-radius: 50px;
-    box-shadow: 0px 0px 6px 1px var(--orange);
+    box-shadow: 0px 0px 10px 2px var(--orange);
 }
 
 .react {
@@ -581,7 +587,7 @@ h1 {
     background-color:#fff;
     height: 100%;
     border-radius: 50px;
-    box-shadow: 0px 0px 6px 1px #fff;
+    box-shadow: 0px 0px 10px 1px #fff;
 }
 
 .sql {
@@ -589,15 +595,15 @@ h1 {
     background-color:#fff;
     height: 100%;
     border-radius: 50px;
-    box-shadow: 0px 0px 6px 1px #fff;
+    box-shadow: 0px 0px 10px 1px #fff;
 }
 
 .ps {
-    width: 60%;
+    width: 55%;
     background-color:var(--orange) ;
     height: 100%;
     border-radius: 50px;
-    box-shadow: 0px 0px 6px 1px var(--orange);
+    box-shadow: 0px 0px 10px 2px var(--orange);
 }
 
 .ai {
@@ -605,7 +611,7 @@ h1 {
     background-color:#fff;
     height: 100%;
     border-radius: 50px;
-    box-shadow: 0px 0px 6px 1px #fff;
+    box-shadow: 0px 0px 10px 1px #fff;
 }
 
 /*----start wrapperFour--------*/
@@ -630,11 +636,11 @@ h1 {
     padding-top: 60px;
     padding-bottom: 80px;
     color:#fff;
-    font-size:2.2em;
+    font-size:2.8em;
     background-color: none;
     color: black;
     mix-blend-mode: screen;
-    text-shadow: 0px 0px 4px var(--orange), 0px 0px 6px var(--orange),  0px 0px 8px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange);
+     text-shadow: 0px 0px 4px var(--orange), 0px 0px 8px var(--orange),  0px 0px 8px var(--orange),  0px 0px 12px var(--orange),  0px 0px 12px var(--orange);
 }
 
 .work_img {
@@ -655,7 +661,7 @@ h1 {
 
 .workImg img {
     width: 100%;
-    box-shadow: 0px 0px 6px 6px #fff;
+    box-shadow: 0px 0px 9px 2px #fff;
 }
 
 .work_imgTwo {
@@ -663,7 +669,7 @@ h1 {
 }
 
 #work_imgTwo {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 100px;
     width: 92%;
     margin: 0 auto;
@@ -680,7 +686,7 @@ h1 {
 
 .workImgTwo img {
     width:100%;
-    box-shadow: 0px 0px 6px 10px #fff;
+    box-shadow: 0px 0px 9px 2px #fff;
 }
 
 
@@ -704,9 +710,9 @@ h1 {
 
 #tittleTwo h2 {
     padding-top: 100px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     color:#fff;
-    font-size:2.2em;
+    font-size:2.8em;
     background-color: none;
     color: black;
     mix-blend-mode: screen;
@@ -716,7 +722,7 @@ h1 {
 #tittleTwo h3 {
     color:white;
     font-size: 1.6em;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 
 .social {
@@ -732,15 +738,53 @@ h1 {
 }
 
 .redSocial {
-    width: 34%;
+    width: 35%;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     display:flex;
+    height: 100px;
     flex-wrap: wrap;
     align-items: center;
-    border: 3px solid #202020;
-    border-bottom: 4px solid var(--water_green);
-    box-shadow: 0 4px 2px -2px var(--water_green);
+     border: 3px solid #202020;
+     border-bottom: none;
+    /* border-bottom: 4px solid var(--water_green);
+    box-shadow: 0 4px 2px -2px var(--water_green); */ 
+}
+
+.light {
+    flex:100%;
+    height: 10%;
+    margin-top: 24px;
+    background-color: #00ffff;
+    box-shadow: 0px 0px 10px 2px #00ffff;
+    border-radius: 50px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.minlight {
+    width: 4%;
+    border-radius: 50px;
+    height: 40%;
+    background-color: #fff;
+    box-shadow: 0px 0px 14px 1px #fff;
+    position: relative;
+    animation: moveLight 2.6s ease-in-out  infinite alternate;
+}
+
+@keyframes  moveLight {
+    0% {
+        left:0%;
+    }
+
+    50%{
+        left: 96%;
+    }
+
+    100% {
+        left: 0%;
+    }
 }
 
 .textRed {
@@ -748,7 +792,7 @@ h1 {
 }
 
 .textRed h4 {
-    width: 94%;
+    width: 90%;
     margin:0 auto;
     color:white;
     font-size: 1.1em;
@@ -783,15 +827,15 @@ h1 {
 }
 
 .redSocialTwo {
-    width: 34%;
-    display:flex;
-    flex-wrap: wrap;
+    width: 35%;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    display:flex;
+    height: 100px;
+    flex-wrap: wrap;
     align-items: center;
-    border: 3px solid #202020;
-    border-bottom: 4px solid var(--water_green);
-    box-shadow: 0 4px 2px -2px var(--water_green); 
+     border: 3px solid #202020;
+     border-bottom: none;
 }
 
 .textRedSocial {
@@ -799,7 +843,7 @@ h1 {
 }
 
 .textRedSocial h4 {
-    width: 94%;
+    width: 90%;
     margin:0 auto;
     color:white;
     font-size: 1.1em;
