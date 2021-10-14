@@ -128,7 +128,7 @@ input {
   .menu .menuContent {
     position: relative;
     top: 50%;
-   font-size: 2em;
+   font-size: 1.6em;
     text-align: center;
     padding-bottom: 20px;
     margin-top: -170px;
@@ -340,10 +340,8 @@ h1 {
 }
 
 #cta button:hover {
-     border:4px solid #fff;
-     color:#fff;
-     text-shadow: 0px 0px 3px #fff, 0px 0px 4px #fff;
-     box-shadow: 0px 0px 6px 3px #fff;
+     border:4px solid var(--water_green);
+     box-shadow: 0px 0px 13px 3px var(--water_green);
      transform: translateY(-0.25em);
 }
 
@@ -669,6 +667,10 @@ h1 {
     box-shadow: 0px 0px 10px 2px #fff;
 }
 
+.work_img img:hover {
+    transform: scale(1.1, 1.1);
+}
+
 .work_imgTwo {
     flex:100%;
 }
@@ -694,6 +696,9 @@ h1 {
     box-shadow: 0px 0px 10px 2px #fff;
 }
 
+.workImgTwo img:hover {
+    transform: scale(1.1, 1.1);
+}
 
 /*----start wrapperFive-------*/
 
@@ -998,9 +1003,12 @@ footer {
 }
 
 @media only screen and (min-width: 1400px) and (max-width:1499px) {
+    .wrapperOne {
+        background-size: 60% 70%;
+    }
 
     #cta {
-        width: 60%;
+        width: 70%;
     }
 
     #textRedEmail {
@@ -1020,13 +1028,16 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) and (max-width:1299px) {
+    .wrapperOne {
+        background-size: 60% 66%;
+    }
 
     #logo {
         width: 40%;
     }
 
     #cta {
-        width: 60%;
+        width: 70%;
     }
 
     h1 {
@@ -1048,6 +1059,9 @@ footer {
 
 
 @media only screen and (min-width: 1100px) and (max-width:1199px) {
+    .wrapperOne {
+        background-size: 70% 66%;
+    }
 
     #logo {
         width: 40%;
@@ -1058,7 +1072,7 @@ footer {
     }
 
     #cta {
-        width: 60%;
+        width: 70%;
     }
 
     h1 {
@@ -1109,6 +1123,9 @@ footer {
 
 
 @media only screen and (min-width: 1000px) and (max-width:1099px) {
+    .wrapperOne {
+        background-size: 80% 66%;
+    }
 
     #logo {
         width: 40%;
@@ -1119,7 +1136,7 @@ footer {
     }
 
     #cta {
-        width: 60%;
+        width: 70%;
     }
 
     h1 {
@@ -1134,6 +1151,10 @@ footer {
         font-size: 1.2em;
     }
 
+    #about h2 {
+        font-size: 2.6em;
+    }
+
     #about p {
         width: 100%;
         font-size: 1.2em;
@@ -1141,6 +1162,14 @@ footer {
 
     .bars {
         padding-top: 240px;
+    }
+
+    #tittle h2 {
+        font-size: 2.6em;
+    }
+
+    #tittleTwo h2 {
+        font-size: 2.6em;
     }
 
     .redSocial {
@@ -1183,87 +1212,9 @@ footer {
 
 @media only screen and (min-width: 900px) and (max-width:999px) {
 
-    #logo {
-        width: 50%;
+    .wrapperOne {
+        background-size: 80% 66%;
     }
-
-    .navBar nav {
-        width: 86%;
-    }
-
-    .navBar a {
-        font-size: 1.2em;
-    }
-
-    #cta {
-        width: 70%;
-    }
-
-    h1 {
-        font-size: 3.3em;
-        line-height: 100px;
-    }
-
-    #cta p {
-        font-size: 1.3em;
-    }
-
-    #cta button {
-        font-size: 1.1em;
-    }
-
-    #about p {
-        width: 100%;
-        font-size: 1.2em;
-    }
-
-    .bars {
-        padding-top: 240px;
-    }
-
-    .redSocial {
-        width: 40%;
-    }
-
-    .redSocialTwo {
-        width: 40%;
-    }
-
-    #textRedEmail {
-        font-size: 0.8em;
-    }
-
-    #footerLogo {
-        width: 60%;
-        margin:0 auto;
-    }
-
-    #tittleTwo h3 {
-        font-size: 1.3em;
-        padding-bottom: 60px;
-    }
-
-    .textRed h4 {
-        width: 96%;
-        font-size: 0.9em;
-    }
-
-    .textRedSocial h4 {
-        width: 96%;
-        font-size: 0.9em;
-    }
-
-    #footerAbout a, #therm a {
-        font-size: 1.1em;
-    }
-
-    #footerSocial {
-        width: 80%;
-    }
-    
-}
-
-@media only screen and (min-width: 800px) and (max-width:899px) {
 
     #logo {
         width: 50%;
@@ -1294,9 +1245,13 @@ footer {
         font-size: 1.1em;
     }
 
+    #about h2 {
+        font-size: 2.4em;
+    }
+
     #about p {
         width: 100%;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .bars {
@@ -1318,9 +1273,137 @@ footer {
     .redSocialTwo {
         width: 40%; 
     }
+    #tittle h2 {
+        font-size: 2.4em;
+    }
 
     #tittleTwo h2 {
+        font-size: 2.4em;
         padding-top: 80px;
+    }
+
+    #work_imgTwo {
+        padding-top: 20px;
+    }
+
+    .workImg,.workImgTwo {
+        width: 44%;
+        margin-bottom: 30px;
+    }
+
+    #textRedEmail {
+        font-size: 0.8em;
+    }
+
+    #footerLogo {
+        width: 60%;
+        margin:0 auto;
+    }
+
+    #tittleTwo h3 {
+        font-size: 1.3em;
+        padding-bottom: 60px;
+    }
+
+    .textRed h4 {
+        width: 96%;
+        font-size: 0.8em;
+    }
+
+    .textRedSocial h4 {
+        width: 96%;
+        font-size: 0.8em;
+    }
+
+    #footerAbout a, #therm a {
+        font-size: 1.1em;
+    }
+
+    #footerSocial {
+        width: 80%;
+        padding-top: 200px;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) and (max-width:899px) {
+    .wrapperOne {
+        background-size: 80% 70%;
+    }
+
+    #logo {
+        width: 50%;
+    }
+
+    .navBar nav {
+        width: 90%;
+    }
+
+    .navBar a {
+        font-size: 1.2em;
+    }
+
+    #cta {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 3em;
+        line-height: 100px;
+    }
+
+    #cta p {
+        font-size: 1.2em;
+    }
+
+    #cta button {
+        font-size: 1.1em;
+    }
+
+    #about h2 {
+        font-size: 2.4em;
+    }
+
+    #about p {
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .bars {
+        padding-top: 260px;
+    }
+
+    #bars {
+        width: 80%;
+    }
+
+    #work_imgTwo {
+        padding-top: 50px;
+    }
+
+    .redSocial {
+        width: 40%;
+    }
+
+    .redSocialTwo {
+        width: 40%; 
+    }
+    #tittle h2 {
+        font-size: 2.4em;
+    }
+
+    #tittleTwo h2 {
+        font-size: 2.4em;
+        padding-top: 80px;
+    }
+
+    #work_imgTwo {
+        padding-top: 20px;
+    }
+
+    .workImg,.workImgTwo {
+        width: 44%;
+        margin-bottom: 20px;
     }
 
     #textRedEmail {
@@ -1358,6 +1441,9 @@ footer {
 } 
 
 @media only screen and (min-width: 700px) and (max-width:799px) {
+    .wrapperOne {
+        background-size: 80% 70%;
+    }
 
     #logo {
         width: 50%;
@@ -1397,12 +1483,13 @@ footer {
     }
 
     #about h2 {
+        font-size: 2.4em;
         padding-top: 160px;
     }
 
     #about p {
         width: 100%;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .bars {
@@ -1413,22 +1500,27 @@ footer {
         width: 80%;
     }
 
-    #work_imgTwo {
-        padding-top: 50px;
-    }
-
-
     #tittle h2 {
+        font-size: 2.4em;
         padding-bottom: 60px;
     }
 
     #tittleTwo h2 {
         padding-top: 80px;
+        font-size: 2.4em;
     }
 
     #work_imgTwo {
-        padding-bottom: 50px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
+
+    .workImgTwo, .workImg  {
+        width: 44%;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    } 
+
 
     #textRedEmail {
         font-size: 0.8em;
@@ -1475,132 +1567,9 @@ footer {
 } 
 
 @media only screen and (min-width: 600px) and (max-width:699px) {
-
-    #logo {
-        width: 50%;
+    .wrapperOne {
+        background-size: 86% 64%;
     }
-
-    .navBar nav {
-        width: 90%;
-    }
-
-    .navBar a {
-        font-size: 1em;
-    }
-
-    #cta {
-        width: 80%;
-        text-align: start;
-    }
-
-    h1 {
-        font-size: 2.7em;
-        line-height: 100px;
-    }
-
-    #cta p {
-        font-size: 1em;
-    }
-
-    #cta button {
-        font-size: 1.1em;
-    }
-
-    #redes {
-        padding-bottom: 40px;
-    }
-
-    .red {
-        width: 10%;
-        padding-right: 50px;
-    }
-
-    #about {
-        width: 80%;
-    }
-
-    #about h2 {
-        padding-top: 160px;
-    }
-
-    #about p {
-        width: 100%;
-        font-size: 1.1em;
-    }
-
-    .bars {
-        padding-top: 240px;
-    }
-
-    #bars {
-        width: 80%;
-    }
-
-    .tecno h3 {
-        font-size: 1em;
-    }
-
-    #work_imgTwo {
-        padding-top: 50px;
-    }
-
-
-    #tittle h2 {
-        padding-bottom: 60px;
-    }
-
-    #tittleTwo h2 {
-        padding-top: 80px;
-    }
-
-    #work_imgTwo {
-        padding-bottom: 50px;
-    }
-
-    #textRedEmail {
-        font-size: 0.8em;
-    }
-
-
-    .redSocial {
-        width: 45%;
-    }
-
-    .redSocialTwo {
-        width: 45%; 
-    }
-
-
-    #tittleTwo h3 {
-        font-size: 1.1em;
-        padding-bottom: 60px;
-    }
-
-    .textRed h4 {
-        width: 96%;
-        font-size: 0.7em;
-    }
-
-    .textRedSocial h4 {
-        width: 96%;
-        font-size: 0.7em;
-    }
-
-    #footerLogo {
-        width: 80%;
-    }
-
-    #footerAbout a, #therm a {
-        font-size: 1.1em;
-    }
-
-    #footerSocial {
-        width: 96%;
-        padding-top: 200px;
-    }
-} 
-
-@media only screen and (min-width: 500px) and (max-width:599px) {
 
     #logo {
         width: 60%;
@@ -1655,6 +1624,7 @@ footer {
     }
 
     #about h2 {
+        font-size: 2.4em;
         padding-top: 140px;
     }
 
@@ -1684,6 +1654,10 @@ footer {
         text-align: center;
     }
 
+    #tittle h2 {
+        font-size: 2.4em;
+    }
+
     #work_img {
         width: 80%;
     }
@@ -1710,6 +1684,7 @@ footer {
     #tittleTwo h2 {
         padding-top: 10px;
         text-align: center;
+        font-size: 2.4em;
     }
 
     #tittleTwo h3 {
@@ -1771,6 +1746,10 @@ footer {
         flex:100%;
     }
 
+    #footerLogo  {
+        width: 40%;
+    }
+
     .footerAbout {
         flex:100%;
     }
@@ -1793,7 +1772,12 @@ footer {
     }
 } 
 
+
+
 @media only screen and (min-width: 500px) and (max-width:599px) {
+    .wrapperOne {
+        background-size: 86% 64%;
+    }
 
     #logo {
         width: 60%;
@@ -1848,6 +1832,7 @@ footer {
     }
 
     #about h2 {
+        font-size: 2.4em;
         padding-top: 140px;
     }
 
@@ -1877,6 +1862,10 @@ footer {
         text-align: center;
     }
 
+    #tittle h2 {
+        font-size: 2.4em;
+    }
+
     #work_img {
         width: 80%;
     }
@@ -1903,6 +1892,7 @@ footer {
     #tittleTwo h2 {
         padding-top: 10px;
         text-align: center;
+        font-size: 2.4em;
     }
 
     #tittleTwo h3 {
@@ -1987,6 +1977,9 @@ footer {
 } 
 
 @media only screen and (min-width: 400px) and (max-width:499px) {
+    .wrapperOne {
+        background-size: 86% 52%;
+    }
 
     .navMobile {
         display: flex;
@@ -2063,6 +2056,7 @@ footer {
 
     #about h2 {
         padding-top: 140px;
+        font-size: 2.2em;
     }
 
     #about p {
@@ -2091,6 +2085,10 @@ footer {
         text-align: center;
     }
 
+    #tittle h2 {
+        font-size: 2.2em;
+    }
+
     #work_img {
         width: 80%;
     }
@@ -2117,6 +2115,7 @@ footer {
     #tittleTwo h2 {
         padding-top: 10px;
         text-align: center;
+        font-size: 2.2em;
     }
 
     #tittleTwo h3 {
@@ -2201,7 +2200,11 @@ footer {
 } 
 
 @media only screen and (max-width:399px) {
-
+    .wrapperOne {
+        background-color: #000;
+        background-size: 98% 66%;
+    }
+    
     .navMobile {
         display: flex;
         z-index: 1;
@@ -2231,7 +2234,7 @@ footer {
     }
 
     .navBar a {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     #cta {
@@ -2276,6 +2279,7 @@ footer {
     }
 
     #about h2 {
+        font-size: 2em;
         padding-top: 140px;
     }
 
@@ -2305,6 +2309,10 @@ footer {
         text-align: center;
     }
 
+    #tittle h2 {
+        font-size: 2em;
+    }
+
     #work_img {
         width: 80%;
     }
@@ -2331,6 +2339,7 @@ footer {
     #tittleTwo h2 {
         padding-top: 10px;
         text-align: center;
+        font-size: 2em;
     }
 
     #tittleTwo h3 {
