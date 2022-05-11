@@ -46,10 +46,117 @@ html {
 
 .navMobile {
     display: none;
+    width: 91%;
+    margin:0 auto;
+    padding-top: 28px;
+    position: relative;
+}
+
+.hambu {
+    width:29px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+    z-index: 120;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.hambu::after  {
+    content:"";
+    width:22px;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    top:190%;
+    border-radius: 50px;
+}
+
+.hambu::before {
+    content:"";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    top:390%;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.active.hambu::after {
+    display: none;
+}
+
+.active.hambu {
+    transform:rotate(40deg);
+    transform-origin: 0;
+    background-color: #00ffff;
+    width: 32px;
+}
+
+.active.hambu::before {
+    background-color: #ff8e31;
+    transform: rotate(100deg);
+    top:0%;
+}
+.active.containMobile {
+    opacity: 1;
+}
+
+.containMobile {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    top:0%;
+    height: 95vh;
+    width: 110%;
+    left:-5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.containMobile nav {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.containMobile nav ul {
+    width: 80%;
+    margin: 0 auto;
+    height: 60%;
+}
+
+.containMobile nav li{
+   list-style: none;
+   text-align: center;
+   display: flex;
+   flex:1;
+   height: 35%;
+   align-items: center;
+}
+
+.containMobile nav a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: white;
 }
 
 input {
     display: none;
+    background-color: red;
   }
   
   .open {
@@ -164,7 +271,7 @@ input {
     transform: translateY(0%);
     transition: all 0.5s;
   }
-  
+  transparent
   #menuToggle:checked ~ .menuEffects {
     opacity: 1;
     visibility: visible;
@@ -284,7 +391,7 @@ h1 {
 
 #denis {
     letter-spacing: 3px;
-    background-color: none;
+    background-color: transparent;
     color: black;
     mix-blend-mode: screen;
     text-shadow: 0px 0px 8px #00ffff, 0px 0px 10px #00ffff,  0px 0px 10px #00ffff,  0px 0px 10px #00ffff,  0px 0px 10px #fff;
@@ -403,7 +510,7 @@ h1 {
     padding-bottom: 40px;
     color:#fff;
     font-size:2.8em;
-    background-color: none;
+    background-color: transparent;
     color: black;
     mix-blend-mode: screen;
     text-shadow: 0px 0px 4px var(--orange), 0px 0px 8px var(--orange),  0px 0px 8px var(--orange),  0px 0px 12px var(--orange),  0px 0px 12px var(--orange);
@@ -635,7 +742,7 @@ h1 {
     padding-bottom: 80px;
     color:#fff;
     font-size:2.8em;
-    background-color: none;
+    background-color: transparent;
     color: black;
     mix-blend-mode: screen;
      text-shadow: 0px 0px 4px var(--orange), 0px 0px 8px var(--orange),  0px 0px 8px var(--orange),  0px 0px 12px var(--orange),  0px 0px 12px var(--orange);
@@ -670,7 +777,7 @@ h1 {
     flex:100%;
 }
 
-#work_imgTwo {
+#work_imgTwo,#work_imgThree {
     padding-top: 40px;
     padding-bottom: 5px;
     width: 92%;
@@ -679,7 +786,6 @@ h1 {
     flex-wrap: wrap;
     justify-content:space-evenly;
 }
-
 
 .workImgTwo {
     width: 28%;
@@ -718,7 +824,7 @@ h1 {
     padding-bottom: 30px;
     color:#fff;
     font-size:2.8em;
-    background-color: none;
+    background-color: transparent;
     color: black;
     mix-blend-mode: screen;
     text-shadow: 0px 0px 4px var(--orange), 0px 0px 6px var(--orange),  0px 0px 8px var(--orange),  0px 0px 10px var(--orange),  0px 0px 10px var(--orange);
