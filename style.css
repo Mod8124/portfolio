@@ -36,7 +36,7 @@ html {
     margin:0 auto;
     border: none;
     background-color: #000;
-    background-image: url("./img/images/wallpaper.jpg");
+    background-image: url("./img/images/hero.jpg");
     background-size: 50%;
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
@@ -944,7 +944,9 @@ footer {
 
 
 @media only screen and (min-width: 1500px) and (max-width:1600px) {
-
+    .wrapperOne {
+        background-size: 56% 88%;
+    }
     #cta {
         width: 60%;
     }
@@ -956,11 +958,11 @@ footer {
 
 @media only screen and (min-width: 1400px) and (max-width:1499px) {
     .wrapperOne {
-        background-size: 60% 70%;
+        background-size: 58% 90%;
     }
 
     #cta {
-        width: 70%;
+        width: 60%;
     }
 
     #textRedEmail {
@@ -969,9 +971,11 @@ footer {
 }
 
 @media only screen and (min-width: 1300px) and (max-width:1399px) {
-
+    .wrapperOne {
+        background-size: 60% 88%;
+    }
     #cta {
-        width: 70%;
+        width: 60%;
     }
 
     #textRedEmail {
@@ -981,7 +985,7 @@ footer {
 
 @media only screen and (min-width: 1200px) and (max-width:1299px) {
     .wrapperOne {
-        background-size: 60% 66%;
+        background-size: 63% 88%;
     }
 
     #logo {
@@ -989,7 +993,7 @@ footer {
     }
 
     #cta {
-        width: 70%;
+        width: 60%;
     }
 
     h1 {
@@ -1012,7 +1016,7 @@ footer {
 
 @media only screen and (min-width: 1100px) and (max-width:1199px) {
     .wrapperOne {
-        background-size: 70% 66%;
+        background-size: 68% 86%;
     }
 
     #logo {
@@ -1024,7 +1028,7 @@ footer {
     }
 
     #cta {
-        width: 70%;
+        width: 60%;
     }
 
     h1 {
@@ -1076,7 +1080,7 @@ footer {
 
 @media only screen and (min-width: 1000px) and (max-width:1099px) {
     .wrapperOne {
-        background-size: 80% 66%;
+        background-size: 72% 82%;
     }
 
     #logo {
@@ -1088,7 +1092,7 @@ footer {
     }
 
     #cta {
-        width: 70%;
+        width: 60%;
     }
 
     h1 {
@@ -1165,7 +1169,7 @@ footer {
 @media only screen and (min-width: 900px) and (max-width:999px) {
 
     .wrapperOne {
-        background-size: 80% 66%;
+        background-size: 76% 78%;
     }
 
     #logo {
@@ -2153,8 +2157,7 @@ footer {
 
 @media only screen and (max-width:399px) {
     .wrapperOne {
-        background-color: #000;
-        background-size: 98% 66%;
+        background-size: 86% 52%;
     }
     
     .navMobile {
