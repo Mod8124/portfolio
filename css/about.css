@@ -1,0 +1,94 @@
+/*---inicia wrapperTwo----*/
+
+.wrapperTwo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    margin:0 auto;
+}
+
+.about {
+    flex:100%;
+}
+
+.about__container {
+    width: 90%;
+    margin:0 auto;
+    max-width: 880px;
+    text-align: center;
+}
+
+.about__container h2 {
+    padding-top:120px;
+    padding-bottom: 40px;
+    font-size:var(--title__mobile);
+    color: var(--orange);
+    text-shadow: 0px 0px 2px var(--orange), 0px 0px 6px var(--orange); 
+    letter-spacing: 2px;
+}
+
+.about__container p {
+    font-size: var(--body__sizeMobile);
+    padding-bottom: 50px;
+    color:white;
+    line-height: 32px;
+}
+
+.mainButton {
+    background-color: transparent;
+    max-width: 280px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin:0 auto;
+    letter-spacing: 2px;
+    align-items: center;
+    text-decoration: none;
+    color:var(--water_green);
+    font-size: var(--mainButton__mobile);
+    text-shadow: 0px 0px 4px var(--water_green);
+    border:4px solid var(--water_green);
+    box-shadow: 0px 0px 15px 1px var(--water_green);
+    transition: all 0.5s ease-in-out;
+}
+
+.mainButton:hover {
+    border:4px solid white;
+    box-shadow: 0px 0px 18px 1px white;
+}
+
+.mainButton__svg path {
+    fill: var(--water_green);
+    stroke: var(--water_green);
+}
+
+@media screen and (min-width:800px) {
+    .about__container h2 {
+        padding-top:200px;
+    }
+
+    .about__container p {
+        line-height: 34px;
+    }
+    
+}
+
+
+@media screen and (min-width:1100px) {
+
+    .about__container P {
+        font-size: 1.4em;
+        line-height: 36px;
+    }
+ 
+    .about__container h2 {
+     font-size:var(--title__size);
+     padding-top:200px;
+    }
+
+    .mainButton {
+        font-size: var(--mainButton__size);
+        max-width: 320px;
+    } 
+ }
+ 

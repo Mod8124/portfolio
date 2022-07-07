@@ -1,0 +1,54 @@
+@import url('/css/about.css');
+@import url('/css/accesibility.css');
+@import url('/css/contact.css');
+@import url('/css/footer.css');
+@import url('/css/hero.css');
+@import url('/css/loading.css');
+@import url('/css/modal.css');
+@import url('/css/projects.css');
+@import url('/css/skills.css');
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+  
+:root {
+    --water_green:#00ffff;
+    --orange:#ff8e31;
+    
+    --title__size:3.2em;
+    --body__size:1.4em;
+    --subTitlte__size:1.4em;
+    --button__sizeHero:1.5em;
+    --mainButton__size:1.1em;
+    --title__sizeHero:4.7em;
+    --contant__links:1.1em;
+    --footer__links:1.3em;
+    --para__hero:1.8em;
+
+    --title__mobile:2.6em;
+    --title__sizeHeroMobile:2.4em;
+    --subTitle__mobile:1.2em;  
+    --body__sizeMobile:1.1em;
+    --mainButton__mobile:0.9em;
+    --button_sizeHeroMobile:1.1em;
+    --email__mobile:0.8em;
+    --contant__linksMobile:0.9em;
+    --footer_linksMobile:1.2em;
+    --para__heroMobile:1em;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #000;
+}

@@ -1,44 +1,39 @@
-const hambu = document.querySelector('.hambu')
-const containerMobile = document.querySelector('.containMobile');
+import { hambu, toggleHambu, menuLinksMobile } from "./js/functions/hambu.js";
+import { objectEntry } from "./js/functions/animation.js";
+import { handleLoading } from "./js/functions/load.js";
+import { handleScroll } from "./js/functions/scroll.js";
+import { modal, modalDisplay,  modalNotDisplay, projects } from "./js/functions/modal.js";
+import { 
+  btnAccesibility, btnRestartColorMain, btnRestartColorSecondary, 
+   colorSelect__main, colorSelect__secondary, handleToggleAccesibility,
+  handleRestartColors, handleColor 
+} from "./js/functions/accesibility.js";
 
-function toggleHambu() {
+window.addEventListener('load',handleLoading)
+window.addEventListener('scroll', handleScroll)
 
-  if(hambu.classList.contains('active')) {
+//modal
+modal.addEventListener('click',modalNotDisplay)
+ projects.forEach((img,index)=> {
+  img.addEventListener('click', ()=> modalDisplay(index))
+})
 
-     hambu.classList.remove('active')
-     containerMobile.style.display = 'none'
+// accesibility
+colorSelect__main.addEventListener('input',handleColor)
+ colorSelect__secondary.addEventListener('input', handleColor)
+   btnAccesibility.addEventListener('click', handleToggleAccesibility)
+ btnRestartColorMain.addEventListener('click', handleRestartColors)
+btnRestartColorSecondary.addEventListener('click',handleRestartColors)
 
-   } else {
-     hambu.classList.add('active')
-      containerMobile.style.display='flex'
-     setTimeout(()=> {
-          containerMobile.classList.add('active')
-     },100)
-   }
-}
-
+//toggleHambu
 hambu.addEventListener('click', toggleHambu)
+ menuLinksMobile.forEach((button)=> {
+   button.addEventListener('click',toggleHambu)
+ })
 
-function objectEntry (object, animation) {
-  var observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.classList.add(animation)
-        }
-      })
-  })
-
-  observer.observe(document.querySelector(`.${object}`))
-}
-
-objectEntry('react','react-animation')
-objectEntry('css','css-animation')
-objectEntry('ps','ps-animation')
-
-document.getElementById("denisEmail").setAttribute('onclick', 'location.href = "mailto:denisenriquebaca@gmail.com"');
-document.getElementById("denisNumber").setAttribute('onclick', 'location.href = "https://wa.me/+50661208412"');
-document.getElementById("denisGithub").setAttribute('onclick', 'location.href = "https://github.com/Mod8124"');
-document.getElementById("denisInsta").setAttribute('onclick', 'location.href = "https://www.instagram.com/denismunoz151/"');
+//animation
+objectEntry('javaScript','rotate-animation')
+ objectEntry('react','rotate-animation')
 
 
 

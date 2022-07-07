@@ -1,0 +1,102 @@
+.modalImg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modalImg__container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100%;
+    align-content: space-between;
+    grid-template-rows: 10% 80% 6%;
+}
+
+.modalImg__imgContainer {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+} 
+
+.modalImg__img {
+    width: 90%;
+    max-width: 860px;
+    margin:0 auto;
+    object-fit: fill;
+    border-radius: 14px;
+    border:10px solid black;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.modalImg__github {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.modalImg__linkSvg {
+    height: 100%;
+   width: 40%;
+   max-width: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    text-decoration: none;
+    color:white;
+}
+
+.modalImg__linkSvg svg {
+    width: 40px;
+    height: 40px;
+}
+
+.modalImg__linkSvg svg path {
+    fill:white;
+    stroke:white;
+}
+
+.modalImg__linkSvg:hover, .modalImg__linkSvg:hover svg path{
+    color:var(--orange);
+    fill:var(--orange);
+    stroke:var(--orange);
+}
+
+
+.modalImg__link {
+    background-color: var(--water_green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalImg__linkLink {
+    color:black;
+    font-weight: 700;
+    padding-bottom: 4px;
+    text-decoration: none;
+    border-bottom:3px solid black;
+}
+
+@media screen and (min-width: 600px) {
+    .modalImg {
+        height: 100vh;
+    }
+
+    .modalImg__imgContainer {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .modalImg__imgContainer {
+        align-items: flex-start;
+    }
+}
