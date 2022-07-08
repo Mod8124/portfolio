@@ -8,7 +8,9 @@ import {
    colorSelect__main, colorSelect__secondary, handleToggleAccesibility,
   handleRestartColors, handleColor 
 } from "./js/functions/accesibility.js";
+import handleImg from './js/functions/handleImg.js'
 
+window.addEventListener('load', handleImg)
 window.addEventListener('load',handleLoading)
 window.addEventListener('scroll', handleScroll)
 
@@ -34,6 +36,7 @@ hambu.addEventListener('click', toggleHambu)
 //animation
 objectEntry('javaScript','rotate-animation')
  objectEntry('react','rotate-animation')
+
 
 
 
