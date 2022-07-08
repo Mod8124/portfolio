@@ -1,5 +1,3 @@
-// import { mainImg } from "./Imgs.js";
-
 const imgLinks =  [
     {
       img:'./assets/img/images/animeBlog.jpg',
