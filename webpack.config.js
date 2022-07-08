@@ -8,9 +8,9 @@ module.exports = {
         style:'./src/style.js'
     },
     output:{
-        path:path.resolve(__dirname, 'public/js'),
+        path:path.resolve(__dirname, 'dist/js'),
         clean:true,
-        assetModuleFilename:'[name][ext]'
+        // assetModuleFilename:'[name][ext]'
     },
     module:{
         rules:[
@@ -22,15 +22,15 @@ module.exports = {
             //     test: /\.pdf$/,
             //     use: 'file-loader?name=[path][name].[ext]',
             // },
-            {
-                test:/\.(png|svg|jpg|jpeg|gif|pdf)$/i,
-                type:'asset/resource'
-            }
+            // {
+            //     test:/\.(png|svg|jpg|jpeg|gif|pdf)$/i,
+            //     type:'asset/resource'
+            // }
         ]
     },
-    plugins: [new HtmlWebpackPlugin({
-        title:'webpack App',
-        filename:'index.html',
-        template:'src/index.html'
-    })],
+    // plugins: [new HtmlWebpackPlugin({
+    //     title:'webpack App',
+    //     filename:'index.html',
+    //     template:'src/index.html'
+    // })],
 }

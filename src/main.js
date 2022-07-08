@@ -1,6 +1,6 @@
 import { hambu, toggleHambu, menuLinksMobile } from "./js/functions/hambu.js";
-import { objectEntry } from "./js/functions/animation.js";
 import { handleLoading } from "./js/functions/load.js";
+import { objectEntry } from "./js/functions/animation.js";
 import { handleScroll } from "./js/functions/scroll.js";
 import { modal, modalDisplay,  modalNotDisplay, projects } from "./js/functions/modal.js";
 import { 
@@ -8,9 +8,7 @@ import {
    colorSelect__main, colorSelect__secondary, handleToggleAccesibility,
   handleRestartColors, handleColor 
 } from "./js/functions/accesibility.js";
-import handleImg from './js/functions/handleImg.js'
 
-window.addEventListener('load', handleImg)
 window.addEventListener('load',handleLoading)
 window.addEventListener('scroll', handleScroll)
 

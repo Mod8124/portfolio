@@ -197,7 +197,7 @@
 
 .cta {
     flex:100%;
-    background-image: url("../img/images/hero.jpg");
+    background-image: url("../../assets/img/images/hero.jpg");
     background-size:100% 90%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -314,7 +314,7 @@ h1 {
 
 @media screen and (min-width:440px) {
     .wrapperOne {
-        background-image: url("../img/images/hero.jpg");
+        background-image: url("../../assets/img/images/hero.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;  

@@ -1,4 +1,3 @@
-import { acebi, close } from "../helpers/Imgs";
 export const btnAccesibility = document.querySelector('.accesibilty');
 export const btnRestartColorMain = document.querySelector('[data-color="--water_green"]');
 export const btnRestartColorSecondary = document.querySelector('[data-color="--orange"]');
@@ -16,11 +15,11 @@ export function handleToggleAccesibility(e) {
     
     if(modalAccesibility.classList.contains('active')) {
 
-      btnAccesibility.querySelector('.accesibility__img').src = close
+      btnAccesibility.querySelector('.accesibility__img').src = './assets/img/images/icon-close.svg'
 
     } else {
 
-      btnAccesibility.querySelector('.accesibility__img').src = acebi
+      btnAccesibility.querySelector('.accesibility__img').src = './assets/img/images/icon-acebi.svg'
       btnAccesibility.style.right = '0px'
 
     }
