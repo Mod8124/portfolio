@@ -6,8 +6,8 @@ This is my portfolio, most of the projects are client side but a few include ser
 ## Table of Contents 
 ---
 
-[features](#features)
-[build with](#build-with)
+- [features](#features)
+- [build with](#build-with)
 
 ## Features
 ---
