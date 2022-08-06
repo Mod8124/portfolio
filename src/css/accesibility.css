@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #eeeae7;
     transition: all 0.5s;
     display: none;
     box-shadow: 0px 0px 2px rgba(0, 0,0, 0.9) inset;
@@ -33,12 +33,12 @@
     top:0;
     right:-100%;
     position: fixed;
-    z-index: 1;
     opacity: 0;
     transition: all 0.3s;
-    background-color: white;
+    background-color: #eeeae7;
     box-shadow: 0px 0px 2px  rgba(0, 0,0, 0.9);
     box-shadow: 0px 0px 10px  var(--water_green);
+    z-index: 4;
 }
 
 .active.accesibility__modal {
@@ -98,4 +98,38 @@
 }
 .colorSelect--main {
     padding-top: 0;
+}
+
+.accebility__language {
+    padding-top: 30px;
+}
+
+.btn__language {
+    border:none;
+    padding: 4px 12px 1px 12px;
+    font-weight: 600;
+    font-size: 0.8em;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.5s;
+    border-bottom:3px solid transparent ;
+    text-align: start;
+}
+
+.active.btn__language--en {
+   background-color: var(--orange);
+   transition: all 0.5s;
+}
+
+.active.btn__language--es {
+   background-color: var(--orange);
+   transition: all 0.5s;
+}
+
+.btn__language--en {
+    margin-right: 4px;
+}
+
+.btn__language--es {
+    margin-left: 4px;
 }

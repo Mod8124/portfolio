@@ -8,32 +8,42 @@ import {
    colorSelect__main, colorSelect__secondary, handleToggleAccesibility,
   handleRestartColors, handleColor 
 } from "./js/functions/accesibility.js";
+import { language, languageBtns } from './js/functions/language.js';
 
-window.addEventListener('load',handleLoading)
+window.addEventListener('load', handleLoading)
 window.addEventListener('scroll', handleScroll)
 
-//modal
+// modal
 modal.addEventListener('click',modalNotDisplay)
  projects.forEach((img,index)=> {
   img.addEventListener('click', ()=> modalDisplay(index))
 })
 
-// accesibility
+//particles
+particlesJS.load('particles-js', './particle.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+// // accesibility
 colorSelect__main.addEventListener('input',handleColor)
  colorSelect__secondary.addEventListener('input', handleColor)
    btnAccesibility.addEventListener('click', handleToggleAccesibility)
  btnRestartColorMain.addEventListener('click', handleRestartColors)
 btnRestartColorSecondary.addEventListener('click',handleRestartColors)
 
-//toggleHambu
+// //accesibility languages 
+languageBtns.forEach((btn) => btn.addEventListener('click', language));
+
+// //toggleHambu
 hambu.addEventListener('click', toggleHambu)
  menuLinksMobile.forEach((button)=> {
    button.addEventListener('click',toggleHambu)
  })
 
-//animation
+// //animation
 objectEntry('javaScript','rotate-animation')
- objectEntry('react','rotate-animation')
+objectEntry('react','rotate-animation')
+
 
 
 

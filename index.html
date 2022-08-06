@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portfolio</title>
+      <title>Portfolio | Denis Muñoz Baca</title>
       <link rel="shortcut icon" href="./assets/img/logog.svg" type="image/x-svg" sizes="30x30">
-     <script src="./dist/js/style.js"></script>
+      <script src="./dist/js/style.js"></script>
 </head>
 <body>
 
@@ -32,30 +32,32 @@
 
                     </article>
 
-                    <div class="colorSelect">
+                    <article class="colorSelect">
                         <h3  class="colorSelect__title">Secondary Color</h3>
                         <input type="color" value="#ff8e31" class="colorSelect__input  colorSelect__secondary" data-key="--orange">
 
                         <div class="colorSelect__restart" data-color="--orange">
                             <p  class="colorSelect__para" data-color="--orange"><img alt="icon restart" src="./assets/img/images/icon-restart.svg" class="colorSelect__img" data-color="--orange"> Restart Color</p>
                         </div>
+                    </article>
 
-                    </div>
+                    <article class="accebility__language">
+                        <button class="btn__language btn__language--en active">En</button>|<button class="btn__language btn__language--es">Es</button>
+                    </article>
 
                 </div>
             </div>
         </section>
 
     <section class="wrapperOne"><!--start wrapperOne-->
-
-
+        <div id="particles-js"></div>
     <div class="navMobile"><!--start menuMobile-->
           <div class="containerMobile">
               <div class="hambu"></div>
               <div class="containMobile">
                   <nav>
                         <ul>
-                            <li class="menuLink"><a href="#projects" class="menuLink__link">Work</a></li>
+                            <li class="menuLink"><a href="#projects" class="menuLink__link">Projects</a></li>
                              <li class="menuLink"><a href="#about"    class="menuLink__link">About</a></li>
                              <li class="menuLink"><a href="#contact"  class="menuLink__link">Contact</a></li>
                         </ul>
@@ -75,9 +77,9 @@
 
                    <div class="navBar">
                        <nav>
-                           <a href="#projects">Work</a>
-                              <a href="#about">About</a>
-                           <a href="#contact">Contact</a>
+                           <a href="#projects" class="navBarLinks">Projects</a>
+                              <a href="#about" class="navBarLinks">About</a>
+                           <a href="#contact" class="navBarLinks">Contact</a>
                        </nav>
                    </div>
 
@@ -91,10 +93,10 @@
                         <span id="hello">Hello!</span>  
                          <br> 
                            <span id="im">I'm</span> 
-                        <span id="denis">Den<span id="letterDenis">i</span>s Muñoz,</span>
+                        <span id="denis">Denis Muñoz,</span>
                    </h1>
 
-                   <p>Web developer & Web designer</p>
+                   <p class="cta__para">Web developer & Web designer</p>
 
                    <a href="#about" class="cta__link">See More</a>
 
@@ -118,17 +120,17 @@
            <section class="about">
                <div class="about__container" id="about">
 
-                   <h2>About Me</h2>
-                     <p>I’m a web developer and web designer with strong knowledge in front end technologies, based in San Jose, Costa Rica, I have an interest in learning a lot, about innovate technologies, UI effects, and animations.
+                   <h2 class="about__title">About Me</h2>
+                     <p class="about__para">I’m a web developer and web designer with strong knowledge in front end technologies, based in San Jose, Costa Rica, I have an interest in learning a lot, about innovate technologies, UI effects, and animations.
                     </p>
 
-                    <p>
+                    <p class="about__para">
                        A Well-committed person with attention to detail, who loves to challenge me every day with new problems, also I participated in the WorldSkills competition 2021.
 
                     </p>
 
                     <a href="./assets/img/resume_Denis_p.pdf" target="_blank" class="mainButton">
-                        Download Resume 
+                       <span class="btnDownload"> Download Resume </span>
                         <span class="mainButton__span">
                             <?xml version="1.0" ?><svg class="mainButton__svg" height="19px" version="1.1" viewBox="0 0 14 19" width="14px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#000000" id="Core" transform="translate(-383.000000, -213.000000)"><g id="file-download" transform="translate(383.000000, 213.500000)"><path d="M14,6 L10,6 L10,0 L4,0 L4,6 L0,6 L7,13 L14,6 L14,6 Z M0,15 L0,17 L14,17 L14,15 L0,15 L0,15 Z" id="Shape"/></g></g></g></svg>
                         </span>
@@ -295,7 +297,7 @@
                         </div>
 
                         <div class="modalImg__link">
-                            <a href="" target="_blank" class="modalImg__linkLink">https://blog-anime-node.herokuapp.com</a>
+                            <a href="" target="_blank" class="modalImg__linkLink"></a>
                         </div>
                 </div>
            </div>
@@ -316,7 +318,7 @@
 
                     <a href="mailto:denisenriquebaca@gmail.com" target="_blank">
                         <article class="redSocial redSocial--start">
-                            <div class="textRed textRedEmail"><h4>Email</h4></div>
+                            <div class="textRed textRedEmail"><h4>denisenriquebaca@gmail.com</h4></div>
                             <div class="imgRed"> 
                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_4" style="enable-background:new 0 0 100 100;" version="1.1" viewBox="0 0 100 100" xml:space="preserve"><g><path d="M51.7,4c-25.4,0-46,20.6-46,46s20.6,46,46,46s46-20.6,46-46S77.1,4,51.7,4z M51.7,94c-24.3,0-44-19.7-44-44s19.7-44,44-44   s44,19.7,44,44S76,94,51.7,94z"/></g><path d="M82.3,31.3c0-0.1,0-0.2,0-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0-0.1,0  s-0.2-0.1-0.3-0.1H21.9c-0.1,0-0.3,0-0.4,0.1c0,0,0,0-0.1,0c-0.1,0-0.2,0.1-0.3,0.2c0,0,0,0.1-0.1,0.1c-0.1,0.1-0.1,0.1-0.1,0.2  c0,0.1,0,0.2,0,0.2v0.1v37.4c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.3,0.8c0.2,0.2,0.5,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1h58.6  c0.1,0.1,0.3,0.1,0.4,0.1c0.3,0,0.5-0.1,0.7-0.3c0.3-0.3,0.4-0.8,0.2-1.1v-37C82.3,31.4,82.3,31.4,82.3,31.3z M78.8,32.5L51.6,58.8  L24.4,32.5H78.8z M50.9,61c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l28-27.1v32.6L66.1,52.3c-0.4-0.4-1-0.4-1.4,0  s-0.4,1,0,1.4l14.2,14.2H24.3l14.2-14.2c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L22.9,66.5V33.9L50.9,61z"/></svg>
                             </div>
@@ -326,7 +328,7 @@
 
                     <a href="https://wa.me/+50661208412" target="_blank">
                         <article class="redSocial  redSocial--end">
-                            <div class="textRed"><h4>Phone Number</h4></div>
+                            <div class="textRed"><h4 class="textRedNumber">Phone Number</h4></div>
                             <div class="imgRed">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_5" style="enable-background:new 0 0 100.4 100.4;" version="1.1" viewBox="0 0 100.4 100.4" xml:space="preserve"><g><path d="M69.3,8.6H28c-5.3,0-9.7,4.3-9.7,9.6v66.2c0,5.3,4.3,9.6,9.7,9.6h41.3c5.3,0,9.7-4.3,9.7-9.6V18.2   C79,12.9,74.7,8.6,69.3,8.6z M76,84.4c0,3.7-3,6.6-6.7,6.6H28c-3.7,0-6.7-3-6.7-6.6V18.2c0-3.7,3-6.6,6.7-6.6h41.3   c3.7,0,6.7,3,6.7,6.6V84.4z"/><path d="M60.9,18.1H36.2c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h24.7c0.8,0,1.5-0.7,1.5-1.5S61.7,18.1,60.9,18.1z"/><path d="M48.6,75.4c-2.8,0-5,2.3-5,5c0,1.3,0.5,2.6,1.5,3.5c0.9,0.9,2.2,1.4,3.5,1.4c0,0,0,0,0,0c2.8,0,5-2.3,5-5   C53.6,77.6,51.4,75.4,48.6,75.4z M48.7,82.4C48.7,82.4,48.7,82.4,48.7,82.4c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.9-0.6-1.4   c0-1.1,0.9-2,2-2c0,0,0,0,0,0c1.1,0,2,0.9,2,2C50.7,81.5,49.8,82.4,48.7,82.4z"/></g></svg>
                             </div>
@@ -359,7 +361,7 @@
 
             </section><!--end wrapperFive-->
 
-        <section class="loading"><!--start loading-->
+        <section class="loading active"><!--start loading-->
             <article class="loading__article">
                 <div class="loading__logo">
                     <img alt="logo" src="./assets/img/logo/test.svg" class="logo__logoImg">
@@ -382,9 +384,9 @@
                <div class="footerAbout">
                    <div class="footerAbout__container">
                        <nav>
-                        <a href="#tittle">Work</a>
-                          <a href="#about">About</a>
-                        <a href="#tittleTwo">Contact</a>
+                        <a class="footer__link" href="#projects">Projects</a>
+                          <a class="footer__link" href="#about">About</a>
+                        <a  class="footer__link" href="#contact">Contact</a>
                        </nav>
                    </div>
                </div>
@@ -392,8 +394,8 @@
                <div class="footerAbout">
                    <div class="footerAbout__container">
                        <nav>
-                           <a href="#">Therm</a>
-                           <a href="#">Privacy</a>
+                           <a class="footer__link2" href="#">Term</a>
+                           <a  class="footer__link2" href="#">Privacy</a>
                        </nav>
                    </div>
                </div>
@@ -409,6 +411,7 @@
 
        </footer><!--end footer-->
     </main><!--end wrapper-->
+    <script src="./src/js/particles.js"></script>
     <script src="./dist/js/index.js" type="module"></script>
 </body>
 </html>

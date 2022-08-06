@@ -11,7 +11,7 @@ export const handleScroll = () => {
       if(modalAccesibility.classList.contains('active')) {
           modalAccesibility.classList.remove('active');
           btnAccesibility.style.right = '0px'
-         btnAccesibility.querySelector('.accesibility__img').src = './img/images/icon-acebi.svg'
+         btnAccesibility.querySelector('.accesibility__img').src = './assets/img/images/icon-acebi.svg'
       }
     }
 }

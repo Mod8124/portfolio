@@ -100,3 +100,12 @@
         align-items: flex-start;
     }
 }
+
+@media screen and (min-width:1940px) {
+    .modalImg__img {
+        width: auto;
+        height: auto;
+        max-width: none;
+        margin:0 auto;
+    }
+}

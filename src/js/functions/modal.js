@@ -11,7 +11,7 @@ export function modalDisplay(index) {
     modal.style.display = 'block'
       modalImg.src = `${imgLinks[index].img}`
         modalGithub.href = `${imgLinks[index].github}`
-        modalLink.textContent = `${imgLinks[index].github}`
+        modalLink.textContent = `${imgLinks[index].url}`
     modalLink.href = `${imgLinks[index].url}`;
 } 
   

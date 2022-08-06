@@ -190,4 +190,9 @@
    }
 }
  
+@media screen and (min-width:1920px) { 
+    .redSocial {
+        max-width: 65%;
+    }
+}
 
