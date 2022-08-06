@@ -51,7 +51,7 @@ export const language = (e) => {
         aboutTitle.innerHTML = EN.about['title'];
          aboutPara.forEach((para, index)=> para.innerHTML = EN.about['para'][index]);
          aboutBtn.textContent = EN.about['link'];
-        btnDownload.href = '../assets/img/resume_Denis_p.pdf';
+        btnDownload.href = './assets/img/resume_Denis_p.pdf';
 
         skillsTitle.innerHTML = EN.skills['title'];
 
@@ -80,7 +80,7 @@ export const language = (e) => {
         aboutTitle.innerHTML = ES.about['title'];
          aboutPara.forEach((para, index)=> para.innerHTML = ES.about['para'][index]);
          aboutBtn.textContent = ES.about['link'];
-        btnDownload.href = '../assets/img/resume_denisSP.pdf';
+        btnDownload.href = './assets/img/resume_denisSP.pdf';
 
         skillsTitle.innerHTML = ES.skills['title'];
 
