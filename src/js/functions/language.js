@@ -37,7 +37,7 @@ export const language = (e) => {
 
     if (e.target.classList.contains('btn__language--en')) {
 
-            languageBtns[0].classList.remove('active');
+            languageBtns[1].classList.remove('active');
             e.target.classList.add('active');
         
         menuLink__link.forEach((link, i)=> link.innerHTML = EN.nav[i]);
@@ -80,7 +80,7 @@ export const language = (e) => {
         aboutTitle.innerHTML = ES.about['title'];
          aboutPara.forEach((para, index)=> para.innerHTML = ES.about['para'][index]);
          aboutBtn.textContent = ES.about['link'];
-        btnDownload.href = './assets/img/resume_DenisSP.pdf';
+        btnDownload.href = './assets/img/resume_denisSP.pdf';
 
         skillsTitle.innerHTML = ES.skills['title'];
 
