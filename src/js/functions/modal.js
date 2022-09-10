@@ -15,7 +15,7 @@ const info = document.querySelector('.modalImg__infoShow--para');
 
 export function modalDisplay(index) {
 
-    modal.style.display = 'block'
+    modal.style.display = 'block';
       modalImg.src = `${imgLinks[index].img}`
         modalGithub.href = `${imgLinks[index].github}`
         modalLink.textContent = `${imgLinks[index].url}`
