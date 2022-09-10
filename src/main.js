@@ -8,7 +8,7 @@ import {
    colorSelect__main, colorSelect__secondary, handleToggleAccesibility,
   handleRestartColors, handleColor 
 } from "./js/functions/accesibility.js";
-import { language, languageBtns } from './js/functions/language.js';
+import { languageBtns, handleLanguage, loadLanguage } from './js/functions/language.js';
 
 window.addEventListener('load', handleLoading)
 window.addEventListener('scroll', handleScroll)
@@ -32,7 +32,7 @@ colorSelect__main.addEventListener('input',handleColor)
 btnRestartColorSecondary.addEventListener('click',handleRestartColors)
 
 // //accesibility languages 
-languageBtns.forEach((btn) => btn.addEventListener('click', language));
+languageBtns.forEach((btn) => btn.addEventListener('click', handleLanguage));
 
 // //toggleHambu
 hambu.addEventListener('click', toggleHambu)

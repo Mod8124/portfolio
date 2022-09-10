@@ -33,13 +33,25 @@ const number = document.querySelector('.textRedNumber');
 const footerLinks = document.querySelectorAll('.footer__link');
 const footerLinksTwo = document.querySelectorAll('.footer__link2');
 
-export const language = (e) => {
+// english button
+const englishBtn = document.querySelector('.btn__language');
 
-    if (e.target.classList.contains('btn__language--en')) {
+export const handleLanguage = (e) => {
+    const {target} = e;
+    if (target.classList.contains('btn__language--en')) {
+        languageBtns[1].classList.remove('active');
+        target.classList.add('active');  
+    } else {
+        languageBtns[0].classList.remove('active');
+        target.classList.add('active');
+    }
+    language()
+}
 
-            languageBtns[1].classList.remove('active');
-            e.target.classList.add('active');
-        
+export const language = () => {
+
+    if (englishBtn.classList.contains('active')) {
+   
         menuLink__link.forEach((link, i)=> link.innerHTML = EN.nav[i]);
         navBarLinks.forEach((link, i) => link.innerHTML = EN.nav[i]);
 
@@ -65,9 +77,6 @@ export const language = (e) => {
         footerLinksTwo.forEach((link, i)=> link.innerHTML = EN.footer.others[i]);
         
     } else {
-
-                languageBtns[0].classList.remove('active');
-                e.target.classList.add('active');
 
         menuLink__link.forEach((link, i)=> link.innerHTML = ES.nav[i]);
         navBarLinks.forEach((link, i) => link.innerHTML = ES.nav[i]);

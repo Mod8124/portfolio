@@ -62,6 +62,6 @@ export const Language = () => {
 
     return {
       EN,
-      ES
+      ES,
     };
 };

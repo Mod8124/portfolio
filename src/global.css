@@ -8,6 +8,7 @@
 @import url('./css/projects.css');
 @import url('./css/skills.css');
 
+
 * {
     margin:0px;
     padding:0px;
@@ -32,6 +33,7 @@ html {
     --contant__links:1.1em;
     --footer__links:1.3em;
     --para__hero:1.8em;
+    --modal__heigth: 100vh;
 
     --title__mobile:2.6em;
     --title__sizeHeroMobile:2.4em;
