@@ -15,6 +15,9 @@ const info = document.querySelector('.modalImg__infoShow--para');
 
 export function modalDisplay(index) {
 
+  const doc = document.documentElement
+  doc.style.setProperty('--modal__heigth', `${window.innerHeight}px`)
+
     modal.style.display = 'block';
       modalImg.src = `${imgLinks[index].img}`
         modalGithub.href = `${imgLinks[index].github}`
