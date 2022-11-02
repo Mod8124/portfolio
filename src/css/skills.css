@@ -1,26 +1,17 @@
-@keyframes animationPara {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
-}
-
-@keyframes rotate {
-    from {
-        opacity: 0;
-        transform: scale(1.5,1);
-        transform: rotate(360deg);
-    } to {
-        opacity: 1;
-        transform: scale(1,1);
-        transform: rotate(0deg);
-    }
-}
-
 @media (prefers-reduced-motion: no-preference) {
-    .rotate-animation {
-        animation: rotate 0.6s linear ;
+    .hidden.skills__title {
+        opacity: 0;
+        transition: all 0.6s ease-in;
+    }
+
+    .hidden.skills__paragraph {
+        transform: scale(0, 0);
+        transition: all 0.6s ease-in;
+    }
+
+    .show.skills__title, .show.skills__paragraph {
+        opacity: 1;
+        transform: scale(1, 1);
     }
 }
 

@@ -92,8 +92,8 @@ const imgLinks =  [
     {
       img:'./assets/img/images/bank.jpg',
       github:'https://github.com/Mod8124/Easybank.git',
-      url:'https://mod8124.github.io/Easybank',
-      icons:["HTMl",'CSS'],
+      url:'https://easybank-liart.vercel.app',
+      icons:["HTMl",'CSS','Webpack'],
       title:'Bank-WebSite',
       info:{
         EN:'Developed a website about Next Generation Digital Banking by using HTML5, and CSS3 to Implement the optimal layout for the site depending on their device\'s screen size and See hover states for all interactive elements on the page, and Mobile-First.',

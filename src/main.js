@@ -1,6 +1,6 @@
 import { hambu, toggleHambu, menuLinksMobile } from "./js/functions/hambu.js";
 import { handleLoading } from "./js/functions/load.js";
-import { objectEntry } from "./js/functions/animation.js";
+import { observer, hiddenElements } from "./js/functions/animation.js";
 import { handleScroll } from "./js/functions/scroll.js";
 import { modal, modalDisplay,  modalNotDisplay, projects } from "./js/functions/modal.js";
 import { 
@@ -8,7 +8,7 @@ import {
    colorSelect__main, colorSelect__secondary, handleToggleAccesibility,
   handleRestartColors, handleColor 
 } from "./js/functions/accesibility.js";
-import { languageBtns, handleLanguage, loadLanguage } from './js/functions/language.js';
+import { languageBtns, handleLanguage } from './js/functions/language.js';
 
 window.addEventListener('load', handleLoading)
 window.addEventListener('scroll', handleScroll)
@@ -41,8 +41,7 @@ hambu.addEventListener('click', toggleHambu)
  })
 
 // //animation
-objectEntry('javaScript','rotate-animation')
-objectEntry('react','rotate-animation')
+hiddenElements.forEach((el) => observer.observe(el));
 
 
 

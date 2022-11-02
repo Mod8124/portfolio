@@ -1,3 +1,19 @@
+@media (prefers-reduced-motion: no-preference) {
+    .hidden.title__title, .hidden.work_img {
+        opacity: 0;
+        transition: all 0.5s ease-in;
+    }
+
+    .hidden.work_img {
+        transform: translateY(20%);
+    }
+
+    .show.title__title, .show.work_img {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .wrapperThree {
     display: flex;
     flex-wrap: wrap;

@@ -1,11 +1,10 @@
-export function objectEntry (object, animation) {
-  var observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.classList.add(animation)
-        }
-      })
+export const observer = new IntersectionObserver((entries)=> {
+  entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show')
+      } 
   })
+});
 
-  observer.observe(document.querySelector(`.${object}`))
-}
+export const hiddenElements = document.querySelectorAll('.hidden');

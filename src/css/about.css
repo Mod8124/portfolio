@@ -1,4 +1,19 @@
-/*---inicia wrapperTwo----*/
+@media (prefers-reduced-motion: no-preference) {
+    .hidden.about__title, .hidden.about__para, .hidden.mainButton{
+        opacity: 0;
+        transition: all 0.6s ease-in;
+    }
+    .hidden.mainButton {
+        transform: translateY(60%);
+    }
+    .hidden.about__para {
+        transform: translateY(50%);
+    }
+    .show.about__title, .show.about__para, .show.mainButton {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
 
 .wrapperTwo {
     display: flex;

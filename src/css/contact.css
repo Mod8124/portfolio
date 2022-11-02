@@ -12,11 +12,48 @@
     }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    .minlight {
+        animation: moveLight 2.6s ease-in-out  infinite alternate;
+    }
+    
+    .hidden.contact__title, .hidden.contact__subTitle{
+        opacity: 0;
+    }
+
+    .hidden.contact__subTitle, .hidden.contact__title {
+        transition: all 0.7s ease-in;
+    }
+
+    .hidden.redSocial--start {
+        opacity: 0;
+        transition: all 0.7s ease-in;
+        transform: translateX(-100%);
+    }
+
+    .hidden.redSocial--end {
+        opacity: 0;
+        transition: all 0.6s ease-in;
+        transform: translateX(100%);
+    }
+
+    .show.redSocial--start, .show.redSocial--end {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .show.contact__title, .show.contact__subTitle {
+        opacity: 1;
+    }
+}
+
+
 .wrapperFive {
     display: flex;
     flex-wrap: wrap;
     width: 94%;
     margin:0 auto;
+    overflow: hidden;
     padding-bottom: 200px;
 }
 
@@ -110,7 +147,6 @@
     background-color: #fff;
     box-shadow: 0px 0px 14px 1px #fff;
     position: relative;
-    animation: moveLight 2.6s ease-in-out  infinite alternate;
 }
 
 .textRed {
