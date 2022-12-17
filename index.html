@@ -1,433 +1,901 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portfolio | Denis Muñoz Baca</title>
-      <link rel="shortcut icon" href="./assets/img/logog.svg" type="image/x-svg" sizes="30x30">
-      <script src="./dist/js/style.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Denis Muñoz Baca</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logog.svg"
+      type="image/x-svg"
+      sizes="30x30"
+    />
+    <!-- <script src="./dist/js/style.js"></script> -->
+    <link rel="stylesheet" href="./src/global.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <!--start wrapper-->
 
-    <main class="wrapper"><!--start wrapper-->
+      <section class="accesibilty">
+        <div class="accesibility__container">
+          <img
+            alt="accesibilty icon"
+            src="./assets/img/images/icon-acebi.svg"
+            class="accesibility__img"
+          />
+        </div>
 
-        <section class="accesibilty">
-            
-            <div class="accesibility__container">
-                <img alt="accesibilty icon" src="./assets/img/images/icon-acebi.svg" class="accesibility__img">
+        <div class="accesibility__modal">
+          <div class="accesibility__modalContainer">
+            <article class="colorSelect colorSelect--main">
+              <h3 class="colorSelect__title">Main Color</h3>
+              <input
+                type="color"
+                value="#00ffff"
+                class="colorSelect__input colorSelect__main"
+                data-key="--water_green"
+              />
+
+              <div
+                class="colorSelect__restart colorMain"
+                data-color="--water_green"
+              >
+                <p class="colorSelect__para" data-color="--water_green">
+                  <img
+                    data-color="--water_green"
+                    src="./assets/img/images/icon-restart.svg"
+                    alt="icon restart"
+                    class="colorSelect__img"
+                  />
+                  Restart Color
+                </p>
+              </div>
+            </article>
+
+            <article class="colorSelect">
+              <h3 class="colorSelect__title">Secondary Color</h3>
+              <input
+                type="color"
+                value="#ff8e31"
+                class="colorSelect__input colorSelect__secondary"
+                data-key="--orange"
+              />
+
+              <div class="colorSelect__restart" data-color="--orange">
+                <p class="colorSelect__para" data-color="--orange">
+                  <img
+                    alt="icon restart"
+                    src="./assets/img/images/icon-restart.svg"
+                    class="colorSelect__img"
+                    data-color="--orange"
+                  />
+                  Restart Color
+                </p>
+              </div>
+            </article>
+
+            <article class="accebility__language">
+              <button class="btn__language btn__language--en active">En</button
+              >|<button class="btn__language btn__language--es">Es</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapperOne">
+        <!--start wrapperOne-->
+        <div id="particles-js"></div>
+        <div class="navMobile">
+          <!--start menuMobile-->
+          <div class="containerMobile">
+            <div class="hambu"></div>
+            <div class="containMobile">
+              <nav>
+                <ul>
+                  <li class="menuLink">
+                    <a href="#projects" class="menuLink__link">Projects</a>
+                  </li>
+                  <li class="menuLink">
+                    <a href="#about" class="menuLink__link">About</a>
+                  </li>
+                  <li class="menuLink">
+                    <a href="#contact" class="menuLink__link">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!--end menumoible-->
+
+        <article class="nav">
+          <div id="nav">
+            <div class="logo">
+              <div id="logo">
+                <img
+                  alt="logo"
+                  src="./assets/img/logo/test.svg"
+                  class="logo__logoImg"
+                />
+              </div>
             </div>
 
-            <div class="accesibility__modal">
-
-                <div class="accesibility__modalContainer">
-
-                    <article class="colorSelect colorSelect--main">
-                        <h3  class="colorSelect__title">Main Color</h3>
-                        <input type="color" value="#00ffff"  class="colorSelect__input colorSelect__main" data-key="--water_green">
-
-                        <div class="colorSelect__restart colorMain" data-color="--water_green">
-                            <p class="colorSelect__para" data-color="--water_green" ><img data-color="--water_green" src="./assets/img/images/icon-restart.svg"  alt="icon restart" class="colorSelect__img"> Restart Color</p>
-                        </div>
-
-                    </article>
-
-                    <article class="colorSelect">
-                        <h3  class="colorSelect__title">Secondary Color</h3>
-                        <input type="color" value="#ff8e31" class="colorSelect__input  colorSelect__secondary" data-key="--orange">
-
-                        <div class="colorSelect__restart" data-color="--orange">
-                            <p  class="colorSelect__para" data-color="--orange"><img alt="icon restart" src="./assets/img/images/icon-restart.svg" class="colorSelect__img" data-color="--orange"> Restart Color</p>
-                        </div>
-                    </article>
-
-                    <article class="accebility__language">
-                        <button class="btn__language btn__language--en active">En</button>|<button class="btn__language btn__language--es">Es</button>
-                    </article>
-
-                </div>
+            <div class="navBar">
+              <nav>
+                <a href="#projects" class="navBarLinks">Projects</a>
+                <a href="#about" class="navBarLinks">About</a>
+                <a href="#contact" class="navBarLinks">Contact</a>
+              </nav>
             </div>
+          </div>
+        </article>
+
+        <div class="cta">
+          <section id="cta">
+            <h1>
+              <span id="hello">Hello!</span>
+              <br />
+              <span id="im">I'm</span>
+              <span id="denis">Denis Muñoz.</span>
+            </h1>
+
+            <p class="cta__para">Front End Developer & Web Designer</p>
+
+            <a href="#about" class="cta__link">See More</a>
+          </section>
+        </div>
+
+        <div class="redes">
+          <div id="redes">
+            <nav class="red">
+              <a href="https://github.com/Mod8124" target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  enable-background="new 0 0 100 100"
+                  height="100px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 100 100"
+                  width="100px"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M49.773,4.459c-25.352,0-45.977,20.625-45.977,45.977s20.625,45.978,45.977,45.978   c25.353,0,45.979-20.625,45.979-45.978S75.126,4.459,49.773,4.459z M49.773,94.414c-24.249,0-43.977-19.728-43.977-43.978   c0-24.249,19.728-43.977,43.977-43.977c24.25,0,43.979,19.728,43.979,43.977C93.752,74.686,74.023,94.414,49.773,94.414z"
+                      fill="#2D2D37"
+                    />
+                    <path
+                      d="M49.773,20.952c-16.258,0-29.484,13.228-29.484,29.486c0,12.448,7.877,23.615,19.606,27.788l0.318,0.108   c0.267,0.086,0.545,0.13,0.825,0.13c1.476,0,2.677-1.2,2.677-2.675c0-0.025-0.001-0.051-0.002-0.076   c0.001-0.019,0.002-0.038,0.002-0.058v-4.952c0-0.3-0.135-0.585-0.368-0.775c-0.232-0.189-0.534-0.266-0.833-0.205   c-0.886,0.182-2.201,0.398-3.432,0.398c-1.092,0-1.682-0.174-1.985-0.32c-1.663-0.8-2.48-1.762-3.363-3.958   c-0.65-1.624-1.73-2.667-2.633-3.351c0.438,0.068,0.967,0.25,1.359,0.7c0.297,0.34,0.612,0.779,0.945,1.243   c1.288,1.793,3.081,4.285,6.209,3.969c1.398-0.146,2.571-0.37,3.487-0.667c0.372-0.121,0.64-0.447,0.685-0.835   c0.151-1.291,0.54-2.272,1.156-2.917c0.256-0.268,0.344-0.656,0.226-1.008c-0.117-0.352-0.419-0.61-0.785-0.67   c-7.892-1.304-11.893-5.496-11.893-12.459c0-3.272,0.897-5.961,2.666-7.993c0.198-0.228,0.283-0.533,0.23-0.831   c-0.519-2.943-0.447-5.336,0.17-6.236c0.487-0.094,2.402-0.144,6.504,2.745c0.232,0.164,0.524,0.222,0.801,0.157   c2.009-0.462,4.29-0.705,6.779-0.72c0.045,0,0.088-0.003,0.131-0.009l0.001,0.008l0.065-0.001c0.022,0.001,0.045,0.002,0.067,0.002   c2.489,0.016,4.771,0.258,6.779,0.72c0.275,0.064,0.566,0.007,0.801-0.157c4.118-2.9,6.066-2.815,6.503-2.748   c0.619,0.896,0.691,3.292,0.172,6.24c-0.053,0.297,0.032,0.603,0.23,0.831c1.77,2.029,2.666,4.718,2.666,7.992   c0,6.963-4.002,11.155-11.894,12.459c-0.366,0.061-0.668,0.319-0.785,0.67c-0.118,0.352-0.03,0.74,0.226,1.008   c1.229,1.283,1.229,3.574,1.229,4.327v7.475c0,1.475,1.2,2.675,2.676,2.675c0.215,0,0.43-0.026,0.633-0.076   c0.042-0.01,0.203-0.055,0.268-0.076C71.282,74.209,79.26,63.007,79.26,50.438C79.26,34.179,66.032,20.952,49.773,20.952z    M58.786,76.412l-0.119,0.033c-0.398,0.099-0.834-0.229-0.834-0.656v-7.475c0-0.737,0-2.639-0.828-4.325   c7.895-1.768,12.053-6.631,12.053-14.14c0-3.581-0.958-6.584-2.85-8.937c0.44-2.745,0.591-6.136-0.911-7.674   c-0.058-0.058-0.121-0.109-0.19-0.152c-0.39-0.24-2.558-1.444-8.407,2.561c-2.042-0.433-4.32-0.66-6.781-0.675v0.008   c-0.048-0.006-0.097-0.01-0.145-0.01l-0.138-0.002c-0.032,0-0.064,0.001-0.096,0.004c-2.426,0.021-4.674,0.247-6.691,0.674   c-5.851-4.004-8.016-2.801-8.406-2.561c-0.069,0.043-0.133,0.094-0.19,0.153c-1.502,1.539-1.352,4.93-0.911,7.673   c-1.892,2.354-2.85,5.359-2.85,8.938c0,7.508,4.158,12.372,12.052,14.139c-0.29,0.591-0.505,1.264-0.643,2.014   c-0.57,0.143-1.381,0.298-2.492,0.414c-1.978,0.203-3.191-1.496-4.378-3.147c-0.361-0.504-0.704-0.98-1.063-1.392   c-0.801-0.917-1.994-1.423-3.36-1.423c-0.858,0-1.953,0.216-2.45,0.823c-0.231,0.282-0.325,0.639-0.257,0.978   c0.113,0.572,0.576,0.875,1.162,1.257c0.854,0.558,2.145,1.4,2.817,3.077c1.061,2.64,2.24,3.999,4.352,5.015   c0.724,0.349,1.656,0.518,2.853,0.518c0.901,0,1.827-0.099,2.633-0.224v3.708c-0.005,0.061-0.005,0.123,0,0.183   c0,0.443-0.462,0.777-0.888,0.642l-0.269-0.092c-10.928-3.888-18.271-14.297-18.271-25.901c0-15.156,12.329-27.486,27.484-27.486   c15.156,0,27.486,12.33,27.486,27.486C77.26,62.155,69.824,72.597,58.786,76.412z"
+                      fill="#2D2D37"
+                    />
+                  </g></svg
+              ></a>
+              <a href="mailto:denisenriquebaca@gmail.com" target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  id="Layer_2"
+                  style="enable-background: new 0 0 100 100"
+                  version="1.1"
+                  viewBox="0 0 100 100"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M51.7,4c-25.4,0-46,20.6-46,46s20.6,46,46,46s46-20.6,46-46S77.1,4,51.7,4z M51.7,94c-24.3,0-44-19.7-44-44s19.7-44,44-44   s44,19.7,44,44S76,94,51.7,94z"
+                    />
+                  </g>
+                  <path
+                    d="M82.3,31.3c0-0.1,0-0.2,0-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0-0.1,0  s-0.2-0.1-0.3-0.1H21.9c-0.1,0-0.3,0-0.4,0.1c0,0,0,0-0.1,0c-0.1,0-0.2,0.1-0.3,0.2c0,0,0,0.1-0.1,0.1c-0.1,0.1-0.1,0.1-0.1,0.2  c0,0.1,0,0.2,0,0.2v0.1v37.4c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.3,0.8c0.2,0.2,0.5,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1h58.6  c0.1,0.1,0.3,0.1,0.4,0.1c0.3,0,0.5-0.1,0.7-0.3c0.3-0.3,0.4-0.8,0.2-1.1v-37C82.3,31.4,82.3,31.4,82.3,31.3z M78.8,32.5L51.6,58.8  L24.4,32.5H78.8z M50.9,61c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l28-27.1v32.6L66.1,52.3c-0.4-0.4-1-0.4-1.4,0  s-0.4,1,0,1.4l14.2,14.2H24.3l14.2-14.2c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L22.9,66.5V33.9L50.9,61z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a"
+                target="_blank"
+                ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  enable-background="new 0 0 100 100"
+                  height="100px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 100 100"
+                  width="100px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g>
+                    <path
+                      d="M49.74,95.866c25.352,0,45.977-20.625,45.977-45.978S75.092,3.911,49.74,3.911   c-25.353,0-45.979,20.625-45.979,45.978S24.387,95.866,49.74,95.866z M49.74,5.911c24.249,0,43.977,19.728,43.977,43.978   S73.989,93.866,49.74,93.866c-24.25,0-43.979-19.728-43.979-43.978S25.49,5.911,49.74,5.911z"
+                      fill="#0087AF"
+                    />
+                    <path
+                      d="M37.578,39.772h-9.115c-0.552,0-1,0.448-1,1v29.446c0,0.552,0.448,1,1,1h9.115c0.552,0,1-0.448,1-1V40.772   C38.578,40.22,38.13,39.772,37.578,39.772z M36.578,69.218h-7.115V41.772h7.115V69.218z"
+                      fill="#0087AF"
+                    />
+                    <path
+                      d="M43.406,71.218h8.742c0.552,0,1-0.448,1-1V54.761c0-2.557,0.79-5.605,4.553-5.605   c0.98,0,3.963,0,3.963,5.605v15.458c0,0.552,0.448,1,1,1h9.07c0.552,0,1-0.448,1-1V51.574c0-7.953-4.379-12.701-11.713-12.701   c-3.765,0-6.324,1.602-7.873,3.061v-1.161c0-0.552-0.448-1-1-1h-8.742c-0.552,0-1,0.448-1,1v29.446   C42.406,70.771,42.854,71.218,43.406,71.218z M44.406,41.772h6.742v2.965c0,0.458,0.311,0.857,0.755,0.969   c0.446,0.115,0.908-0.091,1.125-0.494c0.023-0.043,2.41-4.34,7.993-4.34c6.173,0,9.713,3.9,9.713,10.701v17.644h-7.07V54.761   c0-6.617-3.736-7.605-5.963-7.605c-4.104,0-6.553,2.843-6.553,7.605v14.458h-6.742V41.772z"
+                      fill="#0087AF"
+                    />
+                    <path
+                      d="M32.977,37.916c3.523,0,6.39-2.886,6.39-6.433c0-3.547-2.866-6.433-6.39-6.433s-6.39,2.886-6.39,6.433   C26.587,35.03,29.453,37.916,32.977,37.916z M32.977,27.05c2.42,0,4.39,1.988,4.39,4.433s-1.969,4.433-4.39,4.433   s-4.39-1.989-4.39-4.433S30.556,27.05,32.977,27.05z"
+                      fill="#0087AF"
+                    />
+                  </g></svg
+              ></a>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <!--end wrapperOne-->
+
+      <div class="wrapperTwo">
+        <!--start wrapperTwo-->
+
+        <section class="about">
+          <div class="about__container" id="about">
+            <h2 class="about__title hidden">About Me</h2>
+            <p class="about__para hidden">
+              I’m a Front end Developer & Web Designer with strong knowledge in
+              front end technologies, based in San Jose, Costa Rica, I have an
+              interest in learning a lot, about innovate technologies, UI
+              effects, and animations.
+            </p>
+
+            <p class="about__para hidden">
+              A Well-committed person with attention to detail, who loves to
+              challenge me every day with new problems, also I participated in
+              the
+              <a target="_blank" href="https://worldskills.org">WorldSkills</a>
+              competition 2021.
+            </p>
+
+            <a
+              href="./assets/img/resume_Denis_p.pdf"
+              target="_blank"
+              class="mainButton hidden"
+            >
+              <span class="btnDownload"> Download Resume </span>
+              <span class="mainButton__span">
+                <?xml version="1.0" ?><svg
+                  class="mainButton__svg"
+                  height="19px"
+                  version="1.1"
+                  viewBox="0 0 14 19"
+                  width="14px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <title />
+                  <desc />
+                  <defs />
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                  >
+                    <g
+                      fill="#000000"
+                      id="Core"
+                      transform="translate(-383.000000, -213.000000)"
+                    >
+                      <g
+                        id="file-download"
+                        transform="translate(383.000000, 213.500000)"
+                      >
+                        <path
+                          d="M14,6 L10,6 L10,0 L4,0 L4,6 L0,6 L7,13 L14,6 L14,6 Z M0,15 L0,17 L14,17 L14,15 L0,15 L0,15 Z"
+                          id="Shape"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
         </section>
 
-    <section class="wrapperOne"><!--start wrapperOne-->
-        <div id="particles-js"></div>
-    <div class="navMobile"><!--start menuMobile-->
-          <div class="containerMobile">
-              <div class="hambu"></div>
-              <div class="containMobile">
-                  <nav>
-                        <ul>
-                            <li class="menuLink"><a href="#projects" class="menuLink__link">Projects</a></li>
-                             <li class="menuLink"><a href="#about"    class="menuLink__link">About</a></li>
-                             <li class="menuLink"><a href="#contact"  class="menuLink__link">Contact</a></li>
-                        </ul>
-                  </nav>
-              </div>
+        <section class="skills">
+          <div class="skills__titleContainer">
+            <h2 class="skills__title hidden">Technical Skills</h2>
           </div>
-        </div><!--end menumoible-->
 
-           <div class="nav">
-               <div id="nav">
+          <article class="skills__container">
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-css.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">Css</h5>
+            </span>
 
-                   <div class="logo">
-                       <div id="logo">
-                           <img alt="logo" src="./assets/img/logo/test.svg" class="logo__logoImg">
-                       </div>
-                   </div>
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-javascript.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">JavaScript</h5>
+            </span>
 
-                   <div class="navBar">
-                       <nav>
-                           <a href="#projects" class="navBarLinks">Projects</a>
-                              <a href="#about" class="navBarLinks">About</a>
-                           <a href="#contact" class="navBarLinks">Contact</a>
-                       </nav>
-                   </div>
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-react.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">React</h5>
+            </span>
 
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-vue.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">Vue</h5>
+            </span>
 
-               </div>
-           </div>          
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-mongodb.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">MongoDB</h5>
+            </span>
 
-           <div class="cta">
-               <section id="cta">
-                   <h1>
-                        <span id="hello">Hello!</span>  
-                         <br> 
-                           <span id="im">I'm</span> 
-                        <span id="denis">Denis Muñoz,</span>
-                   </h1>
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-nodejs.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">NodeJs</h5>
+            </span>
 
-                   <p class="cta__para">Web developer & Web designer</p>
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-Sass.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">Sass</h5>
+            </span>
 
-                   <a href="#about" class="cta__link">See More</a>
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-nextjs.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">NextJs</h5>
+            </span>
 
-                </section>
-           </div>
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-mysql.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">MySql</h5>
+            </span>
 
-           <div class="redes">
-               <div id="redes">
-                   <nav class="red">
-                      <a href="https://github.com/Mod8124" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 100 100" height="100px" id="Layer_1" version="1.1" viewBox="0 0 100 100" width="100px" xml:space="preserve"><g><path d="M49.773,4.459c-25.352,0-45.977,20.625-45.977,45.977s20.625,45.978,45.977,45.978   c25.353,0,45.979-20.625,45.979-45.978S75.126,4.459,49.773,4.459z M49.773,94.414c-24.249,0-43.977-19.728-43.977-43.978   c0-24.249,19.728-43.977,43.977-43.977c24.25,0,43.979,19.728,43.979,43.977C93.752,74.686,74.023,94.414,49.773,94.414z" fill="#2D2D37"/><path d="M49.773,20.952c-16.258,0-29.484,13.228-29.484,29.486c0,12.448,7.877,23.615,19.606,27.788l0.318,0.108   c0.267,0.086,0.545,0.13,0.825,0.13c1.476,0,2.677-1.2,2.677-2.675c0-0.025-0.001-0.051-0.002-0.076   c0.001-0.019,0.002-0.038,0.002-0.058v-4.952c0-0.3-0.135-0.585-0.368-0.775c-0.232-0.189-0.534-0.266-0.833-0.205   c-0.886,0.182-2.201,0.398-3.432,0.398c-1.092,0-1.682-0.174-1.985-0.32c-1.663-0.8-2.48-1.762-3.363-3.958   c-0.65-1.624-1.73-2.667-2.633-3.351c0.438,0.068,0.967,0.25,1.359,0.7c0.297,0.34,0.612,0.779,0.945,1.243   c1.288,1.793,3.081,4.285,6.209,3.969c1.398-0.146,2.571-0.37,3.487-0.667c0.372-0.121,0.64-0.447,0.685-0.835   c0.151-1.291,0.54-2.272,1.156-2.917c0.256-0.268,0.344-0.656,0.226-1.008c-0.117-0.352-0.419-0.61-0.785-0.67   c-7.892-1.304-11.893-5.496-11.893-12.459c0-3.272,0.897-5.961,2.666-7.993c0.198-0.228,0.283-0.533,0.23-0.831   c-0.519-2.943-0.447-5.336,0.17-6.236c0.487-0.094,2.402-0.144,6.504,2.745c0.232,0.164,0.524,0.222,0.801,0.157   c2.009-0.462,4.29-0.705,6.779-0.72c0.045,0,0.088-0.003,0.131-0.009l0.001,0.008l0.065-0.001c0.022,0.001,0.045,0.002,0.067,0.002   c2.489,0.016,4.771,0.258,6.779,0.72c0.275,0.064,0.566,0.007,0.801-0.157c4.118-2.9,6.066-2.815,6.503-2.748   c0.619,0.896,0.691,3.292,0.172,6.24c-0.053,0.297,0.032,0.603,0.23,0.831c1.77,2.029,2.666,4.718,2.666,7.992   c0,6.963-4.002,11.155-11.894,12.459c-0.366,0.061-0.668,0.319-0.785,0.67c-0.118,0.352-0.03,0.74,0.226,1.008   c1.229,1.283,1.229,3.574,1.229,4.327v7.475c0,1.475,1.2,2.675,2.676,2.675c0.215,0,0.43-0.026,0.633-0.076   c0.042-0.01,0.203-0.055,0.268-0.076C71.282,74.209,79.26,63.007,79.26,50.438C79.26,34.179,66.032,20.952,49.773,20.952z    M58.786,76.412l-0.119,0.033c-0.398,0.099-0.834-0.229-0.834-0.656v-7.475c0-0.737,0-2.639-0.828-4.325   c7.895-1.768,12.053-6.631,12.053-14.14c0-3.581-0.958-6.584-2.85-8.937c0.44-2.745,0.591-6.136-0.911-7.674   c-0.058-0.058-0.121-0.109-0.19-0.152c-0.39-0.24-2.558-1.444-8.407,2.561c-2.042-0.433-4.32-0.66-6.781-0.675v0.008   c-0.048-0.006-0.097-0.01-0.145-0.01l-0.138-0.002c-0.032,0-0.064,0.001-0.096,0.004c-2.426,0.021-4.674,0.247-6.691,0.674   c-5.851-4.004-8.016-2.801-8.406-2.561c-0.069,0.043-0.133,0.094-0.19,0.153c-1.502,1.539-1.352,4.93-0.911,7.673   c-1.892,2.354-2.85,5.359-2.85,8.938c0,7.508,4.158,12.372,12.052,14.139c-0.29,0.591-0.505,1.264-0.643,2.014   c-0.57,0.143-1.381,0.298-2.492,0.414c-1.978,0.203-3.191-1.496-4.378-3.147c-0.361-0.504-0.704-0.98-1.063-1.392   c-0.801-0.917-1.994-1.423-3.36-1.423c-0.858,0-1.953,0.216-2.45,0.823c-0.231,0.282-0.325,0.639-0.257,0.978   c0.113,0.572,0.576,0.875,1.162,1.257c0.854,0.558,2.145,1.4,2.817,3.077c1.061,2.64,2.24,3.999,4.352,5.015   c0.724,0.349,1.656,0.518,2.853,0.518c0.901,0,1.827-0.099,2.633-0.224v3.708c-0.005,0.061-0.005,0.123,0,0.183   c0,0.443-0.462,0.777-0.888,0.642l-0.269-0.092c-10.928-3.888-18.271-14.297-18.271-25.901c0-15.156,12.329-27.486,27.484-27.486   c15.156,0,27.486,12.33,27.486,27.486C77.26,62.155,69.824,72.597,58.786,76.412z" fill="#2D2D37"/></g></svg></a>
-                      <a href="mailto:denisenriquebaca@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_2" style="enable-background:new 0 0 100 100;" version="1.1" viewBox="0 0 100 100" xml:space="preserve"><g><path d="M51.7,4c-25.4,0-46,20.6-46,46s20.6,46,46,46s46-20.6,46-46S77.1,4,51.7,4z M51.7,94c-24.3,0-44-19.7-44-44s19.7-44,44-44   s44,19.7,44,44S76,94,51.7,94z"/></g><path d="M82.3,31.3c0-0.1,0-0.2,0-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0-0.1,0  s-0.2-0.1-0.3-0.1H21.9c-0.1,0-0.3,0-0.4,0.1c0,0,0,0-0.1,0c-0.1,0-0.2,0.1-0.3,0.2c0,0,0,0.1-0.1,0.1c-0.1,0.1-0.1,0.1-0.1,0.2  c0,0.1,0,0.2,0,0.2v0.1v37.4c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.3,0.8c0.2,0.2,0.5,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1h58.6  c0.1,0.1,0.3,0.1,0.4,0.1c0.3,0,0.5-0.1,0.7-0.3c0.3-0.3,0.4-0.8,0.2-1.1v-37C82.3,31.4,82.3,31.4,82.3,31.3z M78.8,32.5L51.6,58.8  L24.4,32.5H78.8z M50.9,61c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l28-27.1v32.6L66.1,52.3c-0.4-0.4-1-0.4-1.4,0  s-0.4,1,0,1.4l14.2,14.2H24.3l14.2-14.2c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L22.9,66.5V33.9L50.9,61z"/></svg></a>
-                      <a href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a" target="_blank"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 100 100" height="100px" id="Layer_1" version="1.1" viewBox="0 0 100 100" width="100px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M49.74,95.866c25.352,0,45.977-20.625,45.977-45.978S75.092,3.911,49.74,3.911   c-25.353,0-45.979,20.625-45.979,45.978S24.387,95.866,49.74,95.866z M49.74,5.911c24.249,0,43.977,19.728,43.977,43.978   S73.989,93.866,49.74,93.866c-24.25,0-43.979-19.728-43.979-43.978S25.49,5.911,49.74,5.911z" fill="#0087AF"/><path d="M37.578,39.772h-9.115c-0.552,0-1,0.448-1,1v29.446c0,0.552,0.448,1,1,1h9.115c0.552,0,1-0.448,1-1V40.772   C38.578,40.22,38.13,39.772,37.578,39.772z M36.578,69.218h-7.115V41.772h7.115V69.218z" fill="#0087AF"/><path d="M43.406,71.218h8.742c0.552,0,1-0.448,1-1V54.761c0-2.557,0.79-5.605,4.553-5.605   c0.98,0,3.963,0,3.963,5.605v15.458c0,0.552,0.448,1,1,1h9.07c0.552,0,1-0.448,1-1V51.574c0-7.953-4.379-12.701-11.713-12.701   c-3.765,0-6.324,1.602-7.873,3.061v-1.161c0-0.552-0.448-1-1-1h-8.742c-0.552,0-1,0.448-1,1v29.446   C42.406,70.771,42.854,71.218,43.406,71.218z M44.406,41.772h6.742v2.965c0,0.458,0.311,0.857,0.755,0.969   c0.446,0.115,0.908-0.091,1.125-0.494c0.023-0.043,2.41-4.34,7.993-4.34c6.173,0,9.713,3.9,9.713,10.701v17.644h-7.07V54.761   c0-6.617-3.736-7.605-5.963-7.605c-4.104,0-6.553,2.843-6.553,7.605v14.458h-6.742V41.772z" fill="#0087AF"/><path d="M32.977,37.916c3.523,0,6.39-2.886,6.39-6.433c0-3.547-2.866-6.433-6.39-6.433s-6.39,2.886-6.39,6.433   C26.587,35.03,29.453,37.916,32.977,37.916z M32.977,27.05c2.42,0,4.39,1.988,4.39,4.433s-1.969,4.433-4.39,4.433   s-4.39-1.989-4.39-4.433S30.556,27.05,32.977,27.05z" fill="#0087AF"/></g></svg></a>
-                   </nav>
-               </div>
-           </div>
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-tailwindcss.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">Taildwindcss</h5>
+            </span>
 
-        </section><!--end wrapperOne-->
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-typescript.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">TypeScript</h5>
+            </span>
 
-       <div class="wrapperTwo"><!--start wrapperTwo-->
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-jest.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">Jest</h5>
+            </span>
 
-           <section class="about">
-               <div class="about__container" id="about">
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-photoshop.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph hidden">Adobe Ps</h5>
+            </span>
 
-                   <h2 class="about__title hidden">About Me</h2>
-                     <p class="about__para hidden">I’m a web developer and web designer with strong knowledge in front end technologies, based in San Jose, Costa Rica, I have an interest in learning a lot, about innovate technologies, UI effects, and animations.
-                    </p>
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-ilustrator.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">Adobe Ai</h5>
+            </span>
 
-                    <p class="about__para hidden">
-                       A Well-committed person with attention to detail, who loves to challenge me every day with new problems, also I participated in the WorldSkills competition 2021.
+            <span class="modalImg__skill hidden">
+              <img
+                class="modalImg__skillImg"
+                src="./assets/img/icons/icon-figma.svg"
+                alt=""
+              />
+              <h5 class="skills__paragraph">Figma</h5>
+            </span>
+          </article>
+        </section>
+      </div>
+      <!--end wrapperTwo-->
 
-                    </p>
+      <section class="wrapperThree">
+        <!--start wrapperThree-->
 
-                    <a href="./assets/img/resume_Denis_p.pdf" target="_blank" class="mainButton hidden">
-                       <span class="btnDownload"> Download Resume </span>
-                        <span class="mainButton__span">
-                            <?xml version="1.0" ?><svg class="mainButton__svg" height="19px" version="1.1" viewBox="0 0 14 19" width="14px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#000000" id="Core" transform="translate(-383.000000, -213.000000)"><g id="file-download" transform="translate(383.000000, 213.500000)"><path d="M14,6 L10,6 L10,0 L4,0 L4,6 L0,6 L7,13 L14,6 L14,6 Z M0,15 L0,17 L14,17 L14,15 L0,15 L0,15 Z" id="Shape"/></g></g></g></svg>
-                        </span>
-                    </a>
+        <div class="tittle">
+          <div class="title__title hidden" id="projects"><h2>Projects</h2></div>
+        </div>
 
-               </div>
+        <div class="works__img">
+          <div class="work__container">
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/AnimeBlog.jpg"
+                alt="blog Anime"
+                class="work_img hidden"
+              />
+            </div>
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/rock.jpg"
+                alt="game rock-paper-scissors"
+                class="work_img hidden"
+              />
+            </div>
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/moon.jpg"
+                alt="space-tourims"
+                class="work_img hidden"
+              />
+            </div>
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/ecommerce.jpg"
+                alt="ecommerce design"
+                class="work_img hidden"
+              />
+            </div>
+
+            <!-- seconds -->
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/jhonny.jpg"
+                alt="jhonny-website"
+                class="work_img hidden"
+              />
+            </div>
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/rest-country.jpg"
+                alt="front-end rest-country"
+                class="work_img hidden"
+              />
+            </div>
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/sunnyside.jpg"
+                alt="front-end mento sunnyside"
+                class="work_img hidden"
+              />
+            </div>
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/clone-netflix.jpg"
+                alt="clone netflix app"
+                class="work_img hidden"
+              />
+            </div>
+
+            <!-- third -->
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/bank.jpg"
+                alt="front-end webSite EasyBank"
+                class="work_img hidden"
+              />
+            </div>
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/ajedrez.jpg"
+                alt="ajedrez-website"
+                class="work_img hidden"
+              />
+            </div>
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/food.jpg"
+                alt="food-website"
+                class="work_img hidden"
+              />
+            </div>
+
+            <div class="work__imgContainer">
+              <img
+                src="./assets/img/images/calculator.jpg"
+                alt="dark mode website"
+                class="work_img hidden"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end wrapperFour-->
+
+      <div class="modalImg">
+        <div class="modalImg__container">
+          <div class="modalImg__github">
+            <a href="" class="modalImg__linkSvg" target="_blank">
+              GitHub
+              <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+              <svg
+                enable-background="new 0 0 512 512"
+                height="512px"
+                id="Layer_1"
+                version="1.1"
+                viewBox="0 0 512 512"
+                width="512px"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g>
+                  <path
+                    clip-rule="evenodd"
+                    d="M296.133,354.174c49.885-5.891,102.942-24.029,102.942-110.192   c0-24.49-8.624-44.448-22.67-59.869c2.266-5.89,9.515-28.114-2.734-58.947c0,0-18.139-5.898-60.759,22.669   c-18.139-4.983-38.09-8.163-56.682-8.163c-19.053,0-39.011,3.18-56.697,8.163c-43.082-28.567-61.22-22.669-61.22-22.669   c-12.241,30.833-4.983,53.057-2.718,58.947c-14.061,15.42-22.677,35.379-22.677,59.869c0,86.163,53.057,104.301,102.942,110.192   c-6.344,5.452-12.241,15.873-14.507,30.387c-12.702,5.438-45.808,15.873-65.758-18.592c0,0-11.795-21.31-34.012-22.669   c0,0-22.224-0.453-1.813,13.592c0,0,14.96,6.812,24.943,32.653c0,0,13.6,43.089,76.179,29.48v38.543   c0,5.906-4.53,12.702-15.865,10.89C96.139,438.977,32.2,354.626,32.2,255.77c0-123.807,100.216-224.022,224.03-224.022   c123.347,0,224.023,100.216,223.57,224.022c0,98.856-63.946,182.754-152.828,212.688c-11.342,2.266-15.873-4.53-15.873-10.89   V395.45C311.1,374.577,304.288,360.985,296.133,354.174L296.133,354.174z M512,256.23C512,114.73,397.263,0,256.23,0   C114.73,0,0,114.73,0,256.23C0,397.263,114.73,512,256.23,512C397.263,512,512,397.263,512,256.23L512,256.23z"
+                    fill="#0D2636"
+                    fill-rule="evenodd"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <div class="modalImg__imgContainer">
+            <div class="modalImg__imgInfo">
+              <img alt="img design" class="modalImg__img" />
+              <section class="modalImg__info">
+                <h3 class="modalImg__infoShow modalImg__infoShow--name"></h3>
+                <p class="modalImg__infoShow modalImg__infoShow--para"></p>
+              </section>
+            </div>
+
+            <section class="modalImg__skillContainer">
+              <div class="modalImg__skills"></div>
             </section>
+          </div>
 
-           <section class="skills">
+          <div class="modalImg__link">
+            <a href="" target="_blank" class="modalImg__linkLink"></a>
+          </div>
+        </div>
+      </div>
 
-                <div class="skills__titleContainer">
-                    <h2 class="skills__title hidden">
-                        Technical Skills
-                    </h2>
+      <section class="wrapperFive">
+        <!--start wrapperFive-->
+
+        <div class="tittleTwo">
+          <div class="tittleTwo__title" id="contact">
+            <h2 class="contact__title hidden">Contact me</h2>
+            <h3 class="contact__subTitle hidden">Wow, look who's here!</h3>
+          </div>
+        </div>
+
+        <div class="social">
+          <div class="social__container">
+            <a href="mailto:denisenriquebaca@gmail.com" target="_blank">
+              <article class="redSocial redSocial--start hidden">
+                <div class="textRed textRedEmail">
+                  <h4>denisenriquebaca@gmail.com</h4>
                 </div>
-
-                <article class="skills__container">
-
-                        <div class="skills__skill">
-                                <p class="skills__paragraph hidden">
-                                    Css
-                                </p>
-                        </div>
-
-                        <div class="skills__skill">
-                                <p class="skills__paragraph skills__paragraph--color hidden">
-                                    JavaScript
-                                </p>
-                        </div>
-
-                        <div class="skills__skill">
-                                <p class="skills__paragraph hidden">
-                                    Vue
-                                </p>
-                        </div>
-
-                        <div class="skills__skill">
-                                <p class="skills__paragraph skills__paragraph--color hidden">
-                                    React
-                                </p>
-                        </div>
-
-
-                        <div class="skills__skill">
-                                <p class="skills__paragraph hidden">
-                                    MongoDB
-                                </p>
-                        </div>
-
-                        <div class="skills__skill">
-                                <p class="skills__paragraph  skills__paragraph--color nodeJs hidden">
-                                    NodeJs
-                                </p>
-                        </div>
-
-                        <div class="skills__skill">
-                                <p class="skills__paragraph hidden">
-                                    Sass
-                                </p>
-                        </div>
-
-                        <div class="skills__skill">
-                            <p class="skills__paragraph  skills__paragraph--color next hidden">
-                                NextJs
-                            </p>
-                        </div>
-
-                        <div class="skills__skill">
-                            <p class="skills__paragraph hidden">
-                                MySql
-                            </p>
-                        </div>
-
-                        <div class="skills__skill">
-                            <p class="skills__paragraph skills__paragraph--color hidden">
-                               Ps&Ai
-                            </p>
-                        </div>
-
-                </article>
-
-            </section>
-
-        </div><!--end wrapperTwo-->
-
-       <section class="wrapperThree"><!--start wrapperThree-->
-
-           <div class="tittle">
-               <div class="title__title hidden" id="projects"><h2>Projects</h2></div>
-           </div>
-
-
-           <div class="works__img">
-                <div class="work__container">
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/AnimeBlog.jpg"  alt="blog Anime" class="work_img hidden">  
-                        </div>
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/rock.jpg" alt="game rock-paper-scissors" class="work_img hidden">  
-                        </div>
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/moon.jpg" alt="space-tourims" class="work_img hidden">
-                        </div>
-
-                        <div class="work__imgContainer">
-                            <img  src="./assets/img/images/ecommerce.jpg" alt="ecommerce design" class="work_img hidden">
-                        </div>
-
-                        <!-- seconds -->
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/jhonny.jpg" alt="jhonny-website" class="work_img hidden"> 
-                        </div>
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/rest-country.jpg" alt="front-end rest-country" class="work_img hidden">
-                        </div>
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/sunnyside.jpg"  alt="front-end mento sunnyside" class="work_img hidden">
-                        </div>
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/clone-netflix.jpg" alt="clone netflix app" class="work_img hidden">
-                        </div>
-
-                        <!-- third -->
-
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/bank.jpg" alt="front-end webSite EasyBank" class="work_img hidden">
-                        </div>
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/ajedrez.jpg" alt="ajedrez-website" class="work_img hidden">
-                        </div>
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/food.jpg" alt="food-website" class="work_img hidden">
-                        </div>
-
-                        <div class="work__imgContainer">
-                            <img src="./assets/img/images/calculator.jpg" alt="dark mode website" class="work_img hidden">
-                        </div>
-
+                <div class="imgRed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    id="Layer_4"
+                    style="enable-background: new 0 0 100 100"
+                    version="1.1"
+                    viewBox="0 0 100 100"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M51.7,4c-25.4,0-46,20.6-46,46s20.6,46,46,46s46-20.6,46-46S77.1,4,51.7,4z M51.7,94c-24.3,0-44-19.7-44-44s19.7-44,44-44   s44,19.7,44,44S76,94,51.7,94z"
+                      />
+                    </g>
+                    <path
+                      d="M82.3,31.3c0-0.1,0-0.2,0-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0-0.1,0  s-0.2-0.1-0.3-0.1H21.9c-0.1,0-0.3,0-0.4,0.1c0,0,0,0-0.1,0c-0.1,0-0.2,0.1-0.3,0.2c0,0,0,0.1-0.1,0.1c-0.1,0.1-0.1,0.1-0.1,0.2  c0,0.1,0,0.2,0,0.2v0.1v37.4c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.3,0.8c0.2,0.2,0.5,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1h58.6  c0.1,0.1,0.3,0.1,0.4,0.1c0.3,0,0.5-0.1,0.7-0.3c0.3-0.3,0.4-0.8,0.2-1.1v-37C82.3,31.4,82.3,31.4,82.3,31.3z M78.8,32.5L51.6,58.8  L24.4,32.5H78.8z M50.9,61c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l28-27.1v32.6L66.1,52.3c-0.4-0.4-1-0.4-1.4,0  s-0.4,1,0,1.4l14.2,14.2H24.3l14.2-14.2c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L22.9,66.5V33.9L50.9,61z"
+                    />
+                  </svg>
                 </div>
-           </div>
+                <div class="light"><div class="minlight"></div></div>
+              </article>
+            </a>
 
-           <div class="modalImg">
-                <div class="modalImg__container">
-                    
-                        <div class="modalImg__github">
-                                <a href="" class="modalImg__linkSvg" target="_blank">
-                                    GitHub
-                                    <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path clip-rule="evenodd" d="M296.133,354.174c49.885-5.891,102.942-24.029,102.942-110.192   c0-24.49-8.624-44.448-22.67-59.869c2.266-5.89,9.515-28.114-2.734-58.947c0,0-18.139-5.898-60.759,22.669   c-18.139-4.983-38.09-8.163-56.682-8.163c-19.053,0-39.011,3.18-56.697,8.163c-43.082-28.567-61.22-22.669-61.22-22.669   c-12.241,30.833-4.983,53.057-2.718,58.947c-14.061,15.42-22.677,35.379-22.677,59.869c0,86.163,53.057,104.301,102.942,110.192   c-6.344,5.452-12.241,15.873-14.507,30.387c-12.702,5.438-45.808,15.873-65.758-18.592c0,0-11.795-21.31-34.012-22.669   c0,0-22.224-0.453-1.813,13.592c0,0,14.96,6.812,24.943,32.653c0,0,13.6,43.089,76.179,29.48v38.543   c0,5.906-4.53,12.702-15.865,10.89C96.139,438.977,32.2,354.626,32.2,255.77c0-123.807,100.216-224.022,224.03-224.022   c123.347,0,224.023,100.216,223.57,224.022c0,98.856-63.946,182.754-152.828,212.688c-11.342,2.266-15.873-4.53-15.873-10.89   V395.45C311.1,374.577,304.288,360.985,296.133,354.174L296.133,354.174z M512,256.23C512,114.73,397.263,0,256.23,0   C114.73,0,0,114.73,0,256.23C0,397.263,114.73,512,256.23,512C397.263,512,512,397.263,512,256.23L512,256.23z" fill="#0D2636" fill-rule="evenodd"/></g></svg>
-                                </a>
-                        </div>
-
-                        <div class="modalImg__imgContainer">
-
-                            <div class="modalImg__imgInfo">
-                                <img alt="img design" class="modalImg__img">
-                                <section class="modalImg__info">
-                                    <h3 class="modalImg__infoShow modalImg__infoShow--name"></h3>
-                                    <p class="modalImg__infoShow modalImg__infoShow--para"></p>
-                                </section>
-                            </div>
-
-                            <section class="modalImg__skillContainer">
-
-                                <div class="modalImg__skills">
-                                </div>
-
-
-                            </section>
-
-                        </div>
-
-                        <div class="modalImg__link">
-                            <a href="" target="_blank" class="modalImg__linkLink"></a>
-                        </div>
+            <a href="https://wa.me/+50661208412" target="_blank">
+              <article class="redSocial redSocial--end hidden">
+                <div class="textRed">
+                  <h4 class="textRedNumber">Phone Number</h4>
                 </div>
-           </div>
-
-       </section><!--end wrapperFour-->
-
-       <section class="wrapperFive"><!--start wrapperFive-->
-
-               <div class="tittleTwo">
-                   <div class="tittleTwo__title" id="contact">
-                      <h2 class="contact__title hidden">Contact me</h2>
-                      <h3 class="contact__subTitle hidden">Wow, look who's here!</h3>
-                  </div>
-              </div>
-
-              <div class="social">
-                  <div class="social__container">
-
-                    <a href="mailto:denisenriquebaca@gmail.com" target="_blank">
-                        <article class="redSocial redSocial--start hidden">
-                            <div class="textRed textRedEmail"><h4>denisenriquebaca@gmail.com</h4></div>
-                            <div class="imgRed"> 
-                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_4" style="enable-background:new 0 0 100 100;" version="1.1" viewBox="0 0 100 100" xml:space="preserve"><g><path d="M51.7,4c-25.4,0-46,20.6-46,46s20.6,46,46,46s46-20.6,46-46S77.1,4,51.7,4z M51.7,94c-24.3,0-44-19.7-44-44s19.7-44,44-44   s44,19.7,44,44S76,94,51.7,94z"/></g><path d="M82.3,31.3c0-0.1,0-0.2,0-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0-0.1,0  s-0.2-0.1-0.3-0.1H21.9c-0.1,0-0.3,0-0.4,0.1c0,0,0,0-0.1,0c-0.1,0-0.2,0.1-0.3,0.2c0,0,0,0.1-0.1,0.1c-0.1,0.1-0.1,0.1-0.1,0.2  c0,0.1,0,0.2,0,0.2v0.1v37.4c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.3,0.8c0.2,0.2,0.5,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1h58.6  c0.1,0.1,0.3,0.1,0.4,0.1c0.3,0,0.5-0.1,0.7-0.3c0.3-0.3,0.4-0.8,0.2-1.1v-37C82.3,31.4,82.3,31.4,82.3,31.3z M78.8,32.5L51.6,58.8  L24.4,32.5H78.8z M50.9,61c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l28-27.1v32.6L66.1,52.3c-0.4-0.4-1-0.4-1.4,0  s-0.4,1,0,1.4l14.2,14.2H24.3l14.2-14.2c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L22.9,66.5V33.9L50.9,61z"/></svg>
-                            </div>
-                            <div class="light"><div class="minlight"></div></div>
-                        </article>
-                    </a>
-
-                    <a href="https://wa.me/+50661208412" target="_blank">
-                        <article class="redSocial  redSocial--end hidden">
-                            <div class="textRed"><h4 class="textRedNumber">Phone Number</h4></div>
-                            <div class="imgRed">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_5" style="enable-background:new 0 0 100.4 100.4;" version="1.1" viewBox="0 0 100.4 100.4" xml:space="preserve"><g><path d="M69.3,8.6H28c-5.3,0-9.7,4.3-9.7,9.6v66.2c0,5.3,4.3,9.6,9.7,9.6h41.3c5.3,0,9.7-4.3,9.7-9.6V18.2   C79,12.9,74.7,8.6,69.3,8.6z M76,84.4c0,3.7-3,6.6-6.7,6.6H28c-3.7,0-6.7-3-6.7-6.6V18.2c0-3.7,3-6.6,6.7-6.6h41.3   c3.7,0,6.7,3,6.7,6.6V84.4z"/><path d="M60.9,18.1H36.2c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h24.7c0.8,0,1.5-0.7,1.5-1.5S61.7,18.1,60.9,18.1z"/><path d="M48.6,75.4c-2.8,0-5,2.3-5,5c0,1.3,0.5,2.6,1.5,3.5c0.9,0.9,2.2,1.4,3.5,1.4c0,0,0,0,0,0c2.8,0,5-2.3,5-5   C53.6,77.6,51.4,75.4,48.6,75.4z M48.7,82.4C48.7,82.4,48.7,82.4,48.7,82.4c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.9-0.6-1.4   c0-1.1,0.9-2,2-2c0,0,0,0,0,0c1.1,0,2,0.9,2,2C50.7,81.5,49.8,82.4,48.7,82.4z"/></g></svg>
-                            </div>
-                            <div class="light"><div class="minlight"></div></div>
-                        </article>
-                    </a>
-
-                    <a href="https://github.com/Mod8124" target="_blank">
-                        <article class="redSocial redSocial--start hidden">
-                            <div class="textRed"><h4>GitHub</h4></div>
-                            <div class="imgRed">
-                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 100 100" height="100px" id="Layer_6" version="1.1" viewBox="0 0 100 100" width="100px" xml:space="preserve"><g><path d="M49.773,4.459c-25.352,0-45.977,20.625-45.977,45.977s20.625,45.978,45.977,45.978   c25.353,0,45.979-20.625,45.979-45.978S75.126,4.459,49.773,4.459z M49.773,94.414c-24.249,0-43.977-19.728-43.977-43.978   c0-24.249,19.728-43.977,43.977-43.977c24.25,0,43.979,19.728,43.979,43.977C93.752,74.686,74.023,94.414,49.773,94.414z" fill="#2D2D37"/><path d="M49.773,20.952c-16.258,0-29.484,13.228-29.484,29.486c0,12.448,7.877,23.615,19.606,27.788l0.318,0.108   c0.267,0.086,0.545,0.13,0.825,0.13c1.476,0,2.677-1.2,2.677-2.675c0-0.025-0.001-0.051-0.002-0.076   c0.001-0.019,0.002-0.038,0.002-0.058v-4.952c0-0.3-0.135-0.585-0.368-0.775c-0.232-0.189-0.534-0.266-0.833-0.205   c-0.886,0.182-2.201,0.398-3.432,0.398c-1.092,0-1.682-0.174-1.985-0.32c-1.663-0.8-2.48-1.762-3.363-3.958   c-0.65-1.624-1.73-2.667-2.633-3.351c0.438,0.068,0.967,0.25,1.359,0.7c0.297,0.34,0.612,0.779,0.945,1.243   c1.288,1.793,3.081,4.285,6.209,3.969c1.398-0.146,2.571-0.37,3.487-0.667c0.372-0.121,0.64-0.447,0.685-0.835   c0.151-1.291,0.54-2.272,1.156-2.917c0.256-0.268,0.344-0.656,0.226-1.008c-0.117-0.352-0.419-0.61-0.785-0.67   c-7.892-1.304-11.893-5.496-11.893-12.459c0-3.272,0.897-5.961,2.666-7.993c0.198-0.228,0.283-0.533,0.23-0.831   c-0.519-2.943-0.447-5.336,0.17-6.236c0.487-0.094,2.402-0.144,6.504,2.745c0.232,0.164,0.524,0.222,0.801,0.157   c2.009-0.462,4.29-0.705,6.779-0.72c0.045,0,0.088-0.003,0.131-0.009l0.001,0.008l0.065-0.001c0.022,0.001,0.045,0.002,0.067,0.002   c2.489,0.016,4.771,0.258,6.779,0.72c0.275,0.064,0.566,0.007,0.801-0.157c4.118-2.9,6.066-2.815,6.503-2.748   c0.619,0.896,0.691,3.292,0.172,6.24c-0.053,0.297,0.032,0.603,0.23,0.831c1.77,2.029,2.666,4.718,2.666,7.992   c0,6.963-4.002,11.155-11.894,12.459c-0.366,0.061-0.668,0.319-0.785,0.67c-0.118,0.352-0.03,0.74,0.226,1.008   c1.229,1.283,1.229,3.574,1.229,4.327v7.475c0,1.475,1.2,2.675,2.676,2.675c0.215,0,0.43-0.026,0.633-0.076   c0.042-0.01,0.203-0.055,0.268-0.076C71.282,74.209,79.26,63.007,79.26,50.438C79.26,34.179,66.032,20.952,49.773,20.952z    M58.786,76.412l-0.119,0.033c-0.398,0.099-0.834-0.229-0.834-0.656v-7.475c0-0.737,0-2.639-0.828-4.325   c7.895-1.768,12.053-6.631,12.053-14.14c0-3.581-0.958-6.584-2.85-8.937c0.44-2.745,0.591-6.136-0.911-7.674   c-0.058-0.058-0.121-0.109-0.19-0.152c-0.39-0.24-2.558-1.444-8.407,2.561c-2.042-0.433-4.32-0.66-6.781-0.675v0.008   c-0.048-0.006-0.097-0.01-0.145-0.01l-0.138-0.002c-0.032,0-0.064,0.001-0.096,0.004c-2.426,0.021-4.674,0.247-6.691,0.674   c-5.851-4.004-8.016-2.801-8.406-2.561c-0.069,0.043-0.133,0.094-0.19,0.153c-1.502,1.539-1.352,4.93-0.911,7.673   c-1.892,2.354-2.85,5.359-2.85,8.938c0,7.508,4.158,12.372,12.052,14.139c-0.29,0.591-0.505,1.264-0.643,2.014   c-0.57,0.143-1.381,0.298-2.492,0.414c-1.978,0.203-3.191-1.496-4.378-3.147c-0.361-0.504-0.704-0.98-1.063-1.392   c-0.801-0.917-1.994-1.423-3.36-1.423c-0.858,0-1.953,0.216-2.45,0.823c-0.231,0.282-0.325,0.639-0.257,0.978   c0.113,0.572,0.576,0.875,1.162,1.257c0.854,0.558,2.145,1.4,2.817,3.077c1.061,2.64,2.24,3.999,4.352,5.015   c0.724,0.349,1.656,0.518,2.853,0.518c0.901,0,1.827-0.099,2.633-0.224v3.708c-0.005,0.061-0.005,0.123,0,0.183   c0,0.443-0.462,0.777-0.888,0.642l-0.269-0.092c-10.928-3.888-18.271-14.297-18.271-25.901c0-15.156,12.329-27.486,27.484-27.486   c15.156,0,27.486,12.33,27.486,27.486C77.26,62.155,69.824,72.597,58.786,76.412z" fill="#2D2D37"/></g></svg>
-                            </div>
-                            <div class="light"><div class="minlight"></div></div>
-                        </article>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a" target="_blank">
-                        <article class="redSocial  redSocial--end hidden">
-                            <div class="textRed"><h4>LinkedIn</h4></div>
-                            <div class="imgRed">
-                                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 100 100" height="100px" id="Layer_1" version="1.1" viewBox="0 0 100 100" width="100px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M49.74,95.866c25.352,0,45.977-20.625,45.977-45.978S75.092,3.911,49.74,3.911   c-25.353,0-45.979,20.625-45.979,45.978S24.387,95.866,49.74,95.866z M49.74,5.911c24.249,0,43.977,19.728,43.977,43.978   S73.989,93.866,49.74,93.866c-24.25,0-43.979-19.728-43.979-43.978S25.49,5.911,49.74,5.911z" fill="#0087AF"/><path d="M37.578,39.772h-9.115c-0.552,0-1,0.448-1,1v29.446c0,0.552,0.448,1,1,1h9.115c0.552,0,1-0.448,1-1V40.772   C38.578,40.22,38.13,39.772,37.578,39.772z M36.578,69.218h-7.115V41.772h7.115V69.218z" fill="#0087AF"/><path d="M43.406,71.218h8.742c0.552,0,1-0.448,1-1V54.761c0-2.557,0.79-5.605,4.553-5.605   c0.98,0,3.963,0,3.963,5.605v15.458c0,0.552,0.448,1,1,1h9.07c0.552,0,1-0.448,1-1V51.574c0-7.953-4.379-12.701-11.713-12.701   c-3.765,0-6.324,1.602-7.873,3.061v-1.161c0-0.552-0.448-1-1-1h-8.742c-0.552,0-1,0.448-1,1v29.446   C42.406,70.771,42.854,71.218,43.406,71.218z M44.406,41.772h6.742v2.965c0,0.458,0.311,0.857,0.755,0.969   c0.446,0.115,0.908-0.091,1.125-0.494c0.023-0.043,2.41-4.34,7.993-4.34c6.173,0,9.713,3.9,9.713,10.701v17.644h-7.07V54.761   c0-6.617-3.736-7.605-5.963-7.605c-4.104,0-6.553,2.843-6.553,7.605v14.458h-6.742V41.772z" fill="#0087AF"/><path d="M32.977,37.916c3.523,0,6.39-2.886,6.39-6.433c0-3.547-2.866-6.433-6.39-6.433s-6.39,2.886-6.39,6.433   C26.587,35.03,29.453,37.916,32.977,37.916z M32.977,27.05c2.42,0,4.39,1.988,4.39,4.433s-1.969,4.433-4.39,4.433   s-4.39-1.989-4.39-4.433S30.556,27.05,32.977,27.05z" fill="#0087AF"/></g></svg>
-                            </div>
-                            <div class="light"><div class="minlight"></div></div>
-                        </article>
-                    </a>
-
-                  </div>
-              </div>
-
-            </section><!--end wrapperFive-->
-
-        <section class="loading active"><!--start loading-->
-            <article class="loading__article">
-                <div class="loading__logo">
-                    <img alt="logo" src="./assets/img/logo/test.svg" class="logo__logoImg">
+                <div class="imgRed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    id="Layer_5"
+                    style="enable-background: new 0 0 100.4 100.4"
+                    version="1.1"
+                    viewBox="0 0 100.4 100.4"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M69.3,8.6H28c-5.3,0-9.7,4.3-9.7,9.6v66.2c0,5.3,4.3,9.6,9.7,9.6h41.3c5.3,0,9.7-4.3,9.7-9.6V18.2   C79,12.9,74.7,8.6,69.3,8.6z M76,84.4c0,3.7-3,6.6-6.7,6.6H28c-3.7,0-6.7-3-6.7-6.6V18.2c0-3.7,3-6.6,6.7-6.6h41.3   c3.7,0,6.7,3,6.7,6.6V84.4z"
+                      />
+                      <path
+                        d="M60.9,18.1H36.2c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h24.7c0.8,0,1.5-0.7,1.5-1.5S61.7,18.1,60.9,18.1z"
+                      />
+                      <path
+                        d="M48.6,75.4c-2.8,0-5,2.3-5,5c0,1.3,0.5,2.6,1.5,3.5c0.9,0.9,2.2,1.4,3.5,1.4c0,0,0,0,0,0c2.8,0,5-2.3,5-5   C53.6,77.6,51.4,75.4,48.6,75.4z M48.7,82.4C48.7,82.4,48.7,82.4,48.7,82.4c-0.5,0-1-0.2-1.4-0.6c-0.4-0.4-0.6-0.9-0.6-1.4   c0-1.1,0.9-2,2-2c0,0,0,0,0,0c1.1,0,2,0.9,2,2C50.7,81.5,49.8,82.4,48.7,82.4z"
+                      />
+                    </g>
+                  </svg>
                 </div>
-                <div class="loading__bar">
-                    <div class="loading__porcent"></div>
+                <div class="light"><div class="minlight"></div></div>
+              </article>
+            </a>
+
+            <a href="https://github.com/Mod8124" target="_blank">
+              <article class="redSocial redSocial--start hidden">
+                <div class="textRed"><h4>GitHub</h4></div>
+                <div class="imgRed">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    enable-background="new 0 0 100 100"
+                    height="100px"
+                    id="Layer_6"
+                    version="1.1"
+                    viewBox="0 0 100 100"
+                    width="100px"
+                    xml:space="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M49.773,4.459c-25.352,0-45.977,20.625-45.977,45.977s20.625,45.978,45.977,45.978   c25.353,0,45.979-20.625,45.979-45.978S75.126,4.459,49.773,4.459z M49.773,94.414c-24.249,0-43.977-19.728-43.977-43.978   c0-24.249,19.728-43.977,43.977-43.977c24.25,0,43.979,19.728,43.979,43.977C93.752,74.686,74.023,94.414,49.773,94.414z"
+                        fill="#2D2D37"
+                      />
+                      <path
+                        d="M49.773,20.952c-16.258,0-29.484,13.228-29.484,29.486c0,12.448,7.877,23.615,19.606,27.788l0.318,0.108   c0.267,0.086,0.545,0.13,0.825,0.13c1.476,0,2.677-1.2,2.677-2.675c0-0.025-0.001-0.051-0.002-0.076   c0.001-0.019,0.002-0.038,0.002-0.058v-4.952c0-0.3-0.135-0.585-0.368-0.775c-0.232-0.189-0.534-0.266-0.833-0.205   c-0.886,0.182-2.201,0.398-3.432,0.398c-1.092,0-1.682-0.174-1.985-0.32c-1.663-0.8-2.48-1.762-3.363-3.958   c-0.65-1.624-1.73-2.667-2.633-3.351c0.438,0.068,0.967,0.25,1.359,0.7c0.297,0.34,0.612,0.779,0.945,1.243   c1.288,1.793,3.081,4.285,6.209,3.969c1.398-0.146,2.571-0.37,3.487-0.667c0.372-0.121,0.64-0.447,0.685-0.835   c0.151-1.291,0.54-2.272,1.156-2.917c0.256-0.268,0.344-0.656,0.226-1.008c-0.117-0.352-0.419-0.61-0.785-0.67   c-7.892-1.304-11.893-5.496-11.893-12.459c0-3.272,0.897-5.961,2.666-7.993c0.198-0.228,0.283-0.533,0.23-0.831   c-0.519-2.943-0.447-5.336,0.17-6.236c0.487-0.094,2.402-0.144,6.504,2.745c0.232,0.164,0.524,0.222,0.801,0.157   c2.009-0.462,4.29-0.705,6.779-0.72c0.045,0,0.088-0.003,0.131-0.009l0.001,0.008l0.065-0.001c0.022,0.001,0.045,0.002,0.067,0.002   c2.489,0.016,4.771,0.258,6.779,0.72c0.275,0.064,0.566,0.007,0.801-0.157c4.118-2.9,6.066-2.815,6.503-2.748   c0.619,0.896,0.691,3.292,0.172,6.24c-0.053,0.297,0.032,0.603,0.23,0.831c1.77,2.029,2.666,4.718,2.666,7.992   c0,6.963-4.002,11.155-11.894,12.459c-0.366,0.061-0.668,0.319-0.785,0.67c-0.118,0.352-0.03,0.74,0.226,1.008   c1.229,1.283,1.229,3.574,1.229,4.327v7.475c0,1.475,1.2,2.675,2.676,2.675c0.215,0,0.43-0.026,0.633-0.076   c0.042-0.01,0.203-0.055,0.268-0.076C71.282,74.209,79.26,63.007,79.26,50.438C79.26,34.179,66.032,20.952,49.773,20.952z    M58.786,76.412l-0.119,0.033c-0.398,0.099-0.834-0.229-0.834-0.656v-7.475c0-0.737,0-2.639-0.828-4.325   c7.895-1.768,12.053-6.631,12.053-14.14c0-3.581-0.958-6.584-2.85-8.937c0.44-2.745,0.591-6.136-0.911-7.674   c-0.058-0.058-0.121-0.109-0.19-0.152c-0.39-0.24-2.558-1.444-8.407,2.561c-2.042-0.433-4.32-0.66-6.781-0.675v0.008   c-0.048-0.006-0.097-0.01-0.145-0.01l-0.138-0.002c-0.032,0-0.064,0.001-0.096,0.004c-2.426,0.021-4.674,0.247-6.691,0.674   c-5.851-4.004-8.016-2.801-8.406-2.561c-0.069,0.043-0.133,0.094-0.19,0.153c-1.502,1.539-1.352,4.93-0.911,7.673   c-1.892,2.354-2.85,5.359-2.85,8.938c0,7.508,4.158,12.372,12.052,14.139c-0.29,0.591-0.505,1.264-0.643,2.014   c-0.57,0.143-1.381,0.298-2.492,0.414c-1.978,0.203-3.191-1.496-4.378-3.147c-0.361-0.504-0.704-0.98-1.063-1.392   c-0.801-0.917-1.994-1.423-3.36-1.423c-0.858,0-1.953,0.216-2.45,0.823c-0.231,0.282-0.325,0.639-0.257,0.978   c0.113,0.572,0.576,0.875,1.162,1.257c0.854,0.558,2.145,1.4,2.817,3.077c1.061,2.64,2.24,3.999,4.352,5.015   c0.724,0.349,1.656,0.518,2.853,0.518c0.901,0,1.827-0.099,2.633-0.224v3.708c-0.005,0.061-0.005,0.123,0,0.183   c0,0.443-0.462,0.777-0.888,0.642l-0.269-0.092c-10.928-3.888-18.271-14.297-18.271-25.901c0-15.156,12.329-27.486,27.484-27.486   c15.156,0,27.486,12.33,27.486,27.486C77.26,62.155,69.824,72.597,58.786,76.412z"
+                        fill="#2D2D37"
+                      />
+                    </g>
+                  </svg>
                 </div>
-            </article>
-        </section><!--end loading-->
+                <div class="light"><div class="minlight"></div></div>
+              </article>
+            </a>
 
-       <footer><!--start footer-->
-           <div class="footer">
+            <a
+              href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a"
+              target="_blank"
+            >
+              <article class="redSocial redSocial--end hidden">
+                <div class="textRed"><h4>LinkedIn</h4></div>
+                <div class="imgRed">
+                  <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                  <svg
+                    enable-background="new 0 0 100 100"
+                    height="100px"
+                    id="Layer_1"
+                    version="1.1"
+                    viewBox="0 0 100 100"
+                    width="100px"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g>
+                      <path
+                        d="M49.74,95.866c25.352,0,45.977-20.625,45.977-45.978S75.092,3.911,49.74,3.911   c-25.353,0-45.979,20.625-45.979,45.978S24.387,95.866,49.74,95.866z M49.74,5.911c24.249,0,43.977,19.728,43.977,43.978   S73.989,93.866,49.74,93.866c-24.25,0-43.979-19.728-43.979-43.978S25.49,5.911,49.74,5.911z"
+                        fill="#0087AF"
+                      />
+                      <path
+                        d="M37.578,39.772h-9.115c-0.552,0-1,0.448-1,1v29.446c0,0.552,0.448,1,1,1h9.115c0.552,0,1-0.448,1-1V40.772   C38.578,40.22,38.13,39.772,37.578,39.772z M36.578,69.218h-7.115V41.772h7.115V69.218z"
+                        fill="#0087AF"
+                      />
+                      <path
+                        d="M43.406,71.218h8.742c0.552,0,1-0.448,1-1V54.761c0-2.557,0.79-5.605,4.553-5.605   c0.98,0,3.963,0,3.963,5.605v15.458c0,0.552,0.448,1,1,1h9.07c0.552,0,1-0.448,1-1V51.574c0-7.953-4.379-12.701-11.713-12.701   c-3.765,0-6.324,1.602-7.873,3.061v-1.161c0-0.552-0.448-1-1-1h-8.742c-0.552,0-1,0.448-1,1v29.446   C42.406,70.771,42.854,71.218,43.406,71.218z M44.406,41.772h6.742v2.965c0,0.458,0.311,0.857,0.755,0.969   c0.446,0.115,0.908-0.091,1.125-0.494c0.023-0.043,2.41-4.34,7.993-4.34c6.173,0,9.713,3.9,9.713,10.701v17.644h-7.07V54.761   c0-6.617-3.736-7.605-5.963-7.605c-4.104,0-6.553,2.843-6.553,7.605v14.458h-6.742V41.772z"
+                        fill="#0087AF"
+                      />
+                      <path
+                        d="M32.977,37.916c3.523,0,6.39-2.886,6.39-6.433c0-3.547-2.866-6.433-6.39-6.433s-6.39,2.886-6.39,6.433   C26.587,35.03,29.453,37.916,32.977,37.916z M32.977,27.05c2.42,0,4.39,1.988,4.39,4.433s-1.969,4.433-4.39,4.433   s-4.39-1.989-4.39-4.433S30.556,27.05,32.977,27.05z"
+                        fill="#0087AF"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="light"><div class="minlight"></div></div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--end wrapperFive-->
 
-               <div class="footerLogo">
-                   <div class="footerLogo__logo">
-                       <img alt="footer-logo" src="./assets/img/logo/test.svg" class="logo__logoImg">
-                   </div>
-               </div>
+      <section class="loading active">
+        <!--start loading-->
+        <article class="loading__article">
+          <div class="loading__logo">
+            <img
+              alt="logo"
+              src="./assets/img/logo/test.svg"
+              class="logo__logoImg"
+            />
+          </div>
+          <div class="loading__bar">
+            <div class="loading__porcent"></div>
+          </div>
+        </article>
+      </section>
+      <!--end loading-->
 
-               <div class="footerAbout">
-                   <div class="footerAbout__container">
-                       <nav>
-                        <a class="footer__link" href="#projects">Projects</a>
-                          <a class="footer__link" href="#about">About</a>
-                        <a  class="footer__link" href="#contact">Contact</a>
-                       </nav>
-                   </div>
-               </div>
+      <footer>
+        <!--start footer-->
+        <div class="footer">
+          <div class="footerLogo">
+            <div class="footerLogo__logo">
+              <img
+                alt="footer-logo"
+                src="./assets/img/logo/test.svg"
+                class="logo__logoImg"
+              />
+            </div>
+          </div>
 
-               <div class="footerAbout">
-                   <div class="footerAbout__container">
-                       <nav>
-                           <a class="footer__link2" href="#">Term</a>
-                           <a  class="footer__link2" href="#">Privacy</a>
-                       </nav>
-                   </div>
-               </div>
+          <div class="footerAbout">
+            <div class="footerAbout__container">
+              <nav>
+                <a class="footer__link" href="#projects">Projects</a>
+                <a class="footer__link" href="#about">About</a>
+                <a class="footer__link" href="#contact">Contact</a>
+              </nav>
+            </div>
+          </div>
 
-               <div class="footerSocial">
-                   <nav class="footerSocial__links">
-                       <a href="https://github.com/Mod8124" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 100 100" height="100px" id="Layer_8" version="1.1" viewBox="0 0 100 100" width="100px" xml:space="preserve"><g><path d="M49.773,4.459c-25.352,0-45.977,20.625-45.977,45.977s20.625,45.978,45.977,45.978   c25.353,0,45.979-20.625,45.979-45.978S75.126,4.459,49.773,4.459z M49.773,94.414c-24.249,0-43.977-19.728-43.977-43.978   c0-24.249,19.728-43.977,43.977-43.977c24.25,0,43.979,19.728,43.979,43.977C93.752,74.686,74.023,94.414,49.773,94.414z" fill="#2D2D37"/><path d="M49.773,20.952c-16.258,0-29.484,13.228-29.484,29.486c0,12.448,7.877,23.615,19.606,27.788l0.318,0.108   c0.267,0.086,0.545,0.13,0.825,0.13c1.476,0,2.677-1.2,2.677-2.675c0-0.025-0.001-0.051-0.002-0.076   c0.001-0.019,0.002-0.038,0.002-0.058v-4.952c0-0.3-0.135-0.585-0.368-0.775c-0.232-0.189-0.534-0.266-0.833-0.205   c-0.886,0.182-2.201,0.398-3.432,0.398c-1.092,0-1.682-0.174-1.985-0.32c-1.663-0.8-2.48-1.762-3.363-3.958   c-0.65-1.624-1.73-2.667-2.633-3.351c0.438,0.068,0.967,0.25,1.359,0.7c0.297,0.34,0.612,0.779,0.945,1.243   c1.288,1.793,3.081,4.285,6.209,3.969c1.398-0.146,2.571-0.37,3.487-0.667c0.372-0.121,0.64-0.447,0.685-0.835   c0.151-1.291,0.54-2.272,1.156-2.917c0.256-0.268,0.344-0.656,0.226-1.008c-0.117-0.352-0.419-0.61-0.785-0.67   c-7.892-1.304-11.893-5.496-11.893-12.459c0-3.272,0.897-5.961,2.666-7.993c0.198-0.228,0.283-0.533,0.23-0.831   c-0.519-2.943-0.447-5.336,0.17-6.236c0.487-0.094,2.402-0.144,6.504,2.745c0.232,0.164,0.524,0.222,0.801,0.157   c2.009-0.462,4.29-0.705,6.779-0.72c0.045,0,0.088-0.003,0.131-0.009l0.001,0.008l0.065-0.001c0.022,0.001,0.045,0.002,0.067,0.002   c2.489,0.016,4.771,0.258,6.779,0.72c0.275,0.064,0.566,0.007,0.801-0.157c4.118-2.9,6.066-2.815,6.503-2.748   c0.619,0.896,0.691,3.292,0.172,6.24c-0.053,0.297,0.032,0.603,0.23,0.831c1.77,2.029,2.666,4.718,2.666,7.992   c0,6.963-4.002,11.155-11.894,12.459c-0.366,0.061-0.668,0.319-0.785,0.67c-0.118,0.352-0.03,0.74,0.226,1.008   c1.229,1.283,1.229,3.574,1.229,4.327v7.475c0,1.475,1.2,2.675,2.676,2.675c0.215,0,0.43-0.026,0.633-0.076   c0.042-0.01,0.203-0.055,0.268-0.076C71.282,74.209,79.26,63.007,79.26,50.438C79.26,34.179,66.032,20.952,49.773,20.952z    M58.786,76.412l-0.119,0.033c-0.398,0.099-0.834-0.229-0.834-0.656v-7.475c0-0.737,0-2.639-0.828-4.325   c7.895-1.768,12.053-6.631,12.053-14.14c0-3.581-0.958-6.584-2.85-8.937c0.44-2.745,0.591-6.136-0.911-7.674   c-0.058-0.058-0.121-0.109-0.19-0.152c-0.39-0.24-2.558-1.444-8.407,2.561c-2.042-0.433-4.32-0.66-6.781-0.675v0.008   c-0.048-0.006-0.097-0.01-0.145-0.01l-0.138-0.002c-0.032,0-0.064,0.001-0.096,0.004c-2.426,0.021-4.674,0.247-6.691,0.674   c-5.851-4.004-8.016-2.801-8.406-2.561c-0.069,0.043-0.133,0.094-0.19,0.153c-1.502,1.539-1.352,4.93-0.911,7.673   c-1.892,2.354-2.85,5.359-2.85,8.938c0,7.508,4.158,12.372,12.052,14.139c-0.29,0.591-0.505,1.264-0.643,2.014   c-0.57,0.143-1.381,0.298-2.492,0.414c-1.978,0.203-3.191-1.496-4.378-3.147c-0.361-0.504-0.704-0.98-1.063-1.392   c-0.801-0.917-1.994-1.423-3.36-1.423c-0.858,0-1.953,0.216-2.45,0.823c-0.231,0.282-0.325,0.639-0.257,0.978   c0.113,0.572,0.576,0.875,1.162,1.257c0.854,0.558,2.145,1.4,2.817,3.077c1.061,2.64,2.24,3.999,4.352,5.015   c0.724,0.349,1.656,0.518,2.853,0.518c0.901,0,1.827-0.099,2.633-0.224v3.708c-0.005,0.061-0.005,0.123,0,0.183   c0,0.443-0.462,0.777-0.888,0.642l-0.269-0.092c-10.928-3.888-18.271-14.297-18.271-25.901c0-15.156,12.329-27.486,27.484-27.486   c15.156,0,27.486,12.33,27.486,27.486C77.26,62.155,69.824,72.597,58.786,76.412z" fill="#2D2D37"/></g></svg></a>
-                         <a href="mailto:denisenriquebaca@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_9" style="enable-background:new 0 0 100 100;" version="1.1" viewBox="0 0 100 100" xml:space="preserve"><g><path d="M51.7,4c-25.4,0-46,20.6-46,46s20.6,46,46,46s46-20.6,46-46S77.1,4,51.7,4z M51.7,94c-24.3,0-44-19.7-44-44s19.7-44,44-44   s44,19.7,44,44S76,94,51.7,94z"/></g><path d="M82.3,31.3c0-0.1,0-0.2,0-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0-0.1,0  s-0.2-0.1-0.3-0.1H21.9c-0.1,0-0.3,0-0.4,0.1c0,0,0,0-0.1,0c-0.1,0-0.2,0.1-0.3,0.2c0,0,0,0.1-0.1,0.1c-0.1,0.1-0.1,0.1-0.1,0.2  c0,0.1,0,0.2,0,0.2v0.1v37.4c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.3,0.8c0.2,0.2,0.5,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1h58.6  c0.1,0.1,0.3,0.1,0.4,0.1c0.3,0,0.5-0.1,0.7-0.3c0.3-0.3,0.4-0.8,0.2-1.1v-37C82.3,31.4,82.3,31.4,82.3,31.3z M78.8,32.5L51.6,58.8  L24.4,32.5H78.8z M50.9,61c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l28-27.1v32.6L66.1,52.3c-0.4-0.4-1-0.4-1.4,0  s-0.4,1,0,1.4l14.2,14.2H24.3l14.2-14.2c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L22.9,66.5V33.9L50.9,61z"/></svg></a>
-                       <a href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a" target="_blank"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 100 100" height="100px" id="Layer_1" version="1.1" viewBox="0 0 100 100" width="100px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M49.74,95.866c25.352,0,45.977-20.625,45.977-45.978S75.092,3.911,49.74,3.911   c-25.353,0-45.979,20.625-45.979,45.978S24.387,95.866,49.74,95.866z M49.74,5.911c24.249,0,43.977,19.728,43.977,43.978   S73.989,93.866,49.74,93.866c-24.25,0-43.979-19.728-43.979-43.978S25.49,5.911,49.74,5.911z" fill="#0087AF"/><path d="M37.578,39.772h-9.115c-0.552,0-1,0.448-1,1v29.446c0,0.552,0.448,1,1,1h9.115c0.552,0,1-0.448,1-1V40.772   C38.578,40.22,38.13,39.772,37.578,39.772z M36.578,69.218h-7.115V41.772h7.115V69.218z" fill="#0087AF"/><path d="M43.406,71.218h8.742c0.552,0,1-0.448,1-1V54.761c0-2.557,0.79-5.605,4.553-5.605   c0.98,0,3.963,0,3.963,5.605v15.458c0,0.552,0.448,1,1,1h9.07c0.552,0,1-0.448,1-1V51.574c0-7.953-4.379-12.701-11.713-12.701   c-3.765,0-6.324,1.602-7.873,3.061v-1.161c0-0.552-0.448-1-1-1h-8.742c-0.552,0-1,0.448-1,1v29.446   C42.406,70.771,42.854,71.218,43.406,71.218z M44.406,41.772h6.742v2.965c0,0.458,0.311,0.857,0.755,0.969   c0.446,0.115,0.908-0.091,1.125-0.494c0.023-0.043,2.41-4.34,7.993-4.34c6.173,0,9.713,3.9,9.713,10.701v17.644h-7.07V54.761   c0-6.617-3.736-7.605-5.963-7.605c-4.104,0-6.553,2.843-6.553,7.605v14.458h-6.742V41.772z" fill="#0087AF"/><path d="M32.977,37.916c3.523,0,6.39-2.886,6.39-6.433c0-3.547-2.866-6.433-6.39-6.433s-6.39,2.886-6.39,6.433   C26.587,35.03,29.453,37.916,32.977,37.916z M32.977,27.05c2.42,0,4.39,1.988,4.39,4.433s-1.969,4.433-4.39,4.433   s-4.39-1.989-4.39-4.433S30.556,27.05,32.977,27.05z" fill="#0087AF"/></g></svg></a>
-                   </nav>
-               </div>
-           </div>
+          <div class="footerAbout">
+            <div class="footerAbout__container">
+              <nav>
+                <a class="footer__link2" href="#">Term</a>
+                <a class="footer__link2" href="#">Privacy</a>
+              </nav>
+            </div>
+          </div>
 
-       </footer><!--end footer-->
-    </main><!--end wrapper-->
+          <div class="footerSocial">
+            <nav class="footerSocial__links">
+              <a href="https://github.com/Mod8124" target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  enable-background="new 0 0 100 100"
+                  height="100px"
+                  id="Layer_8"
+                  version="1.1"
+                  viewBox="0 0 100 100"
+                  width="100px"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M49.773,4.459c-25.352,0-45.977,20.625-45.977,45.977s20.625,45.978,45.977,45.978   c25.353,0,45.979-20.625,45.979-45.978S75.126,4.459,49.773,4.459z M49.773,94.414c-24.249,0-43.977-19.728-43.977-43.978   c0-24.249,19.728-43.977,43.977-43.977c24.25,0,43.979,19.728,43.979,43.977C93.752,74.686,74.023,94.414,49.773,94.414z"
+                      fill="#2D2D37"
+                    />
+                    <path
+                      d="M49.773,20.952c-16.258,0-29.484,13.228-29.484,29.486c0,12.448,7.877,23.615,19.606,27.788l0.318,0.108   c0.267,0.086,0.545,0.13,0.825,0.13c1.476,0,2.677-1.2,2.677-2.675c0-0.025-0.001-0.051-0.002-0.076   c0.001-0.019,0.002-0.038,0.002-0.058v-4.952c0-0.3-0.135-0.585-0.368-0.775c-0.232-0.189-0.534-0.266-0.833-0.205   c-0.886,0.182-2.201,0.398-3.432,0.398c-1.092,0-1.682-0.174-1.985-0.32c-1.663-0.8-2.48-1.762-3.363-3.958   c-0.65-1.624-1.73-2.667-2.633-3.351c0.438,0.068,0.967,0.25,1.359,0.7c0.297,0.34,0.612,0.779,0.945,1.243   c1.288,1.793,3.081,4.285,6.209,3.969c1.398-0.146,2.571-0.37,3.487-0.667c0.372-0.121,0.64-0.447,0.685-0.835   c0.151-1.291,0.54-2.272,1.156-2.917c0.256-0.268,0.344-0.656,0.226-1.008c-0.117-0.352-0.419-0.61-0.785-0.67   c-7.892-1.304-11.893-5.496-11.893-12.459c0-3.272,0.897-5.961,2.666-7.993c0.198-0.228,0.283-0.533,0.23-0.831   c-0.519-2.943-0.447-5.336,0.17-6.236c0.487-0.094,2.402-0.144,6.504,2.745c0.232,0.164,0.524,0.222,0.801,0.157   c2.009-0.462,4.29-0.705,6.779-0.72c0.045,0,0.088-0.003,0.131-0.009l0.001,0.008l0.065-0.001c0.022,0.001,0.045,0.002,0.067,0.002   c2.489,0.016,4.771,0.258,6.779,0.72c0.275,0.064,0.566,0.007,0.801-0.157c4.118-2.9,6.066-2.815,6.503-2.748   c0.619,0.896,0.691,3.292,0.172,6.24c-0.053,0.297,0.032,0.603,0.23,0.831c1.77,2.029,2.666,4.718,2.666,7.992   c0,6.963-4.002,11.155-11.894,12.459c-0.366,0.061-0.668,0.319-0.785,0.67c-0.118,0.352-0.03,0.74,0.226,1.008   c1.229,1.283,1.229,3.574,1.229,4.327v7.475c0,1.475,1.2,2.675,2.676,2.675c0.215,0,0.43-0.026,0.633-0.076   c0.042-0.01,0.203-0.055,0.268-0.076C71.282,74.209,79.26,63.007,79.26,50.438C79.26,34.179,66.032,20.952,49.773,20.952z    M58.786,76.412l-0.119,0.033c-0.398,0.099-0.834-0.229-0.834-0.656v-7.475c0-0.737,0-2.639-0.828-4.325   c7.895-1.768,12.053-6.631,12.053-14.14c0-3.581-0.958-6.584-2.85-8.937c0.44-2.745,0.591-6.136-0.911-7.674   c-0.058-0.058-0.121-0.109-0.19-0.152c-0.39-0.24-2.558-1.444-8.407,2.561c-2.042-0.433-4.32-0.66-6.781-0.675v0.008   c-0.048-0.006-0.097-0.01-0.145-0.01l-0.138-0.002c-0.032,0-0.064,0.001-0.096,0.004c-2.426,0.021-4.674,0.247-6.691,0.674   c-5.851-4.004-8.016-2.801-8.406-2.561c-0.069,0.043-0.133,0.094-0.19,0.153c-1.502,1.539-1.352,4.93-0.911,7.673   c-1.892,2.354-2.85,5.359-2.85,8.938c0,7.508,4.158,12.372,12.052,14.139c-0.29,0.591-0.505,1.264-0.643,2.014   c-0.57,0.143-1.381,0.298-2.492,0.414c-1.978,0.203-3.191-1.496-4.378-3.147c-0.361-0.504-0.704-0.98-1.063-1.392   c-0.801-0.917-1.994-1.423-3.36-1.423c-0.858,0-1.953,0.216-2.45,0.823c-0.231,0.282-0.325,0.639-0.257,0.978   c0.113,0.572,0.576,0.875,1.162,1.257c0.854,0.558,2.145,1.4,2.817,3.077c1.061,2.64,2.24,3.999,4.352,5.015   c0.724,0.349,1.656,0.518,2.853,0.518c0.901,0,1.827-0.099,2.633-0.224v3.708c-0.005,0.061-0.005,0.123,0,0.183   c0,0.443-0.462,0.777-0.888,0.642l-0.269-0.092c-10.928-3.888-18.271-14.297-18.271-25.901c0-15.156,12.329-27.486,27.484-27.486   c15.156,0,27.486,12.33,27.486,27.486C77.26,62.155,69.824,72.597,58.786,76.412z"
+                      fill="#2D2D37"
+                    />
+                  </g></svg
+              ></a>
+              <a href="mailto:denisenriquebaca@gmail.com" target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  id="Layer_9"
+                  style="enable-background: new 0 0 100 100"
+                  version="1.1"
+                  viewBox="0 0 100 100"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M51.7,4c-25.4,0-46,20.6-46,46s20.6,46,46,46s46-20.6,46-46S77.1,4,51.7,4z M51.7,94c-24.3,0-44-19.7-44-44s19.7-44,44-44   s44,19.7,44,44S76,94,51.7,94z"
+                    />
+                  </g>
+                  <path
+                    d="M82.3,31.3c0-0.1,0-0.2,0-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0-0.1,0  s-0.2-0.1-0.3-0.1H21.9c-0.1,0-0.3,0-0.4,0.1c0,0,0,0-0.1,0c-0.1,0-0.2,0.1-0.3,0.2c0,0,0,0.1-0.1,0.1c-0.1,0.1-0.1,0.1-0.1,0.2  c0,0.1,0,0.2,0,0.2v0.1v37.4c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.3,0.8c0.2,0.2,0.5,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1h58.6  c0.1,0.1,0.3,0.1,0.4,0.1c0.3,0,0.5-0.1,0.7-0.3c0.3-0.3,0.4-0.8,0.2-1.1v-37C82.3,31.4,82.3,31.4,82.3,31.3z M78.8,32.5L51.6,58.8  L24.4,32.5H78.8z M50.9,61c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l28-27.1v32.6L66.1,52.3c-0.4-0.4-1-0.4-1.4,0  s-0.4,1,0,1.4l14.2,14.2H24.3l14.2-14.2c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L22.9,66.5V33.9L50.9,61z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a"
+                target="_blank"
+                ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  enable-background="new 0 0 100 100"
+                  height="100px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 100 100"
+                  width="100px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g>
+                    <path
+                      d="M49.74,95.866c25.352,0,45.977-20.625,45.977-45.978S75.092,3.911,49.74,3.911   c-25.353,0-45.979,20.625-45.979,45.978S24.387,95.866,49.74,95.866z M49.74,5.911c24.249,0,43.977,19.728,43.977,43.978   S73.989,93.866,49.74,93.866c-24.25,0-43.979-19.728-43.979-43.978S25.49,5.911,49.74,5.911z"
+                      fill="#0087AF"
+                    />
+                    <path
+                      d="M37.578,39.772h-9.115c-0.552,0-1,0.448-1,1v29.446c0,0.552,0.448,1,1,1h9.115c0.552,0,1-0.448,1-1V40.772   C38.578,40.22,38.13,39.772,37.578,39.772z M36.578,69.218h-7.115V41.772h7.115V69.218z"
+                      fill="#0087AF"
+                    />
+                    <path
+                      d="M43.406,71.218h8.742c0.552,0,1-0.448,1-1V54.761c0-2.557,0.79-5.605,4.553-5.605   c0.98,0,3.963,0,3.963,5.605v15.458c0,0.552,0.448,1,1,1h9.07c0.552,0,1-0.448,1-1V51.574c0-7.953-4.379-12.701-11.713-12.701   c-3.765,0-6.324,1.602-7.873,3.061v-1.161c0-0.552-0.448-1-1-1h-8.742c-0.552,0-1,0.448-1,1v29.446   C42.406,70.771,42.854,71.218,43.406,71.218z M44.406,41.772h6.742v2.965c0,0.458,0.311,0.857,0.755,0.969   c0.446,0.115,0.908-0.091,1.125-0.494c0.023-0.043,2.41-4.34,7.993-4.34c6.173,0,9.713,3.9,9.713,10.701v17.644h-7.07V54.761   c0-6.617-3.736-7.605-5.963-7.605c-4.104,0-6.553,2.843-6.553,7.605v14.458h-6.742V41.772z"
+                      fill="#0087AF"
+                    />
+                    <path
+                      d="M32.977,37.916c3.523,0,6.39-2.886,6.39-6.433c0-3.547-2.866-6.433-6.39-6.433s-6.39,2.886-6.39,6.433   C26.587,35.03,29.453,37.916,32.977,37.916z M32.977,27.05c2.42,0,4.39,1.988,4.39,4.433s-1.969,4.433-4.39,4.433   s-4.39-1.989-4.39-4.433S30.556,27.05,32.977,27.05z"
+                      fill="#0087AF"
+                    />
+                  </g></svg
+              ></a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+      <!--end footer-->
+    </main>
+    <!--end wrapper-->
     <script src="./src/js/particles.js"></script>
-    <script src="./dist/js/index.js" type="module"></script>
-</body>
+    <!-- <script src="./dist/js/index.js" type="module"></script> -->
+    <script src="./src/main.js" type="module"></script>
+  </body>
 </html>
