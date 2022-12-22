@@ -171,12 +171,23 @@
 
 #logo {
   width: 60%;
-  max-width: 250px;
+  max-width: 230px;
 }
 
 #logo img {
   width: 100%;
 }
+
+/* change logo color if it's a svg */
+/* #cls-water,
+#cls-water-1 {
+  stroke: var(--water_green);
+}
+
+#cls-orange,
+#cls-orange-1 {
+  stroke: var(--orange);
+} */
 
 .navBar {
   flex: 50%;
