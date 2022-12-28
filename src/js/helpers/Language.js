@@ -2,10 +2,9 @@ export const Language = () => {
   const EN = {
     nav: ['Work', 'About', 'Contact'],
     hero: {
-      hello: 'Hello!',
+      hello: 'Hi,',
       im: "I'm",
       web: 'Front End Developer & Web designer',
-      link: 'See More',
     },
     about: {
       title: 'About Me',
@@ -35,10 +34,9 @@ export const Language = () => {
   const ES = {
     nav: ['Proyectos', 'Sobre mí', 'Contacto'],
     hero: {
-      hello: 'Hola!',
+      hello: 'Hola,',
       im: 'Soy',
       web: 'Desarrollador Front End & Diseñador Web',
-      link: 'Ver más',
     },
     about: {
       title: 'Sobre mí',

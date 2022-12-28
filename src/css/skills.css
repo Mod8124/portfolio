@@ -47,8 +47,34 @@
   text-align: center;
   letter-spacing: 3px;
   grid-row-gap: 40px;
-  grid-template-columns: 100%;
+  justify-content: center;
+  grid-template-columns: auto;
 }
+
+/* .skills__container .modalImg__skill {
+  grid-template-columns: 100%;
+  padding: 0;
+  justify-content: center;
+  grid-template-rows: 10vh;
+  max-width: 80px;
+}
+
+.skills__container .modalImg__skill img {
+  max-width: 40px;
+  max-height: 40px;
+  margin: 0 auto;
+}
+
+.skills__paragraph {
+  text-shadow: 0px 0px 2px white, 0px 0px 14px white;
+  color: white;
+  font-size: 12px;
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 14px;
+} */
 
 .skills__paragraph {
   /* text-shadow: 0px 0px 2px white, 0px 0px 14px white; */

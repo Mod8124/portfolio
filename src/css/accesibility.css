@@ -9,9 +9,13 @@
   align-items: center;
   justify-content: center;
   background-color: #eeeae7;
-  transition: all 0.5s;
-  display: none;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9) inset;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.active.accesibilty {
+  transform: scale(1);
 }
 
 .accesibility__container {
@@ -34,31 +38,30 @@
   right: -100%;
   position: fixed;
   opacity: 0;
-  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #eeeae7;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
   box-shadow: 0px 0px 10px var(--water_green);
   z-index: 3;
+  transition: all 0.4s;
 }
 
 .active.accesibility__modal {
   opacity: 1;
   right: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.active.accesibility__modal .accesibility__modalContainer {
-  height: auto;
-  width: 80%;
+  transition: all 0.4s;
 }
 
 .accesibility__modalContainer {
-  height: 0%;
-  width: 0%;
+  width: 80%;
+  opacity: 0;
+  transition: all 0.1s ease-out;
+}
+
+.active .accesibility__modalContainer {
   opacity: 1;
-  transition: all 0.5s;
 }
 
 .colorSelect {
