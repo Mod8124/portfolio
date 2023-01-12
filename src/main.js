@@ -3,20 +3,20 @@ import { handleLoading } from './js/functions/load.js';
 import { observer, hiddenElements } from './js/functions/animation.js';
 import { handleScroll } from './js/functions/scroll.js';
 import {
-  modal,
-  modalDisplay,
-  modalNotDisplay,
-  projects,
+    modal,
+    modalDisplay,
+    modalNotDisplay,
+    projects,
 } from './js/functions/modal.js';
 import {
-  btnAccesibility,
-  btnRestartColorMain,
-  btnRestartColorSecondary,
-  colorSelect__main,
-  colorSelect__secondary,
-  handleToggleAccesibility,
-  handleRestartColors,
-  handleColor,
+    btnAccesibility,
+    btnRestartColorMain,
+    btnRestartColorSecondary,
+    colorSelect__main,
+    colorSelect__secondary,
+    handleToggleAccesibility,
+    handleRestartColors,
+    handleColor,
 } from './js/functions/accesibility.js';
 import { languageBtns, handleLanguage } from './js/functions/language.js';
 
@@ -26,10 +26,11 @@ window.addEventListener('scroll', handleScroll);
 // modal
 modal.addEventListener('click', modalNotDisplay);
 projects.forEach((img, index) => {
-  img.addEventListener('click', () => modalDisplay(index));
+    img.addEventListener('click', () => modalDisplay(index));
 });
 
-//particles
+// particles
+// eslint-disable-next-line no-undef
 particlesJS.load('particles-js', './particle.json');
 
 // // accesibility
@@ -45,7 +46,7 @@ languageBtns.forEach((btn) => btn.addEventListener('click', handleLanguage));
 // //toggleHambu
 hambu.addEventListener('click', toggleHambu);
 menuLinksMobile.forEach((button) => {
-  button.addEventListener('click', toggleHambu);
+    button.addEventListener('click', toggleHambu);
 });
 
 // //animation

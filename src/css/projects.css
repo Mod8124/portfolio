@@ -1,98 +1,165 @@
 @media (prefers-reduced-motion: no-preference) {
-  .hidden.title__title,
-  .hidden.work_img {
-    opacity: 0;
-    transition: all 0.5s ease-in;
-  }
+    .hidden.title__title,
+    .hidden.work_img {
+        opacity: 0;
+        transition: all 0.5s ease-in;
+    }
 
-  .hidden.work_img {
-    transform: translateY(20%);
-  }
+    .hidden.work_img {
+        transform: translateY(20%);
+    }
 
-  .show.title__title,
-  .show.work_img {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    .show.title__title,
+    .show.work_img {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .wrapperThree {
-  display: flex;
-  flex-wrap: wrap;
-  width: 94%;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .tittle {
-  flex: 100%;
+    flex: 100%;
 }
 
 .title__title {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .title__title h2 {
-  padding-top: 40px;
-  padding-bottom: 80px;
-  font-size: var(--title__mobile);
-  color: var(--orange);
-  text-shadow: 0px 0px 2px var(--orange), 0px 0px 6px var(--orange);
-  letter-spacing: 2px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: var(--title__mobile);
+    color: var(--orange);
+    text-shadow: 0px 0px 2px var(--orange), 0px 0px 6px var(--orange);
+    letter-spacing: 2px;
+}
+
+.projectsOptions {
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.projectsOptions button {
+    background-color: transparent;
+    padding: 1vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--water_green);
+    text-shadow: 0px 0px 6px var(--water_green);
+    font-size: 1em;
+    outline: none;
+    border: none;
+}
+
+.projectsOptions button:nth-child(3),
+.projectsOptions button:nth-child(2) {
+    color: rgba(255, 255, 255, 0.609);
+    text-shadow: none;
+    box-shadow: none;
 }
 
 .works__img {
-  width: 90%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .work__container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    text-align: center;
 }
 
 .work_img {
-  width: 100%;
-  max-width: 360px;
-  object-fit: fill;
-  box-shadow: 0px 0px 10px 2px #fff;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    max-width: 360px;
+    object-fit: fill;
+    box-shadow: 0px 0px 10px 2px #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .work_img:hover {
-  transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.work__imgContainer {
+    max-width: 420px;
+}
+
+.projects__btn {
+    padding-top: 40px;
+    text-align: center;
+    display: none;
+}
+
+.projects__btnShow {
+    background-color: transparent;
+    max-width: 280px;
+    padding: 15px 25px;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--water_green);
+    font-size: var(--mainButton__mobile);
+    text-shadow: 0px 0px 4px var(--water_green);
+    border: 3px solid var(--water_green);
+    box-shadow: 0px 0px 15px 1px var(--water_green);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.projects__btnShow:hover {
+    border: 3px solid white;
+    box-shadow: 0px 0px 18px 1px white;
 }
 
 @media screen and (min-width: 660px) {
-  .work__container {
-    grid-template-columns: auto auto;
-  }
+    .work__container {
+        grid-template-columns: auto auto;
+    }
 
-  .work_img {
-    max-width: none;
-  }
+    .work_img {
+        max-width: none;
+    }
+    .projectsOptions button {
+        font-size: 1.1em;
+    }
 }
 
 @media screen and (min-width: 1100px) {
-  .title__title h2 {
-    padding-top: 100px;
-    font-size: var(--title__size);
-  }
+    .title__title h2 {
+        padding-top: 100px;
+        font-size: var(--title__size);
+    }
 
-  .work__container {
-    grid-template-columns: auto auto auto;
-  }
+    .work__container {
+        grid-template-columns: auto auto auto;
+    }
 }
 
 @media screen and (min-width: 1600px) {
-  .work__container {
-    grid-template-columns: auto auto auto auto;
-  }
+    .work__container {
+        grid-template-columns: auto auto auto auto;
+    }
 }

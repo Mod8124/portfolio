@@ -1,13 +1,17 @@
 const loading = document.querySelector('.loading');
+import { isTop, navScroll } from './scroll.js';
 
-export function handleLoading( ) {
+export function handleLoading() {
+    const active = sessionStorage.getItem('load');
+    let currentScroll = window.pageYOffset;
+    let navScrollHeight = navScroll.offsetHeight;
 
-  const active = sessionStorage.getItem('load')
-  
-  if(!active) {
-    sessionStorage.setItem('load',true);
-  } else {
-    loading.style.display = 'none';
-    loading.style.animationPlayState = 'paused';   
-  }
+    if (!active) {
+        sessionStorage.setItem('load', true);
+    } else {
+        loading.style.display = 'none';
+        loading.style.animationPlayState = 'paused';
+    }
+
+    isTop(currentScroll, navScrollHeight);
 }
