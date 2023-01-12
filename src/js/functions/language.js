@@ -32,6 +32,7 @@ const number = document.querySelector('.textRedNumber');
 //footer
 const footerLinks = document.querySelectorAll('.footer__link');
 const footerLinksTwo = document.querySelectorAll('.footer__link2');
+const footerLinkRepo = document.querySelector('.footer__linkRepo');
 
 // english button
 const englishBtn = document.querySelector('.btn__language');
@@ -79,6 +80,7 @@ export const language = () => {
         footerLinksTwo.forEach(
             (link, i) => (link.innerHTML = EN.footer.others[i])
         );
+        footerLinkRepo.innerHTML = EN.footer.repo;
     } else {
         menuLink__link.forEach((link, i) => (link.innerHTML = ES.nav[i]));
         navBarLinks.forEach((link, i) => (link.innerHTML = ES.nav[i]));
@@ -109,5 +111,6 @@ export const language = () => {
         footerLinksTwo.forEach(
             (link, i) => (link.innerHTML = ES.footer.others[i])
         );
+        footerLinkRepo.innerHTML = ES.footer.repo;
     }
 };

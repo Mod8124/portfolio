@@ -29,7 +29,8 @@ export const Language = () => {
         },
         footer: {
             links: ['Projects', 'About', 'Contact'],
-            others: ['Term', 'Privacy']
+            others: ['Term', 'Privacy'],
+            repo: ' Designed & built by <strong>Denis Muñoz</strong>'
         }
     };
 
@@ -62,7 +63,8 @@ export const Language = () => {
         },
         footer: {
             links: ['Proyectos', 'Sobre mí', 'Contacto'],
-            others: ['Términos', 'Privacidad']
+            others: ['Términos', 'Privacidad'],
+            repo: ' Diseñado y construido por <strong>Denis Muñoz</strong>'
         }
     };
 
