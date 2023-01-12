@@ -1,234 +1,236 @@
-@keyframes  moveLight {
-    0% {
-        left:0%;
-    }
+@keyframes moveLight {
+  0% {
+    left: 0%;
+  }
 
-    50%{
-        left: 96%;
-    }
+  50% {
+    left: 96%;
+  }
 
-    100% {
-        left: 0%;
-    }
+  100% {
+    left: 0%;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .minlight {
-        animation: moveLight 2.6s ease-in-out  infinite alternate;
-    }
-    
-    .hidden.contact__title, .hidden.contact__subTitle{
-        opacity: 0;
-    }
+  .minlight {
+    animation: moveLight 2.6s ease-in-out infinite alternate;
+  }
 
-    .hidden.contact__subTitle, .hidden.contact__title {
-        transition: all 0.7s ease-in;
-    }
+  .hidden.contact__title,
+  .hidden.contact__subTitle {
+    opacity: 0;
+  }
 
-    .hidden.redSocial--start {
-        opacity: 0;
-        transition: all 0.7s ease-in;
-        transform: translateX(-100%);
-    }
+  .hidden.contact__subTitle,
+  .hidden.contact__title {
+    transition: all 0.7s ease-in;
+  }
 
-    .hidden.redSocial--end {
-        opacity: 0;
-        transition: all 0.6s ease-in;
-        transform: translateX(100%);
-    }
+  .hidden.redSocial--start {
+    opacity: 0;
+    transition: all 0.7s ease-in;
+    transform: translateX(-100%);
+  }
 
-    .show.redSocial--start, .show.redSocial--end {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  .hidden.redSocial--end {
+    opacity: 0;
+    transition: all 0.6s ease-in;
+    transform: translateX(100%);
+  }
 
-    .show.contact__title, .show.contact__subTitle {
-        opacity: 1;
-    }
+  .show.redSocial--start,
+  .show.redSocial--end {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .show.contact__title,
+  .show.contact__subTitle {
+    opacity: 1;
+  }
 }
 
-
 .wrapperFive {
-    display: flex;
-    flex-wrap: wrap;
-    width: 94%;
-    margin:0 auto;
-    overflow: hidden;
-    padding-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 94%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 1;
 }
 
 .tittleTwo {
-    flex:100%;
+  flex: 100%;
 }
 
 .tittleTwo__title {
-    margin: 0 auto; 
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .tittleTwo__title h2 {
-    padding-top: 100px;
-    padding-bottom: 40px;
-    font-size:var(--title__mobile);
-    color: var(--orange);
-    text-shadow: 0px 0px 2px var(--orange), 0px 0px 6px var(--orange); 
-    letter-spacing: 2px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  font-size: var(--title__mobile);
+  color: var(--orange);
+  text-shadow: 0px 0px 2px var(--orange), 0px 0px 6px var(--orange);
+  letter-spacing: 2px;
 }
 
 .tittleTwo__title h3 {
-    color:white;
-    font-size: var(--subTitle__mobile);
-    padding-bottom: 60px;
+  color: white;
+  font-size: var(--subTitle__mobile);
+  padding-bottom: 60px;
 }
 
 .social {
-    flex:100%;
+  flex: 100%;
 }
 
-.social__container  {
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 30px;
-    justify-content: space-between;
+.social__container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 30px;
+  justify-content: space-between;
 }
 
 .social__container a {
-    text-decoration: none;
-    width: 100%;
-    display: grid;
+  text-decoration: none;
+  width: 100%;
+  display: grid;
 }
 
 .redSocial {
-    width: 100%;
-    max-width: 400px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display:flex;
-    height: 100px;
-    flex-wrap: wrap;
-    align-items: center;
-    border: 3px solid #202020;
-    border-bottom: none;
-    cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  height: 100px;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 3px solid #202020;
+  border-bottom: none;
+  cursor: pointer;
 }
 
 .redSocial--start {
-    justify-self:center;
+  justify-self: center;
 }
 
 .redSocial--end {
-      justify-self: center;
-      background-color: center;
+  justify-self: center;
+  background-color: center;
 }
 
-
 .redSocial:hover > .light {
-    background-color: white;
+  background-color: white;
 }
 
 .light {
-    flex:100%;
-    height: 10%;
-    margin-top: 24px;
-    background-color: var(--water_green);
-    box-shadow: 0px 0px 11px 2px var(--water_green);
-    border-radius: 50px;
-    align-self: flex-end;
-    display: flex;
-    align-items: center;
+  flex: 100%;
+  height: 10%;
+  margin-top: 24px;
+  background-color: var(--water_green);
+  box-shadow: 0px 0px 11px 2px var(--water_green);
+  border-radius: 50px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
 }
 
 .minlight {
-    width: 4%;
-    border-radius: 50px;
-    height: 40%;
-    background-color: #fff;
-    box-shadow: 0px 0px 14px 1px #fff;
-    position: relative;
+  width: 4%;
+  border-radius: 50px;
+  height: 40%;
+  background-color: #fff;
+  box-shadow: 0px 0px 14px 1px #fff;
+  position: relative;
 }
 
 .textRed {
-    flex:80%;
+  flex: 80%;
 }
 
 .textRed h4 {
-    width: 90%;
-    margin:0 auto;
-    color:white;
-    font-size:var(--contant__linksMobile);
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  font-size: var(--contant__linksMobile);
 }
 
 .imgRed {
-    flex:20%;
-    text-align: center;
+  flex: 20%;
+  text-align: center;
 }
 
 .imgRed svg {
-    width: 40px;
-    height: 40px;
-    fill:white;
+  width: 40px;
+  height: 40px;
+  fill: white;
 }
 
 .redSocial svg path {
-    fill: white;
-    stroke: white;
+  fill: white;
+  stroke: white;
 }
 
-.redSocial:hover svg path{
-    fill: var(--water_green);
-    stroke: var(--water_green);
+.redSocial:hover svg path {
+  fill: var(--water_green);
+  stroke: var(--water_green);
 }
 
-@media screen and (min-width:900px) {
-    .textRed h4 {
-        font-size: 1em;
-    }
-    .social__container {
-        width: 90%;
-        grid-template-columns: 48% 48%;
-        grid-row-gap:40px ;
-        justify-content: space-between;
-    } 
-    .wrapperFive {
-        padding-bottom: 300px;
-    }  
+@media screen and (min-width: 900px) {
+  .textRed h4 {
+    font-size: 1em;
+  }
+  .social__container {
+    width: 90%;
+    grid-template-columns: 48% 48%;
+    grid-row-gap: 40px;
+    justify-content: space-between;
+  }
+  .wrapperFive {
+    padding-bottom: 300px;
+  }
 }
 
-@media screen and (min-width:1100px) {
+@media screen and (min-width: 1100px) {
+  .tittleTwo__title h2 {
+    font-size: var(--title__size);
+  }
 
-   .tittleTwo__title h2 {
-    font-size:var(--title__size);
-   }
-
-   .tittleTwo__title h3  {
+  .tittleTwo__title h3 {
     font-size: var(--subTitlte__size);
-   }
-   .textRed h4 {
-    font-size:var(--contant__links);
-   }
+  }
+  .textRed h4 {
+    font-size: var(--contant__links);
+  }
 
-   .redSocial {
+  .redSocial {
     max-width: 530px;
-   }
+  }
 
-   .redSocial--start {
-      justify-self:flex-start;
-    }
+  .redSocial--start {
+    justify-self: flex-start;
+  }
 
-    .redSocial--end {
-        justify-self: flex-end;
-    }
+  .redSocial--end {
+    justify-self: flex-end;
+  }
 
-   .social__container {
-    grid-row-gap:70px ;
-   }
-}
- 
-@media screen and (min-width:1920px) { 
-    .redSocial {
-        max-width: 65%;
-    }
+  .social__container {
+    grid-row-gap: 70px;
+  }
 }
 
+@media screen and (min-width: 1920px) {
+  .redSocial {
+    max-width: 65%;
+  }
+}

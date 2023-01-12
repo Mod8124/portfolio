@@ -1,135 +1,138 @@
 .accesibilty {
-    z-index: 3;
-    position: fixed;
-    top:91%;
-    right: 0%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #eeeae7;
-    transition: all 0.5s;
-    display: none;
-    box-shadow: 0px 0px 2px rgba(0, 0,0, 0.9) inset;
+  z-index: 4;
+  position: fixed;
+  top: 91%;
+  right: 0%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeae7;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9) inset;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.active.accesibilty {
+  transform: scale(1);
 }
 
 .accesibility__container {
-    width: 34px;
-    height: 34px;
+  width: 34px;
+  height: 34px;
 }
 
 .accesibility__img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
 }
 
 .accesibility__modal {
-    height: 100vh;
-    width: 60%;
-    max-width: 210px;
-    top:0;
-    right:-100%;
-    position: fixed;
-    opacity: 0;
-    transition: all 0.3s;
-    background-color: #eeeae7;
-    box-shadow: 0px 0px 2px  rgba(0, 0,0, 0.9);
-    box-shadow: 0px 0px 10px  var(--water_green);
-    z-index: 4;
+  height: 100vh;
+  width: 60%;
+  max-width: 210px;
+  top: 0;
+  right: -100%;
+  position: fixed;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeae7;
+  /* border-left: 1px solid var(--water_green); */
+  box-shadow: 0px 0px 10px var(--water_green);
+  z-index: 4;
+  transition: all 0.4s;
 }
 
 .active.accesibility__modal {
-    opacity: 1;
-    right: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.active.accesibility__modal .accesibility__modalContainer {
-    height:auto;
-    width: 80%;
+  opacity: 1;
+  right: 0%;
+  transition: all 0.4s;
 }
 
 .accesibility__modalContainer {
-    height: 0%;
-    width: 0%;
-    opacity: 1;
-    transition: all 0.5s;
+  width: 80%;
+  opacity: 0;
+  transition: all 0.1s ease-out;
+}
+
+.active .accesibility__modalContainer {
+  opacity: 1;
 }
 
 .colorSelect {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .colorSelect__title {
-    padding-bottom: 10px;
-    font-weight: 700;
-    color:rgba(0, 0,0, 0.8);
+  padding-bottom: 10px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .colorSelect__input {
-    width: 100%;
-    max-width: 170px;
-    border:none;
-    padding-left: 0px;
-    padding-right: 10px;
-    background-color: transparent;
-    transition: all 0.5s;
+  width: 100%;
+  max-width: 170px;
+  border: none;
+  padding-left: 0px;
+  padding-right: 10px;
+  background-color: transparent;
+  transition: all 0.5s;
 }
 
 .colorSelect__restart {
-    padding-top: 10px;
-    cursor: pointer;
+  padding-top: 10px;
+  cursor: pointer;
 }
 
 .colorSelect__para {
-    display: flex;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .colorSelect__img {
-    max-width: 20px;
-    object-fit: contain;
+  max-width: 20px;
+  object-fit: contain;
 }
 .colorSelect--main {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .accebility__language {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .btn__language {
-    border:none;
-    padding: 4px 12px 1px 12px;
-    font-weight: 600;
-    font-size: 0.8em;
-    cursor: pointer;
-    background: transparent;
-    transition: all 0.5s;
-    border-bottom:3px solid transparent ;
-    text-align: start;
+  border: none;
+  padding: 4px 12px 1px 12px;
+  font-weight: 600;
+  font-size: 0.8em;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.5s;
+  border-bottom: 3px solid transparent;
+  text-align: start;
 }
 
 .active.btn__language--en {
-   background-color: var(--orange);
-   transition: all 0.5s;
+  background-color: var(--orange);
+  transition: all 0.5s;
 }
 
 .active.btn__language--es {
-   background-color: var(--orange);
-   transition: all 0.5s;
+  background-color: var(--orange);
+  transition: all 0.5s;
 }
 
 .btn__language--en {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 .btn__language--es {
-    margin-left: 4px;
+  margin-left: 4px;
 }

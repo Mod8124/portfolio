@@ -1,47 +1,90 @@
 @keyframes hello {
-
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
         text-shadow: 0px 0px 3px #fff, 0px 0px 20px #fff;
     }
 
-    20%, 24%, 55% {        
+    20%,
+    24%,
+    55% {
         text-shadow: none;
         box-shadow: none;
-    }  
+    }
 }
 
 @keyframes denis {
     0%,
     100% {
-        text-shadow: 0px 0px 4px #fff, 0px 0px 6px #fff,  0px 0px 8px #fff,  0px 0px 10px #fff,  0px 0px 10px #fff; 
+        text-shadow: 0px 0px 4px #fff, 0px 0px 6px #fff, 0px 0px 8px #fff,
+            0px 0px 10px #fff, 0px 0px 10px #fff;
     }
 
     50% {
-        text-shadow: 0px 0px 9px #fff, 0px 0px 11px #fff,  0px 0px 11px #fff,  0px 0px 10px #fff,  0px 0px 10px #fff; 
+        text-shadow: 0px 0px 9px #fff, 0px 0px 11px #fff, 0px 0px 11px #fff,
+            0px 0px 10px #fff, 0px 0px 10px #fff;
+    }
+}
+
+@keyframes scrolldown-anim {
+    0% {
+        opacity: 0;
+        height: 6px;
+    }
+
+    40% {
+        opacity: 1;
+        height: 10px;
+    }
+
+    80% {
+        transform: translate(0, 20px);
+        height: 10px;
+        opacity: 0;
+    }
+
+    100% {
+        height: 3px;
+        opacity: 0;
+    }
+}
+
+@keyframes pulse54012 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
     }
 }
 
 .wrapperOne {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
     width: 94%;
-    margin:0 auto;
+    margin: 0 auto;
     position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;  
     z-index: 1;
+    min-height: 100vh;
 }
 
 .navMobile {
     display: flex;
     width: 91%;
-    margin:0 auto;
+    margin: 0 auto;
     padding-top: 28px;
     position: relative;
 }
 
 .hambu {
-    width:29px;
+    width: 29px;
     height: 4px;
     background-color: white;
     border-radius: 50px;
@@ -51,61 +94,41 @@
     transition: all 0.5s ease-in-out;
 }
 
-.hambu::after  {
-    content:"";
-    width:22px;
+.hambu::after {
+    content: '';
+    width: 22px;
     height: 100%;
     position: absolute;
     background-color: white;
-    top:190%;
+    top: 190%;
     border-radius: 50px;
 }
 
 .hambu::before {
-    content:"";
-    width:100%;
+    content: '';
+    width: 100%;
     height: 100%;
     position: absolute;
     background-color: white;
-    top:390%;
+    top: 390%;
     border-radius: 50px;
     transition: all 0.5s;
 }
 
-.active.hambu::after {
-    display: none;
-}
-
-.active.hambu {
-    transform:rotate(40deg);
-    transform-origin: 0;
-    background-color: var(--water_green);
-    width: 32px;
-}
-
-.active.hambu::before {
-    background-color: var(--orange);
-    transform: rotate(100deg);
-    top:0%;
-}
-.active.containMobile {
-    opacity: 1;
-}
-
 .containMobile {
     position: absolute;
-    width: 100%;
-    background-color: black;
-    top:0%;
-    height: 95vh;
+    transition: all 0.5s ease-in-out;
+    top: 0%;
+    height: 100vh;
     width: 110%;
-    left:-5%;
-    display: none;
+    left: -5%;
     justify-content: center;
     align-items: center;
     z-index: 100;
     opacity: 0;
-    transition: all 0.5s;
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+    display: none;
 }
 
 .containMobile nav {
@@ -120,13 +143,13 @@
     height: 60%;
 }
 
-.containMobile nav li{
-   list-style: none;
-   text-align: center;
-   display: flex;
-   flex:1;
-   height: 35%;
-   align-items: center;
+.containMobile nav li {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    height: 35%;
+    align-items: center;
 }
 
 .containMobile nav a {
@@ -140,28 +163,37 @@
     font-size: 1.6em;
     text-transform: uppercase;
     color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.containMobile nav a:hover {
+    color: var(--water_green);
 }
 
 .nav {
-    flex:100%;
+    height: 100%;
 }
 
 #nav {
+    height: 100%;
     padding-top: 20px;
     width: 98%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    transition: all 0.5s ease-in-out;
 }
 
 .logo {
-    flex:100%;
+    flex: 100%;
     display: flex;
     justify-content: center;
 }
 
 #logo {
     width: 60%;
-    max-width: 250px;
+    max-width: 210px;
+    transition: all 0.5s ease-in-out;
 }
 
 #logo img {
@@ -169,60 +201,65 @@
 }
 
 .navBar {
-    flex:50%;
-    display:none;
+    flex: 50%;
+    display: none;
     align-items: center;
     justify-content: flex-end;
 }
 
 .navBar nav {
     width: 90%;
-    max-width: 482px;
+    padding-right: 70px;
+    justify-content: flex-end;
     display: flex;
-    justify-content: space-evenly;
+    column-gap: 3vh;
     align-items: center;
 }
 
 .navBar a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
     transition: all 0.5s ease-in-out;
-    border-bottom: 4px solid transparent;
 }
 
-.navBar a:hover {
-    border-bottom: 4px solid var(--water_green);
+/* navScroll */
+.navScroll {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: grid;
+    transition: all 0.5s ease-in-out;
 }
 
 .cta {
-    flex:100%;
-    /* background-image: url("../../assets/img/images/hero.jpg");
-    background-size:100% 90%;
-    background-repeat: no-repeat;
-    background-position: center center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #cta {
-    width:90%;
-    max-width: 840px;
-    margin:0 auto;
-    padding-bottom: 50px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
 }
 
 h1 {
-    padding-top: 30px;
     color: #fff;
     font-size: var(--title__sizeHeroMobile);
     line-height: 80px;
+    text-align: center;
 }
 
 #hello {
-  animation: hello 4s infinite alternate;    
-  font-size: 1em;
+    animation: hello 4s infinite alternate;
+    font-size: 1em;
 }
 
 #im {
@@ -233,70 +270,38 @@ h1 {
 #denis {
     letter-spacing: 3px;
     background-color: transparent;
-    color: black;
+    color: rgb(11, 11, 11);
     mix-blend-mode: screen;
-    text-shadow: 0px 0px 8px #00ffff, 0px 0px 10px #00ffff,  0px 0px 10px #00ffff,  0px 0px 10px #00ffff,  0px 0px 10px #fff;
+    text-shadow: 0px 0px 8px #00ffff, 0px 0px 10px #00ffff, 0px 0px 10px #00ffff,
+        0px 0px 10px #00ffff, 0px 0px 10px #fff;
     animation: denis 2s linear infinite;
 }
 
 #cta p {
     padding-top: 20px;
-    width: 60%;
-    margin:0 auto;
-    color:rgba(255, 255, 255, 0.609);
+    width: 90%;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.609);
     font-size: var(--para__heroMobile);
     letter-spacing: 4px;
     padding-bottom: 60px;
     line-height: 32px;
-}
-
-.cta__link {
-    background: transparent;
-    color:var(--water_green);
-    font-size: var(--button__sizeHeroMobile);
-    cursor: pointer;
-    text-decoration: none;
-    letter-spacing: 2px;
-    padding: 15px 30px 15px 30px;
-    font-weight: 600;
-    border:4px solid var(--water_green);
-    box-shadow: 0px 0px 10px 3px var(--water_green);
-    transition: all 0.5s;
-}
-
-.cta__link:hover {
-     border:4px solid white;
-     background-color: rgba(0, 0, 0, 0.8);
-     box-shadow: 0px 0px 13px 3px white;
-}
-
-.redes {
-    flex:100%;
-}
-
-#redes {
-    padding-top: 0px;
-    padding-bottom: 80px;
-    width: 100%;
-    margin:0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    text-align: center;
 }
 
 .red {
-    width: 30%;
-    max-width: 120px;
-    min-height: 200px;
+    width: 80%;
+    max-width: 270px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-around;
 }
 
-.red svg path{
-    fill:white;
+.red svg path {
+    fill: var(--water_green);
     transition: all 0.5s;
 }
 
@@ -304,7 +309,8 @@ h1 {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    stroke:#fff;
+    stroke: var(--water_green);
+    border-radius: 50%;
 }
 
 .red svg:hover path {
@@ -318,7 +324,7 @@ h1 {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 
@@ -326,23 +332,109 @@ canvas {
     display: block;
 }
 
-@media screen and (min-width:440px) {
-    /* .wrapperOne {
-        background-image: url("../../assets/img/images/hero.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;  
-    } */
+.chevrons {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--colorArrow);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+@media (prefers-reduced-motion: no-preference) and (max-width: 699px) {
+    .active #logo {
+        margin-top: -25px;
+        max-width: 140px;
+    }
+
+    .active .navMobile {
+        padding-top: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .active.hambu::after {
+        display: none;
+    }
+
+    .active.hambu {
+        transform: rotate(40deg);
+        transform-origin: 0;
+        background-color: var(--water_green);
+        width: 32px;
+    }
+
+    .active.hambu::before {
+        background-color: var(--orange);
+        transform: rotate(100deg);
+        top: 0%;
+    }
+    .active.containMobile {
+        opacity: 1;
+    }
+
+    .active.navScroll {
+        height: 64px;
+        background-color: rgb(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        transition: all 0.5s ease-in-out;
+        box-shadow: 0px 0px 8px var(--water_green);
+    }
+
+    .active #logo {
+        max-width: 140px;
+    }
+
+    .active #nav {
+        padding-top: 0;
+    }
+
+    .active .navBar a {
+        font-size: 1.1em;
+        padding-bottom: 0;
+    }
+
+    .active.navBarLinks {
+        border-bottom: 3px solid var(--orange);
+    }
+
+    .chevrondown:nth-child(odd) {
+        animation: pulse54012 500ms ease infinite alternate;
+    }
+
+    .chevrondown:nth-child(even) {
+        animation: pulse54012 500ms ease infinite alternate 250ms;
+    }
+}
+
+@media screen and (min-width: 440px) {
     .cta {
         background-image: none;
     }
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
     .logo {
         flex: 50%;
         justify-content: flex-start;
+    }
+    #cta p {
+        width: 60%;
     }
     .navBar {
         display: flex;
@@ -353,7 +445,7 @@ canvas {
     }
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
     h1 {
         font-size: 3.5em;
     }
@@ -364,16 +456,15 @@ canvas {
     }
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width: 900px) {
     #cta {
         text-align: start;
-        padding-bottom: 60px;
     }
 
     #cta p {
         width: 100%;
         line-height: normal;
-        padding-bottom: 70px;
+        /* padding-bottom: 70px; */
         font-size: var(--para__hero);
     }
 
@@ -383,15 +474,6 @@ canvas {
 
     h1 {
         line-height: 120px;
-        padding-top: 75px;
         font-size: var(--title__sizeHero);
-    } 
-}
-
-@media screen and (min-width:1900px) {
-    .wrapperOne {
-        background-size:50% ;
-        background-image: none;
-
     }
 }
