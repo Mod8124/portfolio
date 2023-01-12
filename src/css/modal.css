@@ -91,7 +91,7 @@
 .modalImg__github {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     min-height: 45px;
 }
 
@@ -110,8 +110,8 @@
 }
 
 .modalImg__linkSvg svg {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
 .modalImg__linkSvg svg path {
