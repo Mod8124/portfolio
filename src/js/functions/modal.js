@@ -16,6 +16,8 @@ export function modalDisplay(index) {
     doc.style.setProperty('--modal__heigth', `${window.innerHeight}px`);
 
     //modal display
+    document.body.style.overflow = 'hidden'; // hide scroll bar
+
     modal.style.display = 'block';
     modalImg.src = `${imgLinks[index].img}`;
     modalGithub.href = `${imgLinks[index].github}`;
@@ -52,6 +54,7 @@ export function modalNotDisplay(e) {
         e.target.classList.contains('modalImg__github') ||
         e.target.classList.contains('modalImg__imgContainer')
     ) {
+        document.body.style.overflow = 'auto'; // auto scroll bar
         modal.style.display = 'none';
     }
 }

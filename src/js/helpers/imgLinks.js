@@ -45,7 +45,7 @@ const imgLinks = [
         icons: ['Vue', 'Vuex', 'Vue-Router', 'Sass'],
         title: 'Shoes E-commerce',
         info: {
-            EN: 'Developed an e-commerceapp ,and built API for providing all the products, utilizing NodeJs on the server-side, and the client-side with Vue via an API. Implemented design features, state management, router, and CSS methodology like BEM in SASS.',
+            EN: 'Developed an e-commerce app ,and built API for providing all the products, utilizing NodeJs on the server-side, and the client-side with Vue via an API. Implemented design features, state management, router, and CSS methodology like BEM in SASS.',
             ES: 'Desarrolle un e-commerce app, y construí una API para proveer todos los productos, utilizando NodeJs en el lado del servidor, y en el lado del cliente con Vue através de una API. implementado principio de diseño, gestión de estados(vuex), rutas, y aplicando metodologías de CSS como Bem en Sass.'
         }
     },
@@ -86,7 +86,7 @@ const imgLinks = [
     {
         img: './assets/img/images/clone-netflix.jpg',
         github: 'https://github.com/Mod8124/Netflix-clone-with-next-js.git',
-        url: 'https://netflix-clone-mod8124.vercel.app',
+        url: 'https://netflix-clone-three-ochre.vercel.app',
         icons: ['NextJs', 'NodeJs', 'Css-Modules'],
         title: 'Netflix-Clone',
         info: {
