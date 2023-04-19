@@ -3,7 +3,7 @@ const imgLinks = [
     {
         img: './assets/img/images/AnimeBlog.jpg',
         github: 'https://github.com/Mod8124/blogAnime-node.git',
-        url: 'https://blog-anime-node.herokuapp.com',
+        url: 'https://bloganime-node-production.up.railway.app/',
         icons: ['Nodejs', 'MongoDB', 'Webpack'],
         title: 'Blog-App',
         info: {
