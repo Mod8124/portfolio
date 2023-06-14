@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 const frontImgLinks = [
     {
-        img: './assets/img/images/lugaraccesible.jpg',
+        img: './assets/img/images/lugarAccesible.jpg',
         github: 'https://github.com/Mod8124/LugarAccesible',
         url: 'https://lugar-accesible.vercel.app',
         icons: ['React', 'Redux', 'tailwindcss', 'React-testing-library'],
