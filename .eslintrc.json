@@ -30,6 +30,7 @@
         ]
     },
     "ignorePatterns": [
-        "/src/js/particles.js"
+        "/src/js/particles.js",
+        "/webpack.config.js"
     ]
 }

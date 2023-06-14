@@ -67,14 +67,12 @@
 }
 
 .skills__paragraph {
-    color: white;
+    color: var(--white);
     font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 14px;
 }
-/* modify */
 
 @media screen and (min-width: 500px) {
     .skills__container {

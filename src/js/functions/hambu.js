@@ -1,6 +1,6 @@
 export const hambu = document.querySelector('.hambu');
-const containerMobile = document.querySelector('.containMobile');
 export const menuLinksMobile = document.querySelectorAll('.menuLink__link');
+const containerMobile = document.querySelector('.containMobile');
 
 export function toggleHambu() {
     if (hambu.classList.contains('active')) {

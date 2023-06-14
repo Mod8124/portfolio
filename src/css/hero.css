@@ -73,6 +73,12 @@
     position: relative;
     z-index: 1;
     min-height: 100vh;
+    background-color: black;
+    background-image: radial-gradient(
+        circle,
+        hsla(0, 3%, 6%, 0.678) 0%,
+        black 56%
+    );
 }
 
 .navMobile {
@@ -218,7 +224,7 @@
 
 .navBar a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     font-weight: 600;
     font-size: 1.1em;
     padding-bottom: 10px;
@@ -251,7 +257,7 @@
 }
 
 h1 {
-    color: #fff;
+    color: var(--white);
     font-size: var(--title__sizeHeroMobile);
     line-height: 80px;
     text-align: center;
@@ -422,15 +428,9 @@ canvas {
     }
 }
 
-@media screen and (min-width: 440px) {
-    .cta {
-        background-image: none;
-    }
-}
-
 @media screen and (min-width: 700px) {
     .logo {
-        flex: 50%;
+        flex: 1;
         justify-content: flex-start;
     }
     #cta p {
@@ -464,7 +464,6 @@ canvas {
     #cta p {
         width: 100%;
         line-height: normal;
-        /* padding-bottom: 70px; */
         font-size: var(--para__hero);
     }
 
