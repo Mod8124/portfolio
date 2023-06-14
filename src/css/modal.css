@@ -45,10 +45,10 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    object-fit: cover;
     border-radius: 14px;
     border: 10px solid black;
     box-shadow: 0px 0px 12px #fff;
+    object-fit: 100%;
 }
 
 .modalImg__info {
@@ -110,8 +110,8 @@
 }
 
 .modalImg__linkSvg svg {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
 }
 
 .modalImg__linkSvg svg path {
@@ -127,19 +127,23 @@
 }
 
 .modalImg__link {
-    background-color: var(--water_green);
+    background-color: rgb(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 8px white;
+    border-top: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .modalImg__linkLink {
-    color: black;
+    color: white;
     font-weight: 700;
     padding-bottom: 4px;
     text-decoration: none;
-    border-bottom: 3px solid black;
     text-align: center;
+    border-bottom: 2px solid white;
 }
 
 /* new */

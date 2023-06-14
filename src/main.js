@@ -6,7 +6,7 @@ import {
     modal,
     modalDisplay,
     modalNotDisplay,
-    projects,
+    projects
 } from './js/functions/modal.js';
 import {
     btnAccesibility,
@@ -16,9 +16,13 @@ import {
     colorSelect__secondary,
     handleToggleAccesibility,
     handleRestartColors,
-    handleColor,
+    handleColor
 } from './js/functions/accesibility.js';
 import { languageBtns, handleLanguage } from './js/functions/language.js';
+import {
+    btnProjects,
+    handleClickFilterProject
+} from './js/functions/project.js';
 
 window.addEventListener('load', handleLoading);
 window.addEventListener('scroll', handleScroll);
@@ -49,5 +53,10 @@ menuLinksMobile.forEach((button) => {
     button.addEventListener('click', toggleHambu);
 });
 
-// //animation
+// animation
 hiddenElements.forEach((el) => observer.observe(el));
+
+// button filter project
+btnProjects.forEach((btn) =>
+    btn.addEventListener('click', handleClickFilterProject)
+);

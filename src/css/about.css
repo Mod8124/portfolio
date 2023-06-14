@@ -51,19 +51,24 @@
 .about__container p {
     font-size: var(--body__sizeMobile);
     padding-bottom: 50px;
-    color: white;
+    color: var(--white);
     line-height: 32px;
 }
 
 .about__para a {
     color: var(--orange);
-    text-decoration: none;
     transition: all 0.5s ease-in-out;
     border-bottom: 1px solid transparent;
+    text-decoration: none;
 }
 
 .about__para a:hover {
     border-bottom: 1px solid var(--orange);
+}
+
+.about__focus {
+    color: var(--orange);
+    font-weight: bold;
 }
 
 .mainButton {

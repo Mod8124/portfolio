@@ -1,44 +1,44 @@
 @keyframes loading {
-    0%{
+    0% {
         width: 0%;
         box-shadow: 0px 0px 6px 1px #fff;
-        background-color: #fff ;
-      }
-      25%{
-          width: 25%;
-          box-shadow: 0px 0px 6px 1px #fff;
-          background-color: #fff;
-      }
-      50%{
-          width: 50%;
-          box-shadow: 0px 0px 6px 1px #00ffff;
-          background-color:#00ffff;
-      }
+        background-color: #fff;
+    }
+    25% {
+        width: 25%;
+        box-shadow: 0px 0px 6px 1px #fff;
+        background-color: #fff;
+    }
+    50% {
+        width: 50%;
+        box-shadow: 0px 0px 6px 1px #00ffff;
+        background-color: #00ffff;
+    }
 
-      75%{
+    75% {
         width: 75%;
         box-shadow: 0px 0px 8px 1px #00ffff;
         background-color: #00ffff;
     }
 
-      100%{
+    100% {
         width: 100%;
-        box-shadow: 0px 0px 14px 1px #00ffff ;
+        box-shadow: 0px 0px 14px 1px #00ffff;
         background-color: #00ffff;
     }
 }
 
 @keyframes loadingScreen {
-   from {
-    opacity: 1;
-    display: flex;
-    clip-path: inset(0 0 0 0);
-   }
-   to {
-    opacity: 0;
-    display: none;
-    clip-path: inset(45% 0 55% 0);
-   }
+    from {
+        opacity: 1;
+        display: flex;
+        clip-path: inset(0 0 0 0);
+    }
+    to {
+        opacity: 0;
+        display: none;
+        clip-path: inset(45% 0 55% 0);
+    }
 }
 
 .loading {
@@ -49,8 +49,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     transition: all 0.5s;
     z-index: 10;
     animation: 0.1s loadingScreen ease-in-out forwards;
@@ -66,7 +66,7 @@
 
 .loading__logo {
     max-width: 200px;
-    margin:0 auto;
+    margin: 0 auto;
     padding-bottom: 20px;
 }
 
@@ -74,7 +74,7 @@
     height: 6px;
     width: 90%;
     max-width: 600px;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: rgb(197, 194, 194);
     border-radius: 50px;
 }
@@ -83,7 +83,5 @@
     height: 100%;
     border-radius: 50px;
     box-shadow: 0px 0px 14px 1px #fff;
-    animation: 0.8s loading ease-in-out  forwards;
+    animation: 0.8s loading ease-in-out forwards;
 }
-
-
