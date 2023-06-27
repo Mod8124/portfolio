@@ -1,4 +1,5 @@
 import images from '../helpers/projectsInfo.js';
+import { createAlert, isServerOut } from './alert.js';
 export const modal = document.querySelector('.modalImg');
 const navScroll = document.querySelector('.navScroll');
 const englishBtn = document.querySelector('.btn__language');
@@ -12,6 +13,22 @@ const modalSkills = document.querySelector('.modalImg__skills');
 const infoName = document.querySelector('.modalImg__infoShow--name');
 const info = document.querySelector('.modalImg__infoShow--para');
 const imgLinks = images.frontImgLinks;
+
+// check if the hoisting server is working
+export const handleURl = (event, server) => {
+    event.preventDefault();
+    const url = event.currentTarget.href;
+
+    if (!server) return window.open(url, '_blank');
+
+    const isLimit = isServerOut();
+
+    console.log(isLimit);
+
+    if (isLimit) return createAlert();
+
+    window.open(url, '_blank');
+};
 
 export function modalDisplay(index) {
     // hide the navBar if is active(top === '0px')
@@ -34,6 +51,12 @@ export function modalDisplay(index) {
     modalLink.href = `${imgLinks[index].url}`;
     modalSkills.innerHTML = createSkills(index);
 
+    if (imgLinks[index].serverHosting) {
+        modalLink.setAttribute('data-hosting', true);
+    } else {
+        modalLink.setAttribute('data-hosting', false);
+    }
+
     if (englishBtn.classList.contains('active')) {
         info.innerHTML = imgLinks[index].info.EN;
         infoName.innerHTML = imgLinks[index].title.EN;
@@ -42,6 +65,12 @@ export function modalDisplay(index) {
         infoName.innerHTML = imgLinks[index].title.ES;
     }
 }
+
+// check before send it the user to a new url if it's server hosting
+modalLink.addEventListener('click', (event) => {
+    const isServerHosting = event.target.dataset.hosting === 'true' && true;
+    handleURl(event, isServerHosting);
+});
 
 // set skills icons to modal
 export function createSkills(index) {

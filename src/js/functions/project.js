@@ -1,7 +1,9 @@
 export const btnProjects = document.querySelectorAll('.projects__btnOption');
+export const projectsBack = document.querySelectorAll('.project__back--demo');
 const projectsBackSection = document.querySelector('.projects__back');
 const projectsFrontSection = document.querySelector('.work__container');
 
+// set active class on button project section
 const removeActive = () => {
     btnProjects.forEach((btn) => btn.classList.remove('active'));
 };

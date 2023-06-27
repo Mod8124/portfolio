@@ -12,7 +12,8 @@ const frontImgLinks = [
         info: {
             EN: 'Web platform focused on accessibility, which allows people with reduced mobility to obtain information about the accessibility of public and private spaces based on their location. Third-party APIs will be used to gather geolocation information and accessibility details from various places.',
             ES: 'Plataforma web enfocada a la accesibilidad, que permite a las personas con movilidad reducida obtener información sobre la accesibilidad de los espacios públicos y privados en función de su ubicación. Se utilizarán API de terceros para recopilar información de geolocalización y detalles de accesibilidad de varios lugares.'
-        }
+        },
+        serverHosting: true
     },
     {
         img: './assets/img/images/appstudent.jpg',
@@ -73,7 +74,8 @@ const frontImgLinks = [
         info: {
             EN: 'Developed and designed a blog app with authenticating, utilizing NodeJs by storing all the data on MongoDB, And the client-side ejs, while implementing MVC. Improved user experience during app by using things like dark mode to improve the usability.',
             ES: 'Desarrolle y Diseñe un blog app con autenticación, utilizando NodeJs, almacenando todos los datos en MongoDB, y en lado del cliente el template Ejs mientras implemento MVC. Mejorando la ux durante la app, usando modo oscuro para la accesibilidad.'
-        }
+        },
+        serverHosting: true
     },
     {
         img: './assets/img/images/moon.jpg',
