@@ -137,7 +137,7 @@ const frontImgLinks = [
         img: './assets/img/images/ajedrez.jpg',
         github: 'https://github.com/Mod8124/ChessWebsite.git',
         url: 'https://chess-website.vercel.app',
-        icons: ['HTML', 'CSS', 'JavaScript'],
+        icons: ['TypeScript', 'CSS', 'GSAP'],
         title: {
             EN: 'Chess-WebSite',
             ES: 'Ajedrez-sitioWeb'

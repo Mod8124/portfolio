@@ -9,10 +9,12 @@ const removeActive = () => {
 };
 
 export const handleClickFilterProject = (event) => {
-    removeActive(); // remove the class
     const btn = event.target;
     const filter = btn.dataset.filter;
+
     if (filter === 'game') return;
+
+    removeActive(); // remove the class
 
     btn.classList.add('active');
 
