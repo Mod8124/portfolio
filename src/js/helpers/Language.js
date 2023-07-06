@@ -7,6 +7,15 @@ export const Language = () => {
             im: "I'm",
             web: 'Front End Developer & Web designer'
         },
+        accesibilty: {
+            main: {
+                title: 'Main Color'
+            },
+            secondary: {
+                title: 'Secondary Color'
+            },
+            restart: 'Restart Color'
+        },
         about: {
             title: 'About Me',
             para: [
@@ -42,6 +51,15 @@ export const Language = () => {
             hello: 'Hola,',
             im: 'Soy',
             web: 'Desarrollador Front End & Diseñador Web'
+        },
+        accesibilty: {
+            main: {
+                title: 'Color Primario'
+            },
+            secondary: {
+                title: 'Color Secondario'
+            },
+            restart: 'Restaurar color'
         },
         about: {
             title: 'Sobre mí',

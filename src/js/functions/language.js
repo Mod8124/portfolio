@@ -13,6 +13,10 @@ const hello = document.querySelector('#hello');
 const im = document.querySelector('#im');
 const para = document.querySelector('.cta__para');
 
+// accesibility btn
+const titlesAccesibility = document.querySelectorAll('.colorSelect__title');
+const btnsColorAccesibility = document.querySelectorAll('.colorSelect__over');
+
 // about
 const aboutTitle = document.querySelector('.about__title');
 const aboutPara = document.querySelectorAll('.about__para');
@@ -74,6 +78,14 @@ export const language = (englishActive) => {
 
         skillsTitle.innerHTML = EN.skills['title'];
 
+        // accesibility section
+        titlesAccesibility[0].innerHTML = EN.accesibilty.main.title;
+        titlesAccesibility[1].innerHTML = EN.accesibilty.secondary.title;
+
+        btnsColorAccesibility.forEach(
+            (btn) => (btn.innerHTML = EN.accesibilty.restart)
+        );
+
         //projects
         projectsTitle.innerHTML = EN.projects['title'];
         btnGame.innerHTML = EN.projects['btn'];
@@ -112,6 +124,14 @@ export const language = (englishActive) => {
         btnDownload.href = './assets/img/resume_denisSP.pdf';
 
         skillsTitle.innerHTML = ES.skills['title'];
+
+        // accesibility section
+        titlesAccesibility[0].innerHTML = ES.accesibilty.main.title;
+        titlesAccesibility[1].innerHTML = ES.accesibilty.secondary.title;
+
+        btnsColorAccesibility.forEach(
+            (btn) => (btn.innerHTML = ES.accesibilty.restart)
+        );
 
         // projects
         projectsTitle.innerHTML = ES.projects['title'];
