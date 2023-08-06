@@ -66,4 +66,3 @@ btnProjects.forEach((btn) =>
 projectsBack.forEach((project) =>
     project.addEventListener('click', (event) => handleURl(event, true))
 );
-// handleURl(event, true);
