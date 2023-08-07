@@ -2,7 +2,7 @@
     .hidden.title__title,
     .hidden.work_img {
         opacity: 0;
-        transition: opacity 0.5s ease-in;
+        transition: all 0.5s ease-in;
     }
 
     .hidden.work_img {
