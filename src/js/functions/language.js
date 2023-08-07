@@ -29,9 +29,6 @@ const skillsTitle = document.querySelector('.skills__title');
 // projects
 const projectsTitle = document.querySelector('.title__title');
 const btnGame = document.querySelector('.projectBtn-game');
-// projects--back
-const projectsBackTitle = document.querySelectorAll('.project__backTitle');
-const projectsBackInfo = document.querySelectorAll('.project__backParagraph');
 
 // contact
 const contactTitle = document.querySelector('.tittleTwo__title h2');
@@ -87,6 +84,12 @@ export const language = (englishActive) => {
         );
 
         //projects
+        const projectsBackTitle = document.querySelectorAll(
+            '.project__backTitle'
+        );
+        const projectsBackInfo = document.querySelectorAll(
+            '.project__backParagraph'
+        );
         projectsTitle.innerHTML = EN.projects['title'];
         btnGame.innerHTML = EN.projects['btn'];
         projectsBackTitle.forEach(
@@ -134,6 +137,12 @@ export const language = (englishActive) => {
         );
 
         // projects
+        const projectsBackTitle = document.querySelectorAll(
+            '.project__backTitle'
+        );
+        const projectsBackInfo = document.querySelectorAll(
+            '.project__backParagraph'
+        );
         projectsTitle.innerHTML = ES.projects['title'];
         btnGame.innerHTML = ES.projects['btn'];
         projectsBackTitle.forEach(

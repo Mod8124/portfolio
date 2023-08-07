@@ -1,6 +1,5 @@
 import { svgFile, svgGithub, svgLink } from '../helpers/SvgFiles.js';
 const englishBtn = document.querySelector('.btn__language');
-const lng = englishBtn.classList.contains('active') ? 'EN' : 'ES';
 
 const CreateStacks = (icons) => {
     return icons
@@ -23,6 +22,7 @@ const CreateStacks = (icons) => {
 export const CardBack = (project) => {
     const { github, icons, info, title, url } = project;
     const stackIconsHTML = CreateStacks(icons);
+    const lng = englishBtn.classList.contains('active') ? 'EN' : 'ES';
     return `<article class="project__back">
                   <div class="project__back--links">
                         ${svgFile}
