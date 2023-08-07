@@ -27,7 +27,7 @@ const btnDownload = document.querySelector('.mainButton');
 const skillsTitle = document.querySelector('.skills__title');
 
 // projects
-const projectsTitle = document.querySelector('.title__title h2');
+const projectsTitle = document.querySelector('.title__title');
 const btnGame = document.querySelector('.projectBtn-game');
 // projects--back
 const projectsBackTitle = document.querySelectorAll('.project__backTitle');

@@ -43,7 +43,7 @@ export const handleScroll = () => {
             modalAccesibility.classList.remove('active');
             btnAccesibility.style.right = '0px';
             btnAccesibility.querySelector('.accesibility__img').src =
-                './assets/img/images/icon-acebi.svg';
+                './assets/img/icons/icons/icon__acebi.svg';
         }
     }
 

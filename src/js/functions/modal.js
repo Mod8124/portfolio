@@ -1,5 +1,7 @@
 import images from '../helpers/projectsInfo.js';
-import { createAlert, isServerOut } from './alert.js';
+import { createAlert } from '../components/Alert.js';
+import { isServerOut } from './alert.js';
+import { createSkills } from '../components/Modal.js';
 export const modal = document.querySelector('.modalImg');
 const navScroll = document.querySelector('.navScroll');
 const englishBtn = document.querySelector('.btn__language');
@@ -22,8 +24,6 @@ export const handleURl = (event, server) => {
     if (!server) return window.open(url, '_blank');
 
     const isLimit = isServerOut();
-
-    console.log(isLimit);
 
     if (isLimit) return createAlert();
 
@@ -71,23 +71,6 @@ modalLink.addEventListener('click', (event) => {
     const isServerHosting = event.target.dataset.hosting === 'true' && true;
     handleURl(event, isServerHosting);
 });
-
-// set skills icons to modal
-export function createSkills(index) {
-    return imgLinks[index].icons
-        .map((icon) => {
-            let lowerICons = icon.toLowerCase();
-            if (lowerICons === 'rtk query') lowerICons = 'redux';
-            if (lowerICons === 'vue-router') lowerICons = 'vue';
-            return `
-      <span class="modalImg__skill">
-      <img class="modalImg__skillImg" src="./assets/img/icons/icon-${lowerICons}.svg" alt="">
-      <h5>${icon}</h5>
-      </span>
-    `;
-        })
-        .join('');
-}
 
 export function modalNotDisplay(e) {
     if (

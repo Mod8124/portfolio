@@ -22,10 +22,10 @@ export function handleToggleAccesibility(e) {
 
     if (modalAccesibility.classList.contains('active')) {
         btnAccesibility.querySelector('.accesibility__img').src =
-            './assets/img/images/icon-close.svg';
+            './assets/img/icons/icons/icon__close.svg';
     } else {
         btnAccesibility.querySelector('.accesibility__img').src =
-            './assets/img/images/icon-acebi.svg';
+            './assets/img/icons/icons/icon__acebi.svg';
         btnAccesibility.style.right = '0px';
     }
 }

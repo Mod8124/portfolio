@@ -6,8 +6,7 @@ import {
     modal,
     modalDisplay,
     modalNotDisplay,
-    projects,
-    handleURl
+    projects
 } from './js/functions/modal.js';
 import {
     btnAccesibility,
@@ -22,8 +21,7 @@ import {
 import { languageBtns, handleLanguage } from './js/functions/language.js';
 import {
     btnProjects,
-    handleClickFilterProject,
-    projectsBack
+    handleClickFilterProject
 } from './js/functions/project.js';
 
 window.addEventListener('load', handleLoading);
@@ -61,8 +59,4 @@ hiddenElements.forEach((el) => observer.observe(el));
 // project section
 btnProjects.forEach((btn) =>
     btn.addEventListener('click', handleClickFilterProject)
-);
-
-projectsBack.forEach((project) =>
-    project.addEventListener('click', (event) => handleURl(event, true))
 );

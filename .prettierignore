@@ -1,2 +1,4 @@
 dist
-src/js/particles.js
+/src/js/particles.js
+/particle.json
+/particlesDefault.json

@@ -180,19 +180,20 @@ const frontImgLinks = [
 const backImgLinks = [
     {
         github: 'https://github.com/Mod8124/LugarAccesible-back',
-        url: 'https://calculator-react-type-script.vercel.app',
+        url: 'https://lugaraccesible-back-production.up.railway.app',
         title: {
             EN: 'LugarAccesibleAPI',
             ES: 'LugarAccesibleAPI'
         },
         info: {
             EN: 'A simple API that provide accessibility information based on location for people with reduced mobility',
-            ES: ' Simple API que proporciona información de accesibilidad según la ubicación para personas con movilidad reducida'
-        }
+            ES: 'Simple API que proporciona información de accesibilidad según la ubicación para personas con movilidad reducida'
+        },
+        icons: ['NodeJs', 'Fastify', 'Zod', 'TypeScript', 'Swagger', 'MongoDB']
     },
     {
-        github: 'https://github.com/Mod8124/LugarAccesible-back',
-        url: 'https://calculator-react-type-script.vercel.app',
+        github: 'https://github.com/Mod8124/freeShoesApi',
+        url: 'https://freeshoesapi-production.up.railway.app',
         title: {
             EN: 'FreeShoesAPI',
             ES: 'ZapatosGratisAPI'
@@ -200,11 +201,12 @@ const backImgLinks = [
         info: {
             EN: 'A simple free API that provides a curated collection of 30 shoe collections for e-commerce websites.',
             ES: 'Simple API y gratuita que proporciona una colección de 30 colecciones de zapatos para sitios web de comercio electrónico.'
-        }
+        },
+        icons: ['NodeJs', 'TypeScript', 'Jest', 'Swagger', 'MongoDB']
     },
     {
-        github: 'https://github.com/Mod8124/LugarAccesible-back',
-        url: 'https://calculator-react-type-script.vercel.app',
+        github: 'https://github.com/Mod8124/blogAnime-node',
+        url: 'https://bloganime-node-production.up.railway.app',
         title: {
             EN: 'Blog-Anime',
             ES: 'Blog-Anime'
@@ -212,7 +214,8 @@ const backImgLinks = [
         info: {
             EN: 'A RESTful API following MVC design pattern, Implemented authentication and user-friendly features.',
             ES: 'API RESTful siguiendo el patrón de diseño MVC, autenticación implementada y características fáciles de usar.'
-        }
+        },
+        icons: ['NodeJs', 'MongoDB', 'Webpack', 'EJS']
     }
 ];
 
