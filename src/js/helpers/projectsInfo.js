@@ -13,7 +13,6 @@ const frontImgLinks = [
             EN: 'Web platform focused on accessibility, which allows people with reduced mobility to obtain information about the accessibility of public and private spaces based on their location. Third-party APIs will be used to gather geolocation information and accessibility details from various places.',
             ES: 'Plataforma web enfocada a la accesibilidad, que permite a las personas con movilidad reducida obtener información sobre la accesibilidad de los espacios públicos y privados en función de su ubicación. Se utilizarán API de terceros para recopilar información de geolocalización y detalles de accesibilidad de varios lugares.'
         },
-        serverHosting: true
     },
     {
         img: './assets/img/images/appstudent.jpg',
