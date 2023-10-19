@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 const frontImgLinks = [
     {
-        img: './assets/img/images/lugarAccesible.jpg',
+        img: 'lugarAccesible',
         github: 'https://github.com/Mod8124/LugarAccesible',
         url: 'https://lugar-accesible.vercel.app',
         icons: ['React', 'Redux', 'tailwindcss', 'React-testing-library'],
@@ -12,10 +12,10 @@ const frontImgLinks = [
         info: {
             EN: 'Web platform focused on accessibility, which allows people with reduced mobility to obtain information about the accessibility of public and private spaces based on their location. Third-party APIs will be used to gather geolocation information and accessibility details from various places.',
             ES: 'Plataforma web enfocada a la accesibilidad, que permite a las personas con movilidad reducida obtener información sobre la accesibilidad de los espacios públicos y privados en función de su ubicación. Se utilizarán API de terceros para recopilar información de geolocalización y detalles de accesibilidad de varios lugares.'
-        },
+        }
     },
     {
-        img: './assets/img/images/appstudent.jpg',
+        img: 'appstudent',
         github: 'https://github.com/Mod8124/AppStudent',
         url: 'https://app-student.vercel.app',
         icons: ['React', 'Redux', 'Sass'],
@@ -24,12 +24,12 @@ const frontImgLinks = [
             ES: 'AppEstudiantes'
         },
         info: {
-            EN: 'A web platform that consists to provide tools for students such as todo-list, dictionary to look for English words, Pomodoro, calendar, calculator and wiki searches. All this in only place.',
-            ES: 'Una plataforma web que consiste en proporcionar herramientas para los estudiantes como lista de tareas, diccionario para buscar palabras en inglés, pomodoro, calendario, calculadora y búsquedas en wiki. Todo esto en un solo lugar.'
+            EN: 'A web platform designed to provide tools for students including a todo-list, an English word dictionary,a Pomodoro timer, a calendar, a calculator, and  access to wiki searches . All in one place.',
+            ES: 'Una plataforma web diseñada para ofrecer herramientas a estudiantes, incluyendo una lista de tareas, un diccionario de palabras en inglés, un temporizador Pomodoro, un calendario, una calculadora y acceso a búsquedas en wikis, ¡todo en un solo lugar!'
         }
     },
     {
-        img: './assets/img/images/rock.jpg',
+        img: 'rock',
         github: 'https://github.com/Mod8124/Classic-Rock-paper-scissors.git',
         url: 'https://classic-rock-paper-scissors.vercel.app',
         icons: [
@@ -48,7 +48,7 @@ const frontImgLinks = [
         }
     },
     {
-        img: './assets/img/images/ecommerce.jpg',
+        img: 'ecommerce',
         github: 'https://github.com/Mod8124/ecommerce-vue.git',
         url: 'https://ecommerce-vue-seven.vercel.app',
         icons: ['Vue', 'Vuex', 'Vue-Router', 'TypeScript', 'Sass'],
@@ -62,7 +62,7 @@ const frontImgLinks = [
         }
     },
     {
-        img: './assets/img/images/AnimeBlog.jpg',
+        img: 'AnimeBlog',
         github: 'https://github.com/Mod8124/blogAnime-node.git',
         url: 'https://bloganime-node-production.up.railway.app',
         icons: ['Nodejs', 'MongoDB', 'Ejs', 'Webpack'],
@@ -77,7 +77,7 @@ const frontImgLinks = [
         serverHosting: true
     },
     {
-        img: './assets/img/images/moon.jpg',
+        img: 'moon',
         github: 'https://github.com/Mod8124/space-tourism-nextjs-typescript.git',
         url: 'https://space-tourism-nextjs-typescript.vercel.app',
         icons: ['NextJs', 'TypeScript', 'RTK Query', 'Styled-Components'],
@@ -91,7 +91,7 @@ const frontImgLinks = [
         }
     },
     {
-        img: './assets/img/images/rest-country.jpg',
+        img: 'rest-country',
         github: 'https://github.com/Mod8124/rest-countries-vue.git',
         url: 'https://rest-countries-mv56ciqhj-mod8124.vercel.app',
         icons: ['Vue', 'Vue-Router', 'Sass'],
@@ -105,7 +105,7 @@ const frontImgLinks = [
         }
     },
     {
-        img: './assets/img/images/clone-netflix.jpg',
+        img: 'clone-netflix',
         github: 'https://github.com/Mod8124/Netflix-clone-with-next-js.git',
         url: 'https://netflix-clone-three-ochre.vercel.app',
         icons: ['NextJs', 'NodeJs', 'Css-Modules'],
@@ -119,7 +119,7 @@ const frontImgLinks = [
         }
     },
     {
-        img: './assets/img/images/jhonny.jpg',
+        img: 'jhonny',
         github: 'https://github.com/Mod8124/jhonny_webSite.git',
         url: 'https://mod8124.github.io/jhonny_webSite',
         icons: ['HTML', 'Css', 'JavaScript'],
@@ -133,7 +133,7 @@ const frontImgLinks = [
         }
     },
     {
-        img: './assets/img/images/ajedrez.jpg',
+        img: 'ajedrez',
         github: 'https://github.com/Mod8124/ChessWebsite.git',
         url: 'https://chess-website.vercel.app',
         icons: ['TypeScript', 'CSS', 'GSAP'],
@@ -147,7 +147,7 @@ const frontImgLinks = [
         }
     },
     {
-        img: './assets/img/images/food.jpg',
+        img: 'food',
         github: 'https://github.com/Mod8124/Food_webSite.git',
         url: 'https://food-web-site.vercel.app',
         icons: ['HTML', 'CSS', 'JavaScript'],
@@ -161,7 +161,7 @@ const frontImgLinks = [
         }
     },
     {
-        img: './assets/img/images/calculator.jpg',
+        img: 'calculator',
         github: 'https://github.com/Mod8124/Calculator-React-TypeScript.git',
         url: 'https://calculator-react-type-script.vercel.app',
         icons: ['React', 'TypeScript', 'Framer-Motion', 'Styled-Components'],

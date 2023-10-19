@@ -515,6 +515,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-typescript.svg"
                             alt="icon typescript"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">TypeScript</h5>
                     </figure>
@@ -524,6 +525,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-vue.svg"
                             alt="icon vue"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">Vue</h5>
                     </figure>
@@ -533,6 +535,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-react.svg"
                             alt="icon react"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">React</h5>
                     </figure>
@@ -542,6 +545,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-angular.svg"
                             alt="icon angular"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">Angular</h5>
                     </figure>
@@ -551,6 +555,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-mongodb.svg"
                             alt="icon mongodb"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">MongoDB</h5>
                     </figure>
@@ -560,6 +565,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-nodejs.svg"
                             alt="icon nodejs"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">NodeJs</h5>
                     </figure>
@@ -569,6 +575,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-nextjs.svg"
                             alt="icon nextJs"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">NextJs</h5>
                     </figure>
@@ -578,6 +585,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-sass.svg"
                             alt="icon sass"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">Sass</h5>
                     </figure>
@@ -587,6 +595,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-mysql.svg"
                             alt="icon mysql"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">MySQL</h5>
                     </figure>
@@ -596,6 +605,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-docker.svg"
                             alt="icon css"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">Docker</h5>
                     </figure>
@@ -605,6 +615,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-tailwindcss.svg"
                             alt="icon tailwindcss"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">Taildwind</h5>
                     </figure>
@@ -614,6 +625,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-jest.svg"
                             alt="icon jest"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">Jest</h5>
                     </figure>
@@ -623,6 +635,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-photoshop.svg"
                             alt="icon photoshop"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">Adobe Ps</h5>
                     </figure>
@@ -632,6 +645,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-ilustrator.svg"
                             alt="icon ilustrator"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">Adobe Ai</h5>
                     </figure>
@@ -641,6 +655,7 @@
                             class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-figma.svg"
                             alt="icon nodejs"
+                            loading="lazy"
                         />
                         <h5 class="skills__paragraph">Figma</h5>
                     </figure>
@@ -796,9 +811,14 @@
                         </a>
                     </div>
 
-                    <div class="modalImg__imgContainer">
+                    <section class="modalImg__imgContainer">
                         <div class="modalImg__imgInfo">
-                            <img alt="img design" class="modalImg__img" />
+
+
+                            <img class="modalImg__fakeImgLoader"  alt="img design fake"></img>
+
+                            <img alt="img design" decoding="async" class="modalImg__img" />
+                            
                             <article class="modalImg__info">
                                 <h3
                                     class="modalImg__infoShow modalImg__infoShow--name"
@@ -812,7 +832,7 @@
                         <article class="modalImg__skillContainer">
                             <div class="modalImg__skills"></div>
                         </article>
-                    </div>
+                    </section>
 
                     <div class="modalImg__link">
                         <a
@@ -1128,17 +1148,6 @@
 
                     <div class="footerSocial">
                         <nav class="footerSocial__links">
-                            <a href="https://github.com/Mod8124" target="_blank"
-                                ><svg viewBox="0 0 100 100">
-                                    <g fill="#2D2D37">
-                                        <path
-                                            d="M49.773 4.459c-25.352 0-45.977 20.625-45.977 45.977s20.625 45.978 45.977 45.978c25.353 0 45.979-20.625 45.979-45.978S75.126 4.459 49.773 4.459zm0 89.955c-24.249 0-43.977-19.728-43.977-43.978 0-24.249 19.728-43.977 43.977-43.977 24.25 0 43.979 19.728 43.979 43.977 0 24.25-19.729 43.978-43.979 43.978z"
-                                        />
-                                        <path
-                                            d="M49.773 20.952c-16.258 0-29.484 13.228-29.484 29.486 0 12.448 7.877 23.615 19.606 27.788l.318.108a2.68 2.68 0 0 0 3.5-2.621l.002-.058v-4.952a1 1 0 0 0-1.201-.98c-.886.182-2.201.398-3.432.398-1.092 0-1.682-.174-1.985-.32-1.663-.8-2.48-1.762-3.363-3.958-.65-1.624-1.73-2.667-2.633-3.351.438.068.967.25 1.359.7.297.34.612.779.945 1.243 1.288 1.793 3.081 4.285 6.209 3.969 1.398-.146 2.571-.37 3.487-.667a1 1 0 0 0 .685-.835c.151-1.291.54-2.272 1.156-2.917a1 1 0 0 0-.559-1.678c-7.892-1.304-11.893-5.496-11.893-12.459 0-3.272.897-5.961 2.666-7.993a1 1 0 0 0 .23-.831c-.519-2.943-.447-5.336.17-6.236.487-.094 2.402-.144 6.504 2.745a.995.995 0 0 0 .801.157c2.009-.462 4.29-.705 6.779-.72a.94.94 0 0 0 .131-.009l.001.008.065-.001.067.002c2.489.016 4.771.258 6.779.72.275.064.566.007.801-.157 4.118-2.9 6.066-2.815 6.503-2.748.619.896.691 3.292.172 6.24a1 1 0 0 0 .23.831c1.77 2.029 2.666 4.718 2.666 7.992 0 6.963-4.002 11.155-11.894 12.459a1 1 0 0 0-.559 1.678c1.229 1.283 1.229 3.574 1.229 4.327v7.475a2.678 2.678 0 0 0 3.309 2.599c.042-.01.203-.055.268-.076C71.282 74.209 79.26 63.007 79.26 50.438c0-16.259-13.228-29.486-29.487-29.486zm9.013 55.46-.119.033c-.398.099-.834-.229-.834-.656v-7.475c0-.737 0-2.639-.828-4.325 7.895-1.768 12.053-6.631 12.053-14.14 0-3.581-.958-6.584-2.85-8.937.44-2.745.591-6.136-.911-7.674a1.065 1.065 0 0 0-.19-.152c-.39-.24-2.558-1.444-8.407 2.561-2.042-.433-4.32-.66-6.781-.675v.008a1.178 1.178 0 0 0-.145-.01l-.138-.002c-.032 0-.064.001-.096.004-2.426.021-4.674.247-6.691.674-5.851-4.004-8.016-2.801-8.406-2.561a.996.996 0 0 0-.19.153c-1.502 1.539-1.352 4.93-.911 7.673-1.892 2.354-2.85 5.359-2.85 8.938 0 7.508 4.158 12.372 12.052 14.139a7.739 7.739 0 0 0-.643 2.014c-.57.143-1.381.298-2.492.414-1.978.203-3.191-1.496-4.378-3.147-.361-.504-.704-.98-1.063-1.392-.801-.917-1.994-1.423-3.36-1.423-.858 0-1.953.216-2.45.823a1.18 1.18 0 0 0-.257.978c.113.572.576.875 1.162 1.257.854.558 2.145 1.4 2.817 3.077 1.061 2.64 2.24 3.999 4.352 5.015.724.349 1.656.518 2.853.518.901 0 1.827-.099 2.633-.224v3.708a1.118 1.118 0 0 0 0 .183c0 .443-.462.777-.888.642l-.269-.092C29.633 72.451 22.29 62.042 22.29 50.438c0-15.156 12.329-27.486 27.484-27.486 15.156 0 27.486 12.33 27.486 27.486 0 11.717-7.436 22.159-18.474 25.974z"
-                                        />
-                                    </g></svg
-                            ></a>
                             <a
                                 href="mailto:denisenriquebaca@gmail.com"
                                 target="_blank"

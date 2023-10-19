@@ -16,6 +16,7 @@ const infoName = document.querySelector('.modalImg__infoShow--name');
 const info = document.querySelector('.modalImg__infoShow--para');
 const imgLinks = images.frontImgLinks;
 
+const fakeImg = document.querySelector('.modalImg__fakeImgLoader');
 // check if the hoisting server is working
 export const handleURl = (event, server) => {
     event.preventDefault();
@@ -38,6 +39,26 @@ export function modalDisplay(index) {
         navScroll.style.top = `-${navScrollHeight + 8}px`;
     }
 
+    // url imgs
+    const fakeUrl =
+        './assets/img/images/loaders/' + `${imgLinks[index].img}` + '.jpg';
+    const urlImg =
+        './assets/img/images/desktop/' + `${imgLinks[index].img}` + '.webp';
+
+    const img = new Image();
+
+    img.onload = function () {
+        modalImg.src = img.src;
+        modalImg.style.display = 'block';
+        // Fade in the real image
+        modalImg.style.opacity = '1';
+
+        fakeImg.style.opacity = '0';
+        setTimeout(() => (fakeImg.style.display = 'none'), 10);
+    };
+
+    fakeImg.src = fakeUrl;
+
     const doc = document.documentElement;
     doc.style.setProperty('--modal__heigth', `${window.innerHeight}px`);
 
@@ -45,11 +66,12 @@ export function modalDisplay(index) {
     document.body.style.overflow = 'hidden'; // hide scroll bar
 
     modal.style.display = 'block';
-    modalImg.src = `${imgLinks[index].img}`;
     modalGithub.href = `${imgLinks[index].github}`;
     modalLink.textContent = `${imgLinks[index].url}`;
     modalLink.href = `${imgLinks[index].url}`;
     modalSkills.innerHTML = createSkills(index);
+
+    img.src = urlImg;
 
     if (imgLinks[index].serverHosting) {
         modalLink.setAttribute('data-hosting', true);
@@ -79,5 +101,8 @@ export function modalNotDisplay(e) {
     ) {
         document.body.style.overflow = 'auto'; // auto scroll bar
         modal.style.display = 'none';
+        modalImg.style.display = 'none';
+        fakeImg.style.display = 'block';
+        fakeImg.style.opacity = '1';
     }
 }
