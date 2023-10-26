@@ -2,12 +2,15 @@ import images from '../helpers/projectsInfo.js';
 import { createAlert } from '../components/Alert.js';
 import { isServerOut } from './alert.js';
 import { createSkills } from '../components/Modal.js';
+import { createLinkProject } from '../components/LinkProject.js';
+
 export const modal = document.querySelector('.modalImg');
 const navScroll = document.querySelector('.navScroll');
 const englishBtn = document.querySelector('.btn__language');
+
 export const projects = document.querySelectorAll('.work__imgContainer'),
     modalImg = document.querySelector('.modalImg__img'),
-    modalGithub = document.querySelector('.modalImg__linkSvg'),
+    modalGithubContainer = document.querySelector('.modalImg__github'),
     modalLink = document.querySelector('.modalImg__linkLink');
 
 // modal's elements
@@ -62,11 +65,22 @@ export function modalDisplay(index) {
     const doc = document.documentElement;
     doc.style.setProperty('--modal__heigth', `${window.innerHeight}px`);
 
+    // check if the project contains a figma link
+    if (imgLinks[index].figma) {
+        modalGithubContainer.innerHTML =
+            createLinkProject(imgLinks[index].github, 'Github', true) +
+            createLinkProject(imgLinks[index].figma, 'Figma', true);
+    } else {
+        modalGithubContainer.innerHTML = createLinkProject(
+            imgLinks[index].github,
+            'Github'
+        );
+    }
+
     // modal display
     document.body.style.overflow = 'hidden'; // hide scroll bar
 
     modal.style.display = 'block';
-    modalGithub.href = `${imgLinks[index].github}`;
     modalLink.textContent = `${imgLinks[index].url}`;
     modalLink.href = `${imgLinks[index].url}`;
     modalSkills.innerHTML = createSkills(index);

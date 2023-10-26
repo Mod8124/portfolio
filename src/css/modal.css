@@ -113,9 +113,18 @@
     font-size: 1.1em;
 }
 
+.figma.modalImg__linkSvg {
+    max-width: 130px;
+}
+
 .modalImg__linkSvg svg {
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
+}
+
+.figma.modalImg__linkSvg svg {
+    width: 30px;
+    height: 30px;
 }
 
 .modalImg__linkSvg svg path {

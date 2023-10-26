@@ -4,8 +4,8 @@
         "es2021": true
     },
     "extends": [
+        "prettier",
         "eslint:recommended",
-        "prettier"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",

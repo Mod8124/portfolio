@@ -12,7 +12,9 @@ const frontImgLinks = [
         info: {
             EN: 'Web platform focused on accessibility, which allows people with reduced mobility to obtain information about the accessibility of public and private spaces based on their location. Third-party APIs will be used to gather geolocation information and accessibility details from various places.',
             ES: 'Plataforma web enfocada a la accesibilidad, que permite a las personas con movilidad reducida obtener información sobre la accesibilidad de los espacios públicos y privados en función de su ubicación. Se utilizarán API de terceros para recopilar información de geolocalización y detalles de accesibilidad de varios lugares.'
-        }
+        },
+        figma: 'https://www.figma.com/file/K0ipZerZOZLIQVVBnp5Td6/LugarAccesible---Design?type=design&node-id=15-4&mode=design&t=a2PaTcvSR7QZsfDZ-0',
+        serverHosting: true
     },
     {
         img: 'appstudent',
@@ -26,7 +28,8 @@ const frontImgLinks = [
         info: {
             EN: 'A web platform designed to provide tools for students including a todo-list, an English word dictionary,a Pomodoro timer, a calendar, a calculator, and  access to wiki searches . All in one place.',
             ES: 'Una plataforma web diseñada para ofrecer herramientas a estudiantes, incluyendo una lista de tareas, un diccionario de palabras en inglés, un temporizador Pomodoro, un calendario, una calculadora y acceso a búsquedas en wikis, ¡todo en un solo lugar!'
-        }
+        },
+        figma: 'https://www.figma.com/file/jV31lTopBJqpwC6GDecJVF/appStudents?type=design&node-id=519-5314&mode=design&t=ygm6Aw4yV6PDaeeQ-0'
     },
     {
         img: 'rock',
