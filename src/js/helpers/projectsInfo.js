@@ -110,7 +110,7 @@ const frontImgLinks = [
     {
         img: 'clone-netflix',
         github: 'https://github.com/Mod8124/Netflix-clone-with-next-js.git',
-        url: 'https://netflix-clone-three-ochre.vercel.app',
+        url: 'https://netflix-clone-8mqoce0z6-mod8124.vercel.app/',
         icons: ['NextJs', 'NodeJs', 'Css-Modules'],
         title: {
             EN: 'Netflix-Clone',
