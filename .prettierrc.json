@@ -5,5 +5,6 @@
     "singleQuote": true,
     "jsxSingleQuote": true,
     "bracketSpacing": true,
-    "endOfLine": "lf"
+    "endOfLine": "lf",
+    "printWidth": 120
 }

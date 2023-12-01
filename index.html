@@ -5,36 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio | Denis Muñoz Baca</title>
-        <meta
-            name="description"
-            content="Portfolio | Frontend developer & Web designer based on CR"
-        />
+        <meta name="description" content="Portfolio | Frontend developer & Web designer based on CR" />
         <meta property="og:title" content="Portfolio | Denis Muñoz Baca" />
-        <meta
-            property="og:description"
-            content="Portfolio | Frontend developer & Web designer based on CR"
-        />
+        <meta property="og:description" content="Portfolio | Frontend developer & Web designer based on CR" />
         <meta property="og:url" content="https://mod8124.github.io/portfolio" />
-        <link
-            rel="shortcut icon"
-            href="./assets/img/logog.svg"
-            type="image/x-svg"
-            sizes="30x30"
-        />
-        <script src="./dist/js/style.js"></script>
-        <!-- <link rel="stylesheet" href="./src/global.css" /> -->
+        <link rel="shortcut icon" href="./assets/img/logog.svg" type="image/x-svg" sizes="30x30" />
+        <!-- <script src="./dist/js/style.js"></script> -->
+        <link rel="stylesheet" href="./src/global.css" />
     </head>
     <body>
+        <article class="cursor__container">
+            <div class="pointer"></div>
+            <div class="cursor__wrapper"></div>
+        </article>
+        <article class="background">
+            <div class="circle"></div>
+        </article>
         <main class="wrapper">
             <section class="loading active">
                 <!--start loading-->
                 <article class="loading__article">
                     <div class="loading__logo">
-                        <img
-                            alt="logo"
-                            src="./assets/img/logo/test.svg"
-                            class="logo__logoImg"
-                        />
+                        <img alt="logo" src="./assets/img/logo/test.svg" class="logo__logoImg" />
                     </div>
                     <div class="loading__bar">
                         <div class="loading__porcent"></div>
@@ -57,11 +49,7 @@
             <section class="accesibility__modal">
                 <div class="accesibility__modalContainer">
                     <article class="colorSelect colorSelect--main">
-                        <label
-                            for="primaryColorInput"
-                            class="colorSelect__title"
-                            >Main Color</label
-                        >
+                        <label for="primaryColorInput" class="colorSelect__title">Main Color</label>
                         <input
                             type="color"
                             value="#00ffff"
@@ -70,34 +58,21 @@
                             id="primaryColorInput"
                         />
 
-                        <div
-                            class="colorSelect__restart colorMain"
-                            data-color="--water_green"
-                        >
-                            <p
-                                class="colorSelect__para"
-                                data-color="--water_green"
-                            >
+                        <div class="colorSelect__restart colorMain" data-color="--water_green">
+                            <p class="colorSelect__para" data-color="--water_green">
                                 <img
                                     data-color="--water_green"
                                     src="./assets/img/icons/icons/icon__restart.svg"
                                     alt="icon restart"
                                     class="colorSelect__img"
                                 />
-                                <span class="colorSelect__over"
-                                    >Restart Color</span
-                                >
+                                <span class="colorSelect__over">Restart Color</span>
                             </p>
                         </div>
                     </article>
 
                     <article class="colorSelect">
-                        <label
-                            for="secondaryColorInput"
-                            class="colorSelect__title"
-                        >
-                            Secondary Color
-                        </label>
+                        <label for="secondaryColorInput" class="colorSelect__title"> Secondary Color </label>
                         <input
                             type="color"
                             value="#ff8e31"
@@ -114,17 +89,15 @@
                                     class="colorSelect__img"
                                     data-color="--orange"
                                 />
-                                <span class="colorSelect__over"
-                                    >Restart Color</span
-                                >
+                                <span class="colorSelect__over">Restart Color</span>
                             </p>
                         </div>
                     </article>
 
                     <article class="accebility__language">
-                        <button class="btn__language btn__language--en active">
-                            En</button
-                        >|<button class="btn__language btn__language--es">
+                        <button class="btn__language btn__language--en active">En</button>|<button
+                            class="btn__language btn__language--es"
+                        >
                             Es
                         </button>
                     </article>
@@ -140,33 +113,19 @@
                             <nav>
                                 <ul>
                                     <li class="menuLink">
-                                        <a href="#home" class="menuLink__link"
-                                            >Home</a
-                                        >
+                                        <a href="#home" class="menuLink__link">Home</a>
                                     </li>
                                     <li class="menuLink">
-                                        <a href="#skills" class="menuLink__link"
-                                            >Skills</a
-                                        >
+                                        <a href="#skills" class="menuLink__link">Skills</a>
                                     </li>
                                     <li class="menuLink">
-                                        <a href="#about" class="menuLink__link"
-                                            >About</a
-                                        >
+                                        <a href="#about" class="menuLink__link">About</a>
                                     </li>
                                     <li class="menuLink">
-                                        <a
-                                            href="#projects"
-                                            class="menuLink__link"
-                                            >Projects</a
-                                        >
+                                        <a href="#projects" class="menuLink__link">Projects</a>
                                     </li>
                                     <li class="menuLink">
-                                        <a
-                                            href="#contact"
-                                            class="menuLink__link"
-                                            >Contact</a
-                                        >
+                                        <a href="#contact" class="menuLink__link">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -233,17 +192,8 @@
                                         </style>
                                     </defs>
                                     <g id="Capa_1" data-name="Capa 1">
-                                        <rect
-                                            class="cls-1"
-                                            x="0.5"
-                                            y="0.5"
-                                            width="199"
-                                            height="99"
-                                        />
-                                        <path
-                                            class="cls-2"
-                                            d="M199,1V99H1V1H199m1-1H0V100H200Z"
-                                        />
+                                        <rect class="cls-1" x="0.5" y="0.5" width="199" height="99" />
+                                        <path class="cls-2" d="M199,1V99H1V1H199m1-1H0V100H200Z" />
                                     </g>
                                     <g id="logo">
                                         <path
@@ -312,13 +262,7 @@
                                             height="13.76"
                                             transform="translate(30.36 130.89) rotate(-52.08)"
                                         />
-                                        <circle
-                                            class="cls-6"
-                                            id="cls-water-1"
-                                            cx="156.95"
-                                            cy="58.38"
-                                            r="3.46"
-                                        />
+                                        <circle class="cls-6" id="cls-water-1" cx="156.95" cy="58.38" r="3.46" />
                                         <rect
                                             x="143.44"
                                             y="58.78"
@@ -333,17 +277,11 @@
 
                         <div class="navBar">
                             <nav>
-                                <a href="#home" class="navBarLinks active"
-                                    >Home</a
-                                >
+                                <a href="#home" class="navBarLinks active">Home</a>
                                 <a href="#about" class="navBarLinks">About</a>
                                 <a href="#skills" class="navBarLinks">Skills</a>
-                                <a href="#projects" class="navBarLinks"
-                                    >Projects</a
-                                >
-                                <a href="#contact" class="navBarLinks"
-                                    >Contact</a
-                                >
+                                <a href="#projects" class="navBarLinks">Projects</a>
+                                <a href="#contact" class="navBarLinks">Contact</a>
                             </nav>
                         </div>
                     </div>
@@ -362,14 +300,9 @@
                             <span id="denis">Denis Muñoz.</span>
                         </h1>
 
-                        <p class="cta__para">
-                            Front End Developer & Web Designer
-                        </p>
+                        <p class="cta__para">Front end Developer & Web Designer</p>
                         <nav class="red">
-                            <a
-                                href="https://github.com/Mod8124"
-                                target="_blank"
-                            >
+                            <a href="https://github.com/Mod8124" target="_blank" aria-label="Link to Mod8124's github">
                                 <svg viewBox="0 0 100 100">
                                     <g fill="#2D2D37">
                                         <path
@@ -384,11 +317,9 @@
                             <a
                                 href="mailto:denisenriquebaca@gmail.com"
                                 target="_blank"
+                                aria-label="Link to denis's email"
                             >
-                                <svg
-                                    style="enable-background: new 0 0 100 100"
-                                    viewBox="0 0 100 100"
-                                >
+                                <svg style="enable-background: new 0 0 100 100" viewBox="0 0 100 100">
                                     <path
                                         d="M51.7 4c-25.4 0-46 20.6-46 46s20.6 46 46 46 46-20.6 46-46-20.6-46-46-46zm0 90c-24.3 0-44-19.7-44-44s19.7-44 44-44 44 19.7 44 44-19.7 44-44 44z"
                                     />
@@ -400,6 +331,7 @@
                             <a
                                 href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a"
                                 target="_blank"
+                                aria-label="Link to Denis's linkedin"
                             >
                                 <svg viewBox="0 0 100 100">
                                     <g fill="#0087AF">
@@ -430,37 +362,23 @@
                     <div class="about__container" id="about">
                         <h2 class="about__title hidden">About Me</h2>
                         <p class="about__para hidden">
-                            I'm a self-taught Front end Developer who started as
-                            a Web Designer, based in Costa Rica. Currently, I
-                            don't work in the IT industry. In my free time, I
-                            like to do code things like
-                            <strong class="about__focus"><</strong>freelance
-                            projects | personal projects | or just code<strong
-                                class="about__focus"
-                                >></strong
-                            >. I hope one day to work as a full-time front end
+                            I'm a self-taught Front end Developer who started as a Web Designer, based in Costa Rica.
+                            Currently, I don't work in the IT industry. In my free time, I like to do code things like
+                            <strong class="about__focus"><</strong>freelance projects | personal projects | or just
+                            code<strong class="about__focus">></strong>. I hope one day to work as a full-time front end
                             developer.
                         </p>
 
                         <p class="about__para hidden">
-                            I like to challenge myself and improve my tech
-                            skills so, I'm starting my journey as
-                            <span class="about__focus"
-                                >Software engineer student</span
-                            >
+                            I like to challenge myself and improve my tech skills so, I'm starting my journey as
+                            <span class="about__focus">Software engineer student</span>
                             in January also, I participated in the
 
-                            <a target="_blank" href="https://worldskills.org"
-                                >WorldSkills</a
-                            >
+                            <a target="_blank" href="https://worldskills.org">WorldSkills</a>
                             competition 2021.
                         </p>
 
-                        <a
-                            href="./assets/img/resume_Denis_p.pdf"
-                            target="_blank"
-                            class="mainButton hidden"
-                        >
+                        <a href="./assets/img/resume_Denis_p.pdf" target="_blank" class="mainButton hidden">
                             <span class="btnDownload"> Download Resume </span>
                             <span class="mainButton__span">
                                 <?xml version="1.0" ?><svg
@@ -476,22 +394,9 @@
                                     <title />
                                     <desc />
                                     <defs />
-                                    <g
-                                        fill="none"
-                                        fill-rule="evenodd"
-                                        id="Page-1"
-                                        stroke="none"
-                                        stroke-width="1"
-                                    >
-                                        <g
-                                            fill="#000000"
-                                            id="Core"
-                                            transform="translate(-383.000000, -213.000000)"
-                                        >
-                                            <g
-                                                id="file-download"
-                                                transform="translate(383.000000, 213.500000)"
-                                            >
+                                    <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                                        <g fill="#000000" id="Core" transform="translate(-383.000000, -213.000000)">
+                                            <g id="file-download" transform="translate(383.000000, 213.500000)">
                                                 <path
                                                     d="M14,6 L10,6 L10,0 L4,0 L4,6 L0,6 L7,13 L14,6 L14,6 Z M0,15 L0,17 L14,17 L14,15 L0,15 L0,15 Z"
                                                     id="Shape"
@@ -573,6 +478,42 @@
                     <figure class="modalImg__skill hidden">
                         <img
                             class="modalImg__skillImg"
+                            src="./assets/img/icons/icons__stack/icon-nestjs.svg"
+                            alt="icon nodejs"
+                            loading="lazy"
+                        />
+                        <h5 class="skills__paragraph">NestJs</h5>
+                    </figure>
+
+                    <figure class="modalImg__skill hidden">
+                        <img
+                            class="modalImg__skillImg"
+                            src="./assets/img/icons/icons__stack/icon-framer-motion.svg"
+                            alt="icon nodejs"
+                            loading="lazy"
+                        />
+                        <h5 class="skills__paragraph">Framer</h5>
+                    </figure>
+
+                    <figure class="modalImg__skill hidden">
+                        <img
+                            class="modalImg__skillImg"
+                            src="./assets/img/icons/icons__stack/icon-styled-components.svg"
+                            alt="icon nodejs"
+                            loading="lazy"
+                        />
+                        <h5 class="skills__paragraph">Styled-C</h5>
+                    </figure>
+
+                    <figure class="modalImg__skill hidden">
+                        <img class="modalImg__skillImg" src="./assets/img/icons/icons__stack/icon-postgresql.svg""
+                        alt="icon nodejs" loading="lazy" />
+                        <h5 class="skills__paragraph">PostgreSQL</h5>
+                    </figure>
+
+                    <figure class="modalImg__skill hidden">
+                        <img
+                            class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-nextjs.svg"
                             alt="icon nextJs"
                             loading="lazy"
@@ -643,16 +584,6 @@
                     <figure class="modalImg__skill hidden">
                         <img
                             class="modalImg__skillImg"
-                            src="./assets/img/icons/icons__stack/icon-ilustrator.svg"
-                            alt="icon ilustrator"
-                            loading="lazy"
-                        />
-                        <h5 class="skills__paragraph">Adobe Ai</h5>
-                    </figure>
-
-                    <figure class="modalImg__skill hidden">
-                        <img
-                            class="modalImg__skillImg"
                             src="./assets/img/icons/icons__stack/icon-figma.svg"
                             alt="icon nodejs"
                             loading="lazy"
@@ -668,21 +599,9 @@
                 <div class="tittle">
                     <h2 class="title__title hidden">Projects</h2>
                     <article class="projectsOptions">
-                        <button
-                            class="projects__btnOption active"
-                            data-filter="front"
-                        >
-                            Front end
-                        </button>
-                        <button class="projects__btnOption" data-filter="back">
-                            Back end
-                        </button>
-                        <button
-                            class="projects__btnOption projectBtn-game"
-                            data-filter="game"
-                        >
-                            Games
-                        </button>
+                        <button class="projects__btnOption active" data-filter="front">Front end</button>
+                        <button class="projects__btnOption" data-filter="back">Back end</button>
+                        <button class="projects__btnOption projectBtn-game" data-filter="game">Games</button>
                     </article>
                 </div>
 
@@ -771,11 +690,7 @@
                         </figure>
 
                         <figure class="work__imgContainer">
-                            <img
-                                src="./assets/img/images/mobile/food.jpg"
-                                alt="food-website"
-                                class="work_img hidden"
-                            />
+                            <img src="./assets/img/images/mobile/food.jpg" alt="food-website" class="work_img hidden" />
                         </figure>
 
                         <figure class="work__imgContainer">
@@ -797,24 +712,13 @@
 
                     <section class="modalImg__imgContainer">
                         <div class="modalImg__imgInfo">
-                            <img
-                                class="modalImg__fakeImgLoader"
-                                alt="img design fake"
-                            />
+                            <img class="modalImg__fakeImgLoader" alt="img design fake" />
 
-                            <img
-                                alt="img design"
-                                decoding="async"
-                                class="modalImg__img"
-                            />
+                            <img alt="img design" decoding="async" class="modalImg__img" />
 
                             <article class="modalImg__info">
-                                <h3
-                                    class="modalImg__infoShow modalImg__infoShow--name"
-                                ></h3>
-                                <p
-                                    class="modalImg__infoShow modalImg__infoShow--para"
-                                ></p>
+                                <h3 class="modalImg__infoShow modalImg__infoShow--name"></h3>
+                                <p class="modalImg__infoShow modalImg__infoShow--para"></p>
                             </article>
                         </div>
 
@@ -824,11 +728,7 @@
                     </section>
 
                     <div class="modalImg__link">
-                        <a
-                            href=""
-                            target="_blank"
-                            class="modalImg__linkLink"
-                        ></a>
+                        <a href="" target="_blank" class="modalImg__linkLink"></a>
                     </div>
                 </div>
             </section>
@@ -840,29 +740,19 @@
                 <div class="tittleTwo">
                     <div class="tittleTwo__title" id="contact">
                         <h2 class="contact__title hidden">Contact me</h2>
-                        <h3 class="contact__subTitle hidden">
-                            Wow, look who's here!
-                        </h3>
+                        <h3 class="contact__subTitle hidden">Wow, look who's here!</h3>
                     </div>
                 </div>
 
                 <div class="social">
                     <div class="social__container">
-                        <a
-                            href="mailto:denisenriquebaca@gmail.com"
-                            target="_blank"
-                        >
+                        <a href="mailto:denisenriquebaca@gmail.com" target="_blank">
                             <article class="redSocial redSocial--start hidden">
                                 <div class="textRed textRedEmail">
                                     <h4>denisenriquebaca@gmail.com</h4>
                                 </div>
                                 <div class="imgRed">
-                                    <svg
-                                        style="
-                                            enable-background: new 0 0 100 100;
-                                        "
-                                        viewBox="0 0 100 100"
-                                    >
+                                    <svg style="enable-background: new 0 0 100 100" viewBox="0 0 100 100">
                                         <path
                                             d="M51.7 4c-25.4 0-46 20.6-46 46s20.6 46 46 46 46-20.6 46-46-20.6-46-46-46zm0 90c-24.3 0-44-19.7-44-44s19.7-44 44-44 44 19.7 44 44-19.7 44-44 44z"
                                         />
@@ -886,10 +776,7 @@
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         xml:space="preserve"
-                                        style="
-                                            enable-background: new 0 0 100.4
-                                                100.4;
-                                        "
+                                        style="enable-background: new 0 0 100.4 100.4"
                                         viewBox="0 0 100.4 100.4"
                                     >
                                         <path
@@ -927,10 +814,7 @@
                             </article>
                         </a>
 
-                        <a
-                            href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a"
-                            target="_blank"
-                        >
+                        <a href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a" target="_blank">
                             <article class="redSocial redSocial--end hidden">
                                 <div class="textRed"><h4>LinkedIn</h4></div>
                                 <div class="imgRed">
@@ -1014,17 +898,8 @@
                                     </style>
                                 </defs>
                                 <g id="Capa_1" data-name="Capa 1">
-                                    <rect
-                                        class="cls-1"
-                                        x="0.5"
-                                        y="0.5"
-                                        width="199"
-                                        height="99"
-                                    />
-                                    <path
-                                        class="cls-2"
-                                        d="M199,1V99H1V1H199m1-1H0V100H200Z"
-                                    />
+                                    <rect class="cls-1" x="0.5" y="0.5" width="199" height="99" />
+                                    <path class="cls-2" d="M199,1V99H1V1H199m1-1H0V100H200Z" />
                                 </g>
                                 <g id="logo">
                                     <path
@@ -1093,13 +968,7 @@
                                         height="13.76"
                                         transform="translate(30.36 130.89) rotate(-52.08)"
                                     />
-                                    <circle
-                                        class="cls-6"
-                                        id="cls-water-1"
-                                        cx="156.95"
-                                        cy="58.38"
-                                        r="3.46"
-                                    />
+                                    <circle class="cls-6" id="cls-water-1" cx="156.95" cy="58.38" r="3.46" />
                                     <rect
                                         x="143.44"
                                         y="58.78"
@@ -1115,13 +984,9 @@
                     <div class="footerAbout">
                         <div class="footerAbout__container">
                             <nav>
-                                <a class="footer__link" href="#projects"
-                                    >Projects</a
-                                >
+                                <a class="footer__link" href="#projects">Projects</a>
                                 <a class="footer__link" href="#about">About</a>
-                                <a class="footer__link" href="#contact"
-                                    >Contact</a
-                                >
+                                <a class="footer__link" href="#contact">Contact</a>
                             </nav>
                         </div>
                     </div>
@@ -1137,13 +1002,8 @@
 
                     <div class="footerSocial">
                         <nav class="footerSocial__links">
-                            <a
-                                href="mailto:denisenriquebaca@gmail.com"
-                                target="_blank"
-                                ><svg
-                                    style="enable-background: new 0 0 100 100"
-                                    viewBox="0 0 100 100"
-                                >
+                            <a href="mailto:denisenriquebaca@gmail.com" target="_blank"
+                                ><svg style="enable-background: new 0 0 100 100" viewBox="0 0 100 100">
                                     <path
                                         d="M51.7 4c-25.4 0-46 20.6-46 46s20.6 46 46 46 46-20.6 46-46-20.6-46-46-46zm0 90c-24.3 0-44-19.7-44-44s19.7-44 44-44 44 19.7 44 44-19.7 44-44 44z"
                                     />
@@ -1151,10 +1011,7 @@
                                         d="M82.3 31.3v-.2c0-.1-.1-.1-.1-.2 0 0 0-.1-.1-.1-.1-.1-.2-.1-.3-.2h-.1c-.1 0-.2-.1-.3-.1H21.9c-.1 0-.3 0-.4.1h-.1c-.1 0-.2.1-.3.2 0 0 0 .1-.1.1-.1.1-.1.1-.1.2v37.8c0 .3.1.5.3.8.2.2.5.3.7.3.1 0 .3 0 .4-.1h58.6c.1.1.3.1.4.1.3 0 .5-.1.7-.3.3-.3.4-.8.2-1.1v-37c.1-.2.1-.2.1-.3zm-3.5 1.2L51.6 58.8 24.4 32.5h54.4zM50.9 61c.2.2.4.3.7.3.3 0 .5-.1.7-.3l28-27.1v32.6L66.1 52.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l14.2 14.2H24.3l14.2-14.2c.4-.4.4-1 0-1.4s-1-.4-1.4 0L22.9 66.5V33.9l28 27.1z"
                                     /></svg
                             ></a>
-                            <a
-                                href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a"
-                                target="_blank"
-                            >
+                            <a href="https://www.linkedin.com/in/denis-mu%C3%B1oz-baca-28323921a" target="_blank">
                                 <svg viewBox="0 0 100 100">
                                     <g fill="#0087AF">
                                         <path
@@ -1169,11 +1026,7 @@
                         </nav>
                     </div>
                 </div>
-                <a
-                    href="https://github.com/Mod8124/portfolio"
-                    target="_blank"
-                    class="footer__linkRepo"
-                >
+                <a href="https://github.com/Mod8124/portfolio" target="_blank" class="footer__linkRepo">
                     Designed & built by
                     <strong>Denis Muñoz</strong>
                 </a>
@@ -1182,7 +1035,7 @@
         </main>
         <!--end wrapper-->
         <script src="./src/js/particles.js"></script>
-        <script src="./dist/js/index.js" type="module"></script>
-        <!-- <script src="./src/main.js" type="module"></script> -->
+        <!-- <script src="./dist/js/index.js" type="module"></script> -->
+        <script src="./src/main.js" type="module"></script>
     </body>
 </html>

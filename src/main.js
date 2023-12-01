@@ -2,12 +2,7 @@ import { hambu, toggleHambu, menuLinksMobile } from './js/functions/hambu.js';
 import { handleLoading } from './js/functions/load.js';
 import { observer, hiddenElements } from './js/functions/animation.js';
 import { handleScroll } from './js/functions/scroll.js';
-import {
-    modal,
-    modalDisplay,
-    modalNotDisplay,
-    projects
-} from './js/functions/modal.js';
+import { modal, modalDisplay, modalNotDisplay, projects } from './js/functions/modal.js';
 import {
     btnAccesibility,
     btnRestartColorMain,
@@ -19,10 +14,8 @@ import {
     handleColor
 } from './js/functions/accesibility.js';
 import { languageBtns, handleLanguage } from './js/functions/language.js';
-import {
-    btnProjects,
-    handleClickFilterProject
-} from './js/functions/project.js';
+import { btnProjects, handleClickFilterProject } from './js/functions/project.js';
+import { handleBackground } from './js/functions/handleBackground.js';
 
 window.addEventListener('load', handleLoading);
 window.addEventListener('scroll', handleScroll);
@@ -35,7 +28,8 @@ projects.forEach((img, index) => {
 
 // particles
 // eslint-disable-next-line no-undef
-particlesJS.load('particles-js', './particle.json');
+
+// particlesJS.load('particles-js', './particle.json');
 
 // // accesibility
 colorSelect__main.addEventListener('input', handleColor);
@@ -57,6 +51,13 @@ menuLinksMobile.forEach((button) => {
 hiddenElements.forEach((el) => observer.observe(el));
 
 // project section
-btnProjects.forEach((btn) =>
-    btn.addEventListener('click', handleClickFilterProject)
-);
+btnProjects.forEach((btn) => btn.addEventListener('click', handleClickFilterProject));
+
+window.addEventListener('mousemove', (event) => {
+    const { x, y } = event;
+
+    document.querySelector('.pointer').style.transform = `translate(${x}px,${y}px)`;
+    document.querySelector('.cursor__wrapper').style.transform = `translate(${x}px, ${y}px)`;
+});
+
+handleBackground();

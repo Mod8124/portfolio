@@ -19,8 +19,9 @@ export const activeLink = (link) => {
 };
 
 export const checkSection = () => {
+    const top = window.scrollY;
+
     sections.forEach((sec) => {
-        let top = window.scrollY;
         let offset = sec.offsetTop;
         let height = sec.offsetHeight;
         let id = sec.dataset.id;
@@ -32,9 +33,12 @@ export const checkSection = () => {
     });
 };
 
+const body = document.body;
+
 export const handleScroll = () => {
-    let currentScroll = window.pageYOffset;
-    let navScrollHeight = navScroll.offsetHeight;
+    const currentScroll = window.pageYOffset;
+    const navScrollHeight = navScroll.offsetHeight;
+
     if (window.scrollY > 60) {
         btnAccesibility.classList.add('active');
     } else {
@@ -42,8 +46,7 @@ export const handleScroll = () => {
         if (modalAccesibility.classList.contains('active')) {
             modalAccesibility.classList.remove('active');
             btnAccesibility.style.right = '0px';
-            btnAccesibility.querySelector('.accesibility__img').src =
-                './assets/img/icons/icons/icon__acebi.svg';
+            btnAccesibility.querySelector('.accesibility__img').src = './assets/img/icons/icons/icon__acebi.svg';
         }
     }
 
@@ -54,6 +57,8 @@ export const handleScroll = () => {
     } else {
         navScroll.style.top = `-${navScrollHeight + 8}px`;
     }
+
+    body.classList.add('active');
 
     prevScroll = currentScroll;
 

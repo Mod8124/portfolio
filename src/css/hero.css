@@ -71,13 +71,11 @@
     width: 94%;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
     min-height: 100vh;
-    background-color: black;
     background-image: radial-gradient(
         circle,
         hsla(0, 3%, 6%, 0.678) 0%,
-        black 56%
+        rgba(0, 0, 0, 0.08) 56%
     );
 }
 
@@ -341,14 +339,15 @@ canvas {
 .chevrons {
     position: absolute;
     bottom: 3%;
-    left: 50%;
+    left: 48%;
     padding: 6px 0 0 0;
     margin-left: -3px;
     margin-top: 48px;
-    width: 30px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .chevrondown {

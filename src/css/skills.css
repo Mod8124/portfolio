@@ -96,7 +96,7 @@
 
     .skills__container {
         grid-row-gap: 40px;
-        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-columns: auto auto auto auto auto auto;
         justify-items: center;
     }
     .skills__container .modalImg__skill {

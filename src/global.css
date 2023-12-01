@@ -49,26 +49,68 @@ html {
     --footer_linksMobile: 1.2em;
     --para__heroMobile: 1em;
 }
+body {
+    background-color: black;
+}
 
 body::-webkit-scrollbar {
-    width: 14px;
+    width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--orange);
     border-radius: 10px;
     border: 3px solid black;
+    transition: all 0.8s;
 }
 
 body::-webkit-scrollbar-track {
-    background-color: black;
+    background-color: transparent;
 }
 
 .wrapper {
     width: 100%;
     margin: 0 auto;
-    background-color: black;
+
+    background-image: radial-gradient(circle, hsla(0, 3%, 6%, 0.678) 0%, rgba(0, 0, 0, 0.08) 40%);
 }
+
+/* body {
+    cursor: none;
+}
+
+.cursor__container {
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+}
+
+.pointer {
+    z-index: 1000;
+    pointer-events: none;
+    width: 5pt;
+    height: 5pt;
+    background: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    top: -2.5pt;
+    left: -2.5pt;
+}
+
+.cursor__wrapper {
+    z-index: 1000;
+    pointer-events: none;
+    position: fixed;
+    top: -15pt;
+    left: -15pt;
+    width: 30pt;
+    height: 30pt;
+    border-radius: 50%;
+    color: rgb(175, 182, 206);
+    font-size: 40px;
+    transition: all 0.09s;
+    border: 1px solid var(--water_green);
+} */
 
 /* global logo */
 .cls-4 {
@@ -77,4 +119,57 @@ body::-webkit-scrollbar-track {
 
 .cls-6 {
     stroke: var(--water_green);
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.circle {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0%;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transition: all 0.5s;
+    border-radius: 50%;
+
+    background-color: black;
+}
+
+.circle.animate {
+    animation: expandCircle 700ms ease forwards;
+}
+
+.circle.animate-reverse {
+    opacity: 0;
+}
+
+@keyframes expandCircle {
+    0% {
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 50%;
+    }
+    100% {
+        width: 250vh; /* 200% of the viewport height for a perfect circle */
+        height: 250vh; /* Same as width to maintain aspect ratio */
+        top: calc(50% - 115vh); /* Adjust position to start from the top-left corner */
+        left: calc(50% - 120vh); /* Adjust position to start from the top-left corner */
+    }
 }

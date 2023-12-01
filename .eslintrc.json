@@ -5,17 +5,13 @@
     },
     "extends": [
         "prettier",
-        "eslint:recommended",
+        "eslint:recommended"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
         "linebreak-style": [
             "error",
             "unix"
