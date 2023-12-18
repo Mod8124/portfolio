@@ -68,7 +68,7 @@ const frontImgLinks = [
         img: 'AnimeBlog',
         github: 'https://github.com/Mod8124/blogAnime-node.git',
         url: 'https://bloganime-node-production.up.railway.app',
-        icons: ['Nodejs', 'MongoDB', 'Ejs', 'Webpack'],
+        icons: ['Nodejs', 'MongoDB', 'Ejs', 'Docker', 'Webpack'],
         title: {
             EN: 'Blog-App',
             ES: 'Blog-App'
@@ -217,7 +217,7 @@ const backImgLinks = [
             EN: 'A RESTful API following MVC design pattern, Implemented authentication and user-friendly features.',
             ES: 'API RESTful siguiendo el patrón de diseño MVC, autenticación implementada y características fáciles de usar.'
         },
-        icons: ['NodeJs', 'MongoDB', 'Webpack', 'EJS']
+        icons: ['NodeJs', 'MongoDB', 'EJS', 'Docker', 'Jest', 'Webpack']
     }
 ];
 

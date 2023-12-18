@@ -77,7 +77,7 @@
     background-image: radial-gradient(
         circle,
         hsla(0, 3%, 6%, 0.678) 0%,
-        black 56%
+        #050505 56%
     );
 }
 

@@ -85,7 +85,7 @@ export function modalDisplay(index) {
     modalLink.href = `${imgLinks[index].url}`;
     modalSkills.innerHTML = createSkills(index);
 
-    img.src = urlImg;
+    img.src = './assets/img/images/demos/1.jpg';
 
     if (imgLinks[index].serverHosting) {
         modalLink.setAttribute('data-hosting', true);

@@ -21,8 +21,8 @@
             type="image/x-svg"
             sizes="30x30"
         />
-        <script src="./dist/js/style.js"></script>
-        <!-- <link rel="stylesheet" href="./src/global.css" /> -->
+        <!-- <script src="./dist/js/style.js"></script> -->
+        <link rel="stylesheet" href="./src/global.css" />
     </head>
     <body>
         <main class="wrapper">
@@ -808,6 +808,29 @@
                                 class="modalImg__img"
                             />
 
+                            <div class="testing">
+                                <video
+                                    width="94%"
+                                    height="100%"
+                                    playsinline
+                                    autoplay
+                                    style="
+                                        position: absolute;
+                                        left: 3%;
+                                        object-fit: contain;
+                                        top: 0;
+                                        margin: 0 auto;
+                                        border-radius: 6px;
+                                    "
+                                    loop
+                                >
+                                    <source
+                                        src="./assets/img/images/demos/netflix.mp4"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                            </div>
+
                             <article class="modalImg__info">
                                 <h3
                                     class="modalImg__infoShow modalImg__infoShow--name"
@@ -1182,7 +1205,7 @@
         </main>
         <!--end wrapper-->
         <script src="./src/js/particles.js"></script>
-        <script src="./dist/js/index.js" type="module"></script>
-        <!-- <script src="./src/main.js" type="module"></script> -->
+        <!-- <script src="./dist/js/index.js" type="module"></script> -->
+        <script src="./src/main.js" type="module"></script>
     </body>
 </html>
