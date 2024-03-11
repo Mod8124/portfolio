@@ -5,7 +5,7 @@ export const Language = () => {
         hero: {
             hello: 'Hi,',
             im: "I'm",
-            web: 'Web Developer & Web designer'
+            web: 'Software Developer & Web designer'
         },
         accesibilty: {
             main: {
@@ -19,10 +19,10 @@ export const Language = () => {
         about: {
             title: 'About Me',
             para: [
-                "I'm a self-taught Front end Developer who started as a Web Designer, based in Costa Rica. Currently, I don't work the IT industry. In my free time, I like to do code things like <strong class='about__focus'><</strong>freelance projects | personal projects | or just code<strong class='about__focus'>></strong>. I hope one day to work as a full-time front end developer.",
-                'I like to challenge myself and improve my tech skills so, I\'m starting my journey as <span class="about__focus">software engineer student</span> in January also, I participated in the <a target="_blank" href="https://worldskills.org">WorldSkills</a> competition 2021.'
+                'As software engineering student who has been coding for around 3 years, even before starting college. I began as a web designer, then transitioned to front-end development, and later decided to formally study engineering. I\'ve participated in several hackathons and open-source projects, such as <a target="_blank" href="https://worldskills.org">WorldSkills</a> in 2021.',
+                'I am actively seeking a company to launch my career in the software engineering world, where I can demonstrate my skills. I am genuinely passionate about the idea and enjoy every aspect of creating new things from scratch.'
             ],
-            link: 'Download Resume '
+            link: 'Download Resume'
         },
         skills: {
             title: 'Technical Skills'
@@ -48,7 +48,7 @@ export const Language = () => {
         hero: {
             hello: 'Hola,',
             im: 'Soy',
-            web: 'Desarrollador Front End & Diseñador Web'
+            web: 'Desarrollador de software & Diseñador Web'
         },
         accesibilty: {
             main: {
@@ -62,8 +62,8 @@ export const Language = () => {
         about: {
             title: 'Sobre mí',
             para: [
-                "Soy un desarrollador front end autodidacta que comenzó como diseñador web, ubicado en Costa Rica. Actualmente, no trabajo en la industria de IT. En mi tiempo libre, me gusta programar cosas como proyectos  <strong class='about__focus'><</strong>freelance | personales<strong class='about__focus'>></strong> o simplemente código. Espero algún día trabajar como desarrollador front-end a tiempo completo.",
-                'Me gusta desafiarme a mí mismo y mejorar mis habilidades tecnológicas, así que estoy comenzando mi viaje como <span class="about__focus">estudiante de ingeniería de software</span> en Enero y también participé en la competencia <a target="_blank" href="https://worldskills.org">WorldSkills</a> 2021.'
+                'Como estudiante de ingeniería de software que ha estado programando durante aproximadamente 3 años, incluso antes de comenzar la universidad. Comencé como diseñador web, luego hice la transición al desarrollo front-end y posteriormente decidí estudiar formalmente ingeniería. He participado en varios hackatones y proyectos de código abierto, como por ejemplo en <a target="_blank" href="https://worldskills.org">WorldSkills</a> en 2021.',
+                'Estoy buscando activamente una empresa para iniciar mi carrera en el mundo de la ingeniería de software, donde pueda demostrar mis habilidades. Me apasiona sinceramente la idea y disfruto de cada aspecto de crear cosas nuevas desde cero.'
             ],
             link: 'Descargar Curriculum'
         },
