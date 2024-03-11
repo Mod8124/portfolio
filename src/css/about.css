@@ -51,7 +51,7 @@
 
 .about__container p {
     font-size: var(--body__sizeMobile);
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     color: var(--white);
     line-height: 32px;
 }
